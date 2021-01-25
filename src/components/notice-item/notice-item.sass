@@ -1,0 +1,70 @@
+.notice-item
+    display: flex
+    padding-top: 15px
+    padding-bottom: 15px
+
+    &:not(:last-child)
+        border-bottom: 1px solid $bg-main
+
+    &__icon
+        background-color: $bg-main
+        width: 32px
+        height: 32px
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 10px
+        flex-shrink: 0
+
+        svg
+            width: 16px
+            height: 16px
+            fill: $accent
+    
+    &__data
+        padding-top: 4px
+
+    &__text
+        font-size: 14px
+        line-height: 20px
+        color: $dark-main
+        font-family: $bold
+        letter-spacing: 0.02em
+        margin-bottom: 14px
+
+        +sm-block()
+            padding-right: 45px
+
+        +md-block()
+            font-size: 16px
+            line-height: 24px
+            margin-bottom: 11px
+
+    &__date
+        font-size: 14px
+        line-height: 16px
+        color: #000000
+        opacity: .5
+
+    &__close
+        width: 24px
+        height: 24px
+        margin-left: auto
+        background-color: transparent
+        border: none
+        cursor: pointer
+        display: flex
+        justify-content: center
+        align-items: center
+
+        &:hover
+            svg
+                opacity: 1
+
+        svg
+            width: 12px
+            height: 12px
+            fill: $accent
+            opacity: .2
+            transition: opacity .2s ease

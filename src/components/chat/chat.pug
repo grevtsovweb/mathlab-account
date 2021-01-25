@@ -1,0 +1,55 @@
+include ../mixins/svg.pug
+
+.chat
+    .chat__messege-block
+        .chat__messege-block-inner  
+            .chat__messege.chat__messege--right
+                .chat__messege-content
+                    .chat__messege-text-block 
+                        .chat__messege-text-item Да, никаких проблем
+                        .chat__messege-text-item 
+                            .chat__messege-text Присылаю вам домашнюю, что нужно бысло сделать ещё 21 числа, извиняюсь за это
+                            a.chat__messege-text-link(href="#") 
+                                span.chat__messege-text-link-icon
+                                    +svg(10,13,"icon-download-file")
+                                | Домашняя_работа.docx
+                    .chat__messege-time 23 ноября 2020
+                .chat__messege-author
+            .chat__messege.chat__messege--left
+                .chat__messege-content
+                    .chat__messege-text-block
+                        .chat__messege-text-item Да, никаких проблем
+                        .chat__messege-text-item Присылаю вам домашнюю, что нужно бысло сделать ещё 21 числа, извиняюсь за это
+                        .chat__messege-text-item Присылаю вам домашнюю, что нужно бысло сделать ещё 21 числа, извиняюсь за это
+                    .chat__messege-time Сегодня в 14:04
+                .chat__messege-author
+                    img(src="img/courses-card/teacher.jpg", alt="")
+            .chat__messege.chat__messege--right
+                .chat__messege-content
+                    .chat__messege-text-block
+                        .chat__messege-text-item Присылаю вам домашнюю, что нужно бысло сделать ещё 21 числа, извиняюсь за это
+                        .chat__messege-text-item Присылаю вам домашнюю, что нужно бысло сделать ещё 21 числа, извиняюсь за это
+                    .chat__messege-time 23 ноября 2020
+                .chat__messege-author
+            .chat__messege.chat__messege--left
+                .chat__messege-content
+                    .chat__messege-text-block
+                        .chat__messege-text-item Присылаю вам домашнюю, что нужно бысло сделать ещё 21 числа, извиняюсь за это
+                    .chat__messege-time Сегодня в 14:04
+                .chat__messege-author
+                    img(src="img/courses-card/teacher.jpg", alt="")
+            .chat__messege.chat__messege--right
+                .chat__messege-content
+                    .chat__messege-text-block
+                        .chat__messege-text-item Присылаю вам домашнюю, что нужно бысло сделать ещё 21 числа, извиняюсь за это
+                    .chat__messege-time 23 ноября 2020
+                .chat__messege-author
+            .chat__messege.chat__messege--left
+                .chat__messege-content
+                    .chat__messege-text-block
+                        .chat__messege-text-item Да, никаких проблем
+                    .chat__messege-time Сегодня в 14:04
+                .chat__messege-author     
+                    img(src="img/courses-card/teacher.jpg", alt="") 
+    .chat__type-block 
+        include ../chat-input/chat-input.pug

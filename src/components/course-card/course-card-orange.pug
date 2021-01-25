@@ -1,0 +1,22 @@
+include ../mixins/svg.pug
+
+.course-card.course-card--orange
+    .course-card__header
+        .course-card__teacher
+            .course-card__teacher-image
+                img(src="img/courses-card/teacher.jpg", alt="Альберт Горяев")
+            .course-card__teacher-name Альберт Горяев
+        .course-card__ticket-container
+            .course-card__ticket Индивидуально
+            .course-card__ticket 11 класс
+    .course-card__title Курс подготовки к олимпиаде «Физтех» по математике
+    .course-card__data
+        .course-card__data-item
+            .course-card__data-icon
+                +svg(16,16,"icon-time")
+            | Каждое воскресенье  в 18:45
+        .course-card__data-item 
+            .course-card__data-icon
+                +svg(16,16,"icon-sand-time")
+            | Доступно 3 занятия
+    a.course-card__button Открыть материалы

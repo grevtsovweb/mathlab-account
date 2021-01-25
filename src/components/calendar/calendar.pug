@@ -1,0 +1,80 @@
+include ../mixins/svg.pug
+
+.calendar
+    .calendar__header
+        .calendar__month-title Сентябрь 2020
+        .calendar__handlers
+            button.calendar__handler-item
+                +svg(15,15,"icon-arrow-prev")
+            button.calendar__handler-item
+                +svg(15,15,"icon-arrow-next")
+    .calendar__body
+        ul.calendar__week-days
+            li.calendar__week-day-item пн
+            li.calendar__week-day-item вт
+            li.calendar__week-day-item ср
+            li.calendar__week-day-item чт
+            li.calendar__week-day-item пт
+            li.calendar__week-day-item сб
+            li.calendar__week-day-item вс
+        .calendar__weeks
+            .calendar__week
+                button.calendar__day.calendar__day--unactive 24
+                button.calendar__day.calendar__day--unactive 25
+                button.calendar__day.calendar__day--unactive 26
+                button.calendar__day.calendar__day--unactive 27
+                button.calendar__day.calendar__day--unactive 28
+                button.calendar__day.calendar__day--unactive 29
+                button.calendar__day 1
+            .calendar__week
+                button.calendar__day 2
+                button.calendar__day 3
+                button.calendar__day 4
+                button.calendar__day 5
+                button.calendar__day 6
+                button.calendar__day 7
+                button.calendar__day 8
+            .calendar__week
+                button.calendar__day 9
+                button.calendar__day 10
+                button.calendar__day 11
+                button.calendar__day 12
+                button.calendar__day 13
+                button.calendar__day 14
+                button.calendar__day 15
+            .calendar__week
+                button.calendar__day 16
+                button.calendar__day.calendar__day--current 17
+                button.calendar__day 18
+                button.calendar__day 19
+                button.calendar__day 20
+                button.calendar__day 21
+                button.calendar__day 22
+            .calendar__week
+                button.calendar__day 23
+                button.calendar__day 24
+                button.calendar__day 25
+                button.calendar__day 26
+                button.calendar__day 27
+                button.calendar__day 28
+                button.calendar__day 29
+            .calendar__week
+                button.calendar__day 30
+                button.calendar__day 31
+                button.calendar__day.calendar__day--unactive 1
+                button.calendar__day.calendar__day--unactive 2
+                button.calendar__day.calendar__day--unactive 3
+                button.calendar__day.calendar__day--unactive 4
+                button.calendar__day.calendar__day--unactive 5
+    .calendar__footer
+        .calendar__footer-item
+            .calendar__button 
+                .calendar__button-icon
+                    +svg(16,16,"icon-arrow-remove")
+                | Перенести/отменить занятие  
+        .calendar__footer-item
+            .calendar__button
+                .calendar__button-icon 
+                    +svg(16,16,"icon-clock-add")
+                | Добавить занятие
+

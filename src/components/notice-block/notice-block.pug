@@ -1,0 +1,17 @@
+include ../mixins/svg.pug
+include ../notice-item/notice-item.pug
+
+.notice-block
+    .notice-block__messeges
+        +notice-item('Твоё следующее занятие завтра в 18:00! Не пропусти! :)')
+        +notice-item('Твоё следующее занятие завтра в 18:00! Не пропусти! :)')
+        +notice-item('Твоё следующее занятие завтра в 18:00! Не пропусти! :)')
+        +notice-item('Твоё следующее занятие завтра в 18:00! Не пропусти! :)')
+        +notice-item('Твоё следующее занятие завтра в 18:00! Не пропусти! :)')
+        +notice-item('Твоё следующее занятие завтра в 18:00! Не пропусти! :)')
+        +notice-item('Твоё следующее занятие завтра в 18:00! Не пропусти! :)')
+
+    button.notice-block__button
+        span.notice-block__button-icon
+            +svg(24,24,"icon-more")
+        | Показать ещё

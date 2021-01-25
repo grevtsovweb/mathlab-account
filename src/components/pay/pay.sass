@@ -1,0 +1,151 @@
+.pay
+    background-color: $bg-white
+    border-radius: 8px
+    width: 100%
+    padding: 15px
+    box-sizing: border-box
+
+    +md-block()
+        width: 100%
+        padding: 30px
+    
+    &__price-block
+        margin-bottom: 34px
+
+        +sm-block()
+            display: flex
+            flex-wrap: wrap
+            margin-left: -10px
+            margin-right: -10px
+
+        +md-block()
+            padding-bottom: 30px
+            margin-bottom: 0
+            margin-top: 25px
+
+    &__price-block-item
+        margin-bottom: 15px
+
+        +sm-block()
+            width: calc(50% - 20px)
+            margin-left: 10px
+            margin-right: 10px
+            margin-bottom: 20px
+
+        +md-block()
+            width: calc(20% - 20px)
+            margin-bottom: 0
+
+        &:last-child
+            margin-bottom: 0
+
+        &--sm-full
+            +sm-block()
+                width: calc(100% - 20px)
+
+            +md-block()
+                width: calc(20% - 20px)
+
+    &__how-works
+
+        +md-block()
+            padding-top: 30px
+            border-top: 1px solid $bg-main
+
+    &__how-works-title
+        text-align: center
+        font-size: 18px
+        font-family: $bold
+        color: $dark-main
+        margin-top: 0
+
+        +sm-block()
+            font-size: 20px
+            line-height: 24px
+            margin-bottom: 30px
+
+        +md-block()
+            font-size: 24px
+
+    &__how-works-container
+        +md-block()
+            display: flex
+            margin-left: -10px
+            margin-right: -10px
+
+    &__how-works-item
+        margin-bottom: 35px
+        position: relative
+
+        +sm-block()
+            max-width: 352px
+            width: 100%
+            margin-left: auto
+            margin-right: auto
+
+        +md-block()
+            max-width: none
+            width: calc(33.3% - 20px)
+            margin-left: 10px
+            margin-right: 10px
+            margin-bottom: 0
+
+        &:last-child::after
+            display: none
+
+        &::after
+            +md-block()
+                position: absolute
+                content: ''
+                width: 32px
+                height: 22px
+                background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2232%22%20height%3D%2222%22%20viewBox%3D%220%200%2032%2022%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%3Cpath%20d%3D%22M31.8047%2010.5288L21.8047%200.528833C21.6133%200.338708%2021.3288%200.280771%2021.0781%200.384271C20.8288%200.487146%2020.6667%200.730646%2020.6667%201.00015V2.33346C20.6667%202.51052%2020.737%202.67983%2020.862%202.80483L27.724%209.66683H0.666687C0.298187%209.6669%200%209.96502%200%2010.3335V11.6668C0%2012.0353%200.298187%2012.3335%200.666687%2012.3335H27.724L20.862%2019.1955C20.737%2019.3205%2020.6667%2019.4898%2020.6667%2019.6669V21.0002C20.6667%2021.2698%2020.8288%2021.5132%2021.0781%2021.6161C21.1608%2021.6506%2021.2474%2021.6669%2021.3333%2021.6669C21.5065%2021.6669%2021.6771%2021.5992%2021.8047%2021.4716L31.8047%2011.4716C32.0651%2011.2111%2032.0651%2010.7893%2031.8047%2010.5288Z%22%20fill%3D%22%23CFD8F5%22/%3E%0A%3C/svg%3E%0A')
+                background-repeat: no-repeat   
+                background-size: cover
+                background-position: center 
+                top: 40px
+                right: -30px
+
+
+.title
+    color: $dark-main
+    font-size: 18px
+    margin-top: 0
+    margin-bottom: 11px
+    line-height: 24px
+    letter-spacing: .02em
+    font-family: $bold
+
+    +sm-block()
+        font-size: 20px
+
+    +md-block()
+        font-size: 24px
+        margin-top: 0
+        margin-bottom: 14px
+        line-height: 1em
+
+.text
+    font-size: 14px
+    line-height: 1em
+    color: $dark-main-opacity
+    margin-top: 0
+    margin-bottom: 12px
+    line-height: 22px
+
+    &:last-child
+        margin-bottom: 0
+
+    +md-block()
+        font-size: 16px
+        margin-bottom: 12px
+
+    &--accent
+        color: $accent
+        opacity: 1
+
+    &--bold
+        font-family: $bold
+
+    &--red
+        color: $red

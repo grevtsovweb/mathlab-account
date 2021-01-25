@@ -1,0 +1,13 @@
+  
+.navbar {
+    grid-area: n;
+    background-color: burlywood;
+}
+
+.navbar__item {
+    color: white;
+}
+
+.navbar__link_active {
+    color: gold;
+}

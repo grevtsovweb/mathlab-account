@@ -1,0 +1,25 @@
+include ../mixins/svg
+
+header.header
+    .header__container
+        .header__row
+            a.header__logo(href="#")
+                img(src="img/common/logo.svg", alt="Mathlab", width="120", height="20")
+            .header__notice
+                .header__notice-item
+                    include ../notice-lessons/notice-lessons.pug
+                .header__notice-item
+                    include ../notice/notice
+            .header__user-block
+                a.header__user-avatar(href="#")
+                span.header__greeting
+                    span.header__greeting-text Привет, Константин!
+                a.header__logout(href="#")
+                    +svg(16,16,"icon-logout")
+    .header__m-menu
+        button.header__m-menu-button
+            span.header__m-menu-button-icon
+                +svg(16,16,"icon-star")
+            | Мои уроки   
+            span.header__m-menu-button-dropdown  
+                +svg(8,4,"icon-arrow")           

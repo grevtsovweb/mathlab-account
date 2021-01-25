@@ -1,0 +1,180 @@
+.calendar-transfer
+    background-color: $bg-white
+    border-radius: 6px
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05)
+
+    &__header
+        display: flex
+        justify-content: space-between
+        padding-left: 26px
+        padding-right: 26px
+        padding-top: 26px
+        padding-bottom: 26px
+
+        +sm-block()
+            justify-content: center
+
+
+    &__handler
+        background-color: transparent
+        border: none
+        padding: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 15px
+        height: 15px
+
+        svg
+            width: 100%
+            height: auto
+            fill: $accent
+
+    &__title
+        font-size: 20px
+        font-family: $medium
+        line-height: 1em
+        color: $dark-blue
+        text-align: center
+
+        +sm-block()
+            width: 175px
+
+    &__body
+        width: 100%
+        max-width: 100%
+        overflow-y: auto
+        display: flex
+        padding-left: 21px
+        padding-right: 21px
+        box-sizing: border-box
+
+        +sm-block()
+            padding-left: 40px
+            padding-right: 40px
+
+    &__body-container
+        width: 100%
+        max-width: 100%
+        display: flex
+        overflow-y: auto
+
+    &__body-inner
+        display: flex
+        margin-left: -11px
+        margin-right: -11px
+
+
+    &__date
+        display: flex
+        flex-direction: column
+        text-align: center
+        width: 25%
+        flex-basis: 25%
+        margin-right: 11px
+        margin-left: 11px
+    
+    &__day
+        margin-bottom: 8px
+
+
+    &__day-week
+        color: #BFCBEE
+        font-size: 12px
+        font-family: $bold
+
+    &__day-number
+        color: $dark-blue
+        font-family: $bold
+        font-size: 16px
+        opacity: .5
+
+    &__time-button
+        background-color: transparent
+        font-size: 12px
+        color: $accent
+        font-family: $main
+        line-height: 36px
+        padding-left: 3px
+        padding-right: 3px
+        padding-top: 0
+        padding-bottom: 0
+        border: none
+        border-radius: 4px
+        cursor: pointer
+        width: 38px
+
+        &:last-child
+            margin-top: 4px
+
+        &--available
+            background-color: $bg-main
+            border-radius: 4px
+
+        &--current
+            background-color: $accent
+            color: $white
+
+    &__buttons
+        margin: 0
+        padding: 0
+        list-style: none
+        padding-left: 16px
+        padding-right: 16px
+        padding-bottom: 20px
+        margin-top: 24px
+
+        +sm-block()
+            display: flex
+            justify-content: center
+    
+    &__buttons-item
+        +sm-block()
+            margin-left: 8px
+            margin-right: 8px
+
+        &:not(:last-child)
+            margin-bottom: 10px
+
+            +sm-block()
+                margin-bottom: 0
+
+    &__button
+        border: none
+        border-radius: 50px
+        font-size: 14px
+        line-height: 16px
+        padding-top: 15px
+        padding-bottom: 15px
+        padding-left: 20px
+        padding-right: 20px
+        font-family: $bold
+        text-align: center
+        color: $white
+        width: 100%
+        background-color: $green
+        box-sizing: border-box
+        min-width: 144px
+        transition: background-color .2s ease
+        cursor: pointer
+
+        &:hover:not(:disabled)
+            background-color: $green-hover
+
+        &--transparent
+            background-color: transparent
+            border: 1px solid $accent
+            color: $accent
+            padding-top: 14px
+            padding-bottom: 14px
+            transition: border-color,color .2s ease
+
+            &:hover:not(:disabled)
+                background-color: transparent
+                border-color: $accent-hover
+                color: $accent-hover
+
+        &:disabled
+            opacity: .5
+            cursor: default
+

@@ -1,0 +1,176 @@
+.price-card
+    background-color: #F7F6FE
+    padding-top: 30px
+    padding-bottom: 30px
+    padding-left: 30px
+    padding-right: 30px
+    text-align: center
+    min-height: 250px
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    position: relative
+    border-radius: 4px
+
+    +md-block()
+        padding-left: 6px
+        padding-right: 6px
+
+    &::before
+        position: absolute
+        content: ''
+        top: 0
+        left: 0
+        right: 0
+        height: 4px
+        background-color: $purple
+        border-top-left-radius: 4px
+        border-top-right-radius: 4px
+
+    &__header
+        position: relative
+
+    &__footer
+        margin-top: auto
+
+    &__count
+        font-size: 13px
+        line-height: 1em
+        color: $dark-main
+        opacity: .5
+
+        +sm-block()
+            font-size: 13px
+
+    &__price
+        font-family: $bold
+        color: $dark-main
+        font-size: 21px
+        line-height: 1em
+        margin-top: 6px
+
+        +sm-block()
+            font-size: 21px
+
+    &__saving
+        font-size: 12px
+        font-family: $main
+        color: $dark-main
+        background-color: rgba(175,72,201,.1)
+        display: inline-block
+        line-height: 20px
+        padding-left: 10px
+        padding-right: 10px
+        border-radius: 18px
+        margin-top: 14px
+
+    &__description
+        font-size: 12px
+        color: $dark-main
+        opacity: .5
+        margin-bottom: 15px
+
+    &__button
+        background-color: $purple
+        color: $white
+        border-radius: 32px
+        font-size: 12px
+        line-height: 12px
+        padding-top: 12px
+        padding-bottom: 12px
+        padding-right: 20px
+        padding-left: 20px
+        font-family: $bold
+        text-align: center
+        border: none
+        min-width: 150px
+        cursor: pointer
+        transition: background-color, color .2s ease
+
+        &:hover
+            background-color: $purple-hover
+
+        +md-block()
+            padding-left: 4px
+            padding-right: 4px
+            min-width: auto
+            width: 100%
+
+    &--accent
+        background-color: $accent
+
+        +sm-block()
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: center
+            padding-top: 30px
+            padding-bottom: 30px
+            min-height: auto
+
+            .price-card__footer
+                margin-top: 0
+                max-width: 170px
+                margin-left: 18px
+
+            .price-card__header
+                margin-right: 18px
+
+        +md-block()
+            padding-top: 30px
+            padding-bottom: 30px
+            text-align: center
+            min-height: 250px
+            box-sizing: border-box
+            display: flex
+            flex-direction: column
+            position: relative
+            border-radius: 4px
+
+            .price-card__footer
+                margin-top: auto
+                max-width: auto
+                margin-left: 0
+
+            .price-card__header
+                margin-right: 0
+
+            .price-card__button
+                &:hover
+                    color: $white
+                    background-color: #aba0f6
+
+        .price-card__header
+
+            &::after
+                position: absolute
+                content: ''
+                width: 10px
+                height: 14px
+                background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2212%22%20height%3D%2214%22%20viewBox%3D%220%200%2012%2014%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%3Cpath%20d%3D%22M11.2201%208.19681C11.0597%206.10887%2010.0876%204.80044%209.22998%203.64582C8.43586%202.5769%207.75%201.65383%207.75%200.292166C7.75%200.182791%207.68875%200.0828225%207.59163%200.0327014C7.4942%20-0.0177205%207.37714%20-0.00946268%207.28857%200.0549045C6.00057%200.976553%204.92591%202.52992%204.55051%204.01206C4.28989%205.04394%204.25541%206.20397%204.25057%206.97011C3.06112%206.71606%202.79168%204.93686%202.78883%204.91747C2.77543%204.82519%202.71905%204.74488%202.63702%204.70102C2.55414%204.65773%202.45671%204.65459%202.37269%204.69618C2.31032%204.72637%200.841711%205.47258%200.756262%208.45198C0.750273%208.5511%200.75%208.65052%200.75%208.74992C0.75%2011.6444%203.10525%2013.9996%206%2013.9996C6.00399%2013.9998%206.00826%2014.0004%206.01168%2013.9996C6.01282%2013.9996%206.01395%2013.9996%206.01537%2013.9996C8.903%2013.9913%2011.25%2011.6393%2011.25%208.74992C11.25%208.60437%2011.2201%208.19681%2011.2201%208.19681ZM6%2013.4163C5.03498%2013.4163%204.25%2012.5801%204.25%2011.5522C4.25%2011.5172%204.24973%2011.4818%204.25227%2011.4385C4.26395%2011.0051%204.34628%2010.7092%204.43657%2010.5123C4.60577%2010.8758%204.90825%2011.2098%205.39959%2011.2098C5.5608%2011.2098%205.69126%2011.0794%205.69126%2010.9182C5.69126%2010.503%205.69982%2010.0239%205.80321%209.59153C5.89522%209.20817%206.11509%208.80031%206.39367%208.47336C6.51756%208.89774%206.75912%209.2412%206.99496%209.57644C7.33249%2010.056%207.68139%2010.5519%207.74264%2011.3975C7.74634%2011.4477%207.75006%2011.4981%207.75006%2011.5522C7.75%2012.58%206.96502%2013.4163%206%2013.4163Z%22%20fill%3D%22%23F79A38%22/%3E%0A%3C/svg%3E%0A')
+                background-repeat: no-repeat
+                background-position: center
+                background-size: cover
+                top: -20px
+                left: 50%
+                transform: translate(-50%)
+        
+        .price-card__count
+            color: $white
+            opacity: .5
+
+        .price-card__price
+            color: $white   
+        
+        .price-card__saving
+            color: $white
+            background-color: rgba(255,255,255,.2)
+
+        .price-card__description
+            color: $white
+            opacity: .5 
+
+        .price-card__button
+            background-color: $bg-white
+            color: $accent
+    

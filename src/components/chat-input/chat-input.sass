@@ -1,0 +1,92 @@
+.chat-input
+    display: flex
+    position: relative
+
+    &__input
+        flex-grow: 1
+        height: 46px
+        padding-right: 54px
+        padding-top: 0
+        padding-bottom: 0
+        padding-left: 52px
+        border: none
+        box-sizing: border-box
+        max-width: 100%
+        font-family: $main
+        font-size: 12px
+        background-color: $bg-main
+        border-radius: 50px
+
+        +sm-block()
+            font-size: 14px
+        
+        &:placeholder
+            color: $black
+            opacity: .5
+            font-size: 14px
+            
+    &__button
+        width: 46px
+        height: 46px
+        padding: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 50%
+        background-color: $accent
+        color: $white
+        border: none
+        transition: .2s ease
+        position: absolute
+        right: 0
+        cursor: pointer
+
+        +sm-block()
+            position: static
+            width: auto
+            padding-left: 30px
+            padding-right: 30px
+            border-radius: 50px
+            font-family: $bold
+            font-size: 14px
+            margin-left: 10px
+
+        &:hover,&:focus
+            background-color: $accent-hover
+
+
+    &__button-icon
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 15px
+        height: 15px
+
+        +sm-block()
+            display: none
+        
+        svg
+            width: 100%
+            height: auto
+            fill: $white
+
+    &__button-text
+        display: none
+
+        +sm-block()
+            display: block
+
+    &__button-attach
+        position: absolute
+        content: ''
+        background-color: transparent
+        border: none
+        padding: 0
+        left: 0
+        width: 46px
+        height: 46px
+
+        svg
+            width: 24px
+            height: 24px
+            fill: $accent

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mathlab: Account</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__row"><a class="header__logo" href="#"><img src="img/common/logo.svg" alt="Mathlab" width="120" height="20"></a>
+          <div class="header__notice">
+            <div class="header__notice-item"><a class="notice-lessons" href="#"><span class="notice-lessons__icon">
+                                <svg aria-hidden="true" width="14" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-play"></use>
+                                </svg></span><span class="notice-lessons__text notice-lessons__text--medium">Всего занятий:</span><span class="notice-lessons__text-count">11 <span class="notice-lessons__text-count notice-lessons__text-count--mobile">занятий</span></span><span class="notice-lessons__text-count-contain">(5 индивидуальных, 7  групповых)</span></a>
+            </div>
+            <div class="header__notice-item"><a class="notice" href="#"><span class="notice__icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                </svg></span><span class="notice__text">Твоё занятие уже началось! Подключайся!</span></a>
+            </div>
+          </div>
+          <div class="header__user-block"><a class="header__user-avatar" href="#"></a><span class="header__greeting"><span class="header__greeting-text">Привет, Константин!</span></span><a class="header__logout" href="#">
+                            <svg aria-hidden="true" width="16" height="16">
+                              <use xlink:href="img/sprite/sprite.svg#icon-logout"></use>
+                            </svg></a></div>
+        </div>
+      </div>
+      <div class="header__m-menu">
+        <button class="header__m-menu-button"><span class="header__m-menu-button-icon">
+                          <svg aria-hidden="true" width="16" height="16">
+                            <use xlink:href="img/sprite/sprite.svg#icon-star"></use>
+                          </svg></span>Мои уроки   <span class="header__m-menu-button-dropdown"> 
+                          <svg aria-hidden="true" width="8" height="4">
+                            <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                          </svg></span></button>
+      </div>
+    </header>
+    <main class="page__main">
+      <div class="page__container">
+        <div class="page__grid">
+          <div class="page__sidebar">
+            <div class="page__main-nav">
+              <nav class="main-nav">
+                <ul class="main-nav__list">
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-pay"></use>
+                                      </svg></span><span class="main-nav__link-title">Оплатить занятия</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-material"></use>
+                                      </svg></span><span class="main-nav__link-title">Материалы занятий</span><span class="main-nav__link-notice">1</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-play"></use>
+                                      </svg></span><span class="main-nav__link-title">Доступные интенсивы</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-star"></use>
+                                      </svg></span><span class="main-nav__link-title">Мои уроки</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-promo"></use>
+                                      </svg></span><span class="main-nav__link-title">Мои промокоды</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-invite"></use>
+                                      </svg></span><span class="main-nav__link-title">Пригласи друзей</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-settings"></use>
+                                      </svg></span><span class="main-nav__link-title">Настройки</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                      </svg></span><span class="main-nav__link-title">Уведомления</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-pay"></use>
+                                      </svg></span><span class="main-nav__link-title">Чат с преподавателем</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-logout"></use>
+                                      </svg></span><span class="main-nav__link-title">Выход</span></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="page__course-cards">
+            <div class="page__course-cards-item">
+              <div class="course-card course-card--purple">
+                <div class="course-card__header">
+                  <div class="course-card__teacher">
+                    <div class="course-card__teacher-image"><img src="img/courses-card/teacher.jpg" alt="Альберт Горяев"></div>
+                    <div class="course-card__teacher-name">Альберт Горяев</div>
+                  </div>
+                  <div class="course-card__ticket-container">
+                    <div class="course-card__ticket">Курс</div>
+                    <div class="course-card__ticket">11 класс</div>
+                  </div>
+                </div>
+                <div class="course-card__title">Курс подготовки к олимпиаде «Физтех» по математике</div>
+                <div class="course-card__data">
+                  <div class="course-card__data-item">
+                    <div class="course-card__data-icon">
+                                    <svg aria-hidden="true" width="16" height="16">
+                                      <use xlink:href="img/sprite/sprite.svg#icon-time"></use>
+                                    </svg>
+                    </div>По пятницам в 17:30
+                  </div>
+                  <div class="course-card__data-item"> 
+                    <div class="course-card__data-icon">
+                                    <svg aria-hidden="true" width="16" height="16">
+                                      <use xlink:href="img/sprite/sprite.svg#icon-sand-time"></use>
+                                    </svg>
+                    </div>Доступно 8 занятий
+                  </div>
+                </div><a class="course-card__button">Открыть материалы</a>
+              </div>
+            </div>
+            <div class="page__course-cards-item">
+              <div class="course-card course-card--orange">
+                <div class="course-card__header">
+                  <div class="course-card__teacher">
+                    <div class="course-card__teacher-image"><img src="img/courses-card/teacher.jpg" alt="Альберт Горяев"></div>
+                    <div class="course-card__teacher-name">Альберт Горяев</div>
+                  </div>
+                  <div class="course-card__ticket-container">
+                    <div class="course-card__ticket">Индивидуально</div>
+                    <div class="course-card__ticket">11 класс</div>
+                  </div>
+                </div>
+                <div class="course-card__title">Курс подготовки к олимпиаде «Физтех» по математике</div>
+                <div class="course-card__data">
+                  <div class="course-card__data-item">
+                    <div class="course-card__data-icon">
+                                    <svg aria-hidden="true" width="16" height="16">
+                                      <use xlink:href="img/sprite/sprite.svg#icon-time"></use>
+                                    </svg>
+                    </div>Каждое воскресенье  в 18:45
+                  </div>
+                  <div class="course-card__data-item"> 
+                    <div class="course-card__data-icon">
+                                    <svg aria-hidden="true" width="16" height="16">
+                                      <use xlink:href="img/sprite/sprite.svg#icon-sand-time"></use>
+                                    </svg>
+                    </div>Доступно 3 занятия
+                  </div>
+                </div><a class="course-card__button">Открыть материалы</a>
+              </div>
+            </div>
+            <div class="page__course-cards-item">
+              <div class="course-card course-card--green">
+                <div class="course-card__header">
+                  <div class="course-card__teacher">
+                    <div class="course-card__teacher-image"><img src="img/courses-card/teacher.jpg" alt="Альберт Горяев"></div>
+                    <div class="course-card__teacher-name">Альберт Горяев</div>
+                  </div>
+                  <div class="course-card__ticket-container">
+                    <div class="course-card__ticket">Подписка</div>
+                    <div class="course-card__ticket">11 класс</div>
+                  </div>
+                </div>
+                <div class="course-card__title">Курс подготовки к олимпиаде «Физтех» по математике</div>
+                <div class="course-card__data">
+                  <div class="course-card__data-item">
+                    <div class="course-card__data-icon">
+                                    <svg aria-hidden="true" width="16" height="16">
+                                      <use xlink:href="img/sprite/sprite.svg#icon-time"></use>
+                                    </svg>
+                    </div>Каждое воскресенье  в 18:45
+                  </div>
+                  <div class="course-card__data-item"> 
+                    <div class="course-card__data-icon">
+                                    <svg aria-hidden="true" width="16" height="16">
+                                      <use xlink:href="img/sprite/sprite.svg#icon-sand-time-end"></use>
+                                    </svg>
+                    </div>У вас закончились занятия
+                  </div>
+                </div><a class="course-card__button">Открыть материалы</a>
+              </div>
+            </div>
+          </div>
+          <div class="page__calendar">
+            <div class="calendar">
+              <div class="calendar__header">
+                <div class="calendar__month-title">Сентябрь 2020</div>
+                <div class="calendar__handlers">
+                  <button class="calendar__handler-item">
+                                <svg aria-hidden="true" width="15" height="15">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-arrow-prev"></use>
+                                </svg>
+                  </button>
+                  <button class="calendar__handler-item">
+                                <svg aria-hidden="true" width="15" height="15">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-arrow-next"></use>
+                                </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="calendar__body">
+                <ul class="calendar__week-days">
+                  <li class="calendar__week-day-item">пн</li>
+                  <li class="calendar__week-day-item">вт</li>
+                  <li class="calendar__week-day-item">ср</li>
+                  <li class="calendar__week-day-item">чт</li>
+                  <li class="calendar__week-day-item">пт</li>
+                  <li class="calendar__week-day-item">сб</li>
+                  <li class="calendar__week-day-item">вс</li>
+                </ul>
+                <div class="calendar__weeks">
+                  <div class="calendar__week">
+                    <button class="calendar__day calendar__day--unactive">24</button>
+                    <button class="calendar__day calendar__day--unactive">25</button>
+                    <button class="calendar__day calendar__day--unactive">26</button>
+                    <button class="calendar__day calendar__day--unactive">27</button>
+                    <button class="calendar__day calendar__day--unactive">28</button>
+                    <button class="calendar__day calendar__day--unactive">29</button>
+                    <button class="calendar__day">1</button>
+                  </div>
+                  <div class="calendar__week">
+                    <button class="calendar__day">2</button>
+                    <button class="calendar__day">3</button>
+                    <button class="calendar__day">4</button>
+                    <button class="calendar__day">5</button>
+                    <button class="calendar__day">6</button>
+                    <button class="calendar__day">7</button>
+                    <button class="calendar__day">8</button>
+                  </div>
+                  <div class="calendar__week">
+                    <button class="calendar__day">9</button>
+                    <button class="calendar__day">10</button>
+                    <button class="calendar__day">11</button>
+                    <button class="calendar__day">12</button>
+                    <button class="calendar__day">13</button>
+                    <button class="calendar__day">14</button>
+                    <button class="calendar__day">15</button>
+                  </div>
+                  <div class="calendar__week">
+                    <button class="calendar__day">16</button>
+                    <button class="calendar__day calendar__day--current">17</button>
+                    <button class="calendar__day">18</button>
+                    <button class="calendar__day">19</button>
+                    <button class="calendar__day">20</button>
+                    <button class="calendar__day">21</button>
+                    <button class="calendar__day">22</button>
+                  </div>
+                  <div class="calendar__week">
+                    <button class="calendar__day">23</button>
+                    <button class="calendar__day">24</button>
+                    <button class="calendar__day">25</button>
+                    <button class="calendar__day">26</button>
+                    <button class="calendar__day">27</button>
+                    <button class="calendar__day">28</button>
+                    <button class="calendar__day">29</button>
+                  </div>
+                  <div class="calendar__week">
+                    <button class="calendar__day">30</button>
+                    <button class="calendar__day">31</button>
+                    <button class="calendar__day calendar__day--unactive">1</button>
+                    <button class="calendar__day calendar__day--unactive">2</button>
+                    <button class="calendar__day calendar__day--unactive">3</button>
+                    <button class="calendar__day calendar__day--unactive">4</button>
+                    <button class="calendar__day calendar__day--unactive">5</button>
+                  </div>
+                </div>
+              </div>
+              <div class="calendar__footer">
+                <div class="calendar__footer-item">
+                  <div class="calendar__button"> 
+                    <div class="calendar__button-icon">
+                                  <svg aria-hidden="true" width="16" height="16">
+                                    <use xlink:href="img/sprite/sprite.svg#icon-arrow-remove"></use>
+                                  </svg>
+                    </div>Перенести/отменить занятие  
+                  </div>
+                </div>
+                <div class="calendar__footer-item">
+                  <div class="calendar__button">
+                    <div class="calendar__button-icon"> 
+                                  <svg aria-hidden="true" width="16" height="16">
+                                    <use xlink:href="img/sprite/sprite.svg#icon-clock-add"></use>
+                                  </svg>
+                    </div>Добавить занятие
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page__social-nav">
+            <ul class="social-nav">
+              <li class="social-nav__item"><a class="social-nav__link" href="#"><span class="social-nav__icon">
+                                <svg aria-hidden="true" width="25" height="25">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-discord"></use>
+                                </svg></span>Подключиться в Discord</a></li>
+              <li class="social-nav__item"><a class="social-nav__link" href="#"><span class="social-nav__icon">
+                                <svg aria-hidden="true" width="25" height="25">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-telegram"></use>
+                                </svg></span>Онлайн-чат в Telegram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="modal">
+      <div class="modal__inner modal__notice">
+        <button class="modal__close">
+              <svg aria-hidden="true" width="10" height="10">
+                <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+              </svg>
+        </button>
+        <div class="modal__wrapper">
+          <h4 class="modal__title">На какую дату добавить занятие</h4>
+          <div class="modal__subtitle">Здесь вы можете указать удобное для вас время</div>
+          <div class="modal__calendar">
+            <div class="calendar-transfer">
+              <div class="calendar-transfer__header">
+                <button class="calendar-transfer__handler calendar-transfer__handler--prev">
+                              <svg aria-hidden="true" width="15" height="15">
+                                <use xlink:href="img/sprite/sprite.svg#icon-arrow-prev"></use>
+                              </svg>
+                </button>
+                <div class="calendar-transfer__title">Сентябрь 2020</div>
+                <button class="calendar-transfer__handler calendar-transfer__handler--next">
+                              <svg aria-hidden="true" width="15" height="15">
+                                <use xlink:href="img/sprite/sprite.svg#icon-arrow-next"></use>
+                              </svg>
+                </button>
+              </div>
+              <div class="calendar-transfer__body">
+                <div class="calendar-transfer__body-container">
+                  <div class="calendar-transfer__body-inner">
+                    <div class="calendar-transfer__date">
+                      <div class="calendar-transfer__day">
+                        <div class="calendar-transfer__day-week">пн</div>
+                        <div class="calendar-transfer__day-number">2</div>
+                      </div>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">19:00</button>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">21:00</button>
+                    </div>
+                    <div class="calendar-transfer__date">
+                      <div class="calendar-transfer__day">
+                        <div class="calendar-transfer__day-week">вт</div>
+                        <div class="calendar-transfer__day-number">3</div>
+                      </div>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">19:00</button>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">21:00</button>
+                    </div>
+                    <div class="calendar-transfer__date">
+                      <div class="calendar-transfer__day">
+                        <div class="calendar-transfer__day-week">ср</div>
+                        <div class="calendar-transfer__day-number">4</div>
+                      </div>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">19:00</button>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">21:00</button>
+                    </div>
+                    <div class="calendar-transfer__date">
+                      <div class="calendar-transfer__day">
+                        <div class="calendar-transfer__day-week">чт</div>
+                        <div class="calendar-transfer__day-number">5</div>
+                      </div>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">19:00</button>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">21:00</button>
+                    </div>
+                    <div class="calendar-transfer__date">
+                      <div class="calendar-transfer__day">
+                        <div class="calendar-transfer__day-week">пт</div>
+                        <div class="calendar-transfer__day-number">6</div>
+                      </div>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">19:00</button>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">21:00</button>
+                    </div>
+                    <div class="calendar-transfer__date">
+                      <div class="calendar-transfer__day">
+                        <div class="calendar-transfer__day-week">пт</div>
+                        <div class="calendar-transfer__day-number">6</div>
+                      </div>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">19:00</button>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">21:00</button>
+                    </div>
+                    <div class="calendar-transfer__date">
+                      <div class="calendar-transfer__day">
+                        <div class="calendar-transfer__day-week">пт</div>
+                        <div class="calendar-transfer__day-number">6</div>
+                      </div>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">19:00</button>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">21:00</button>
+                    </div>
+                    <div class="calendar-transfer__date">
+                      <div class="calendar-transfer__day">
+                        <div class="calendar-transfer__day-week">пт</div>
+                        <div class="calendar-transfer__day-number">6</div>
+                      </div>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">19:00</button>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">21:00</button>
+                    </div>
+                    <div class="calendar-transfer__date">
+                      <div class="calendar-transfer__day">
+                        <div class="calendar-transfer__day-week">пт</div>
+                        <div class="calendar-transfer__day-number">6</div>
+                      </div>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">19:00</button>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">21:00</button>
+                    </div>
+                    <div class="calendar-transfer__date">
+                      <div class="calendar-transfer__day">
+                        <div class="calendar-transfer__day-week">пт</div>
+                        <div class="calendar-transfer__day-number">6</div>
+                      </div>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">19:00</button>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">21:00</button>
+                    </div>
+                    <div class="calendar-transfer__date">
+                      <div class="calendar-transfer__day">
+                        <div class="calendar-transfer__day-week">пт</div>
+                        <div class="calendar-transfer__day-number">6</div>
+                      </div>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">19:00</button>
+                      <button class="calendar-transfer__time-button calendar-transfer__time-button--available">21:00</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="calendar-transfer__buttons">
+                <div class="calendar-transfer__buttons-item">
+                  <button class="calendar-transfer__button" disabled>Добавить занятие </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__row">
+          <div class="footer__info"><a class="footer__logo" href="#">Команда MathLabs</a>
+            <p class="footer__about-team">Математик Годфри Харди писал: «Большинство людей настолько боятся самого названия математики, что они готовы совершенно искренне преувеличивать свою неспособность к математике». Мы полностью разделяем это мнение и считаем, что в большинстве случаев ребенку не хватает упорства, но никак не способностей.</p>
+          </div>
+          <div class="footer__contacts-wrapper">
+            <div class="footer__contacts">
+              <div class="footer__contacts-text">Наши соц.сети</div>
+              <ul class="footer__social-list">
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Instagram">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-instagram"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Facebook">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-facebook"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="footer__contacts">
+              <div class="footer__contacts-text">Если у вас есть вопросы – напишите нам!</div>
+              <ul class="footer__social-list">
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Telegram">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-telegram"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Whatsapp">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-whatsapp"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Viber">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-viber"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Messenger">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-messenger"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__rights-block">
+          <div class="footer__rights-block-item footer__rights-block-copyright">
+            <div class="footer__copyright">© 2020 MathLabs. Все права защищиены   </div>
+          </div>
+          <div class="footer__rights-block-item"><a class="footer__link" href="#">Политика конфиденциальности     </a></div>
+          <div class="footer__rights-block-item"><a class="footer__link" href="#">Пользовательское соглашение</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

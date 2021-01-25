@@ -1,0 +1,60 @@
+.notice-block
+
+    &__messeges
+        background-color: $bg-white
+        border-radius: 8px
+        padding-left: 15px
+        padding-right: 15px
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05)
+
+        +sm-block()
+            padding-left: 20px
+            padding-right: 20px 
+        
+        +md-block()
+            padding-left: 30px
+            padding-right: 30px
+            padding-top: 15px
+            padding-bottom: 15px
+
+    &__button
+        display: none
+
+        +sm-block()
+            font-size: 15px
+            color: $accent
+            font-family: $bold
+            border-radius: 50px
+            border: 1px solid $accent
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: transparent
+            padding-left: 20px
+            padding-right: 20px
+            padding-top: 11px
+            padding-bottom: 11px
+            transition: color, border-color .2s ease
+            cursor: pointer
+            margin-top: 20px
+
+        &:hover
+            border-color: $accent-hover
+            color: $accent-hover
+
+            svg
+                fill: $accent-hover
+
+    &__button-icon
+        width: 24px
+        height: 24px
+        display: flex
+        justify-content: center
+        align-items: center  
+        margin-right: 12px
+
+        svg
+            width: 100%
+            height: auto
+            fill: $accent
+            transition: fill .2s ease

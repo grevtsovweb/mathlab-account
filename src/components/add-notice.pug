@@ -1,0 +1,32 @@
+doctype html
+html(lang="ru").page
+    head
+        meta(charset="UTF-8")
+        title Mathlab: Account
+        meta(name="keywords" content="")
+        meta(name="description" content="")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="styles/style.css")
+    body.page__body
+        include header/header.pug
+        main.page__main
+            .page__container
+                .page__grid
+                    .page__sidebar
+                        .page__main-nav
+                            include main-nav/main-nav.pug
+                    .page__course-cards
+                        .page__course-cards-item
+                            include course-card/course-card-purple.pug
+                        .page__course-cards-item
+                            include course-card/course-card-orange.pug
+                        .page__course-cards-item
+                            include course-card/course-card-green.pug
+                    .page__calendar
+                            include calendar/calendar.pug
+                    .page__social-nav
+                            include social-nav/social-nav.pug
+        include modal/modal-add-notice.pug
+        include footer/footer.pug
+
+        script(src="js/main.js")

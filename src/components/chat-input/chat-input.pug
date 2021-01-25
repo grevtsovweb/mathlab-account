@@ -1,0 +1,10 @@
+include ../mixins/svg.pug
+
+.chat-input
+    button.chat-input__button-attach
+        +svg(24,24,"icon-attach")
+    input(type="text", placeholder="Написать сообщение").chat-input__input
+    button.chat-input__button 
+        span.chat-input__button-icon
+            +svg(15,15,"icon-arrow-next")
+        span.chat-input__button-text Отправить

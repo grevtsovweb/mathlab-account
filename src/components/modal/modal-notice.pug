@@ -1,0 +1,11 @@
+include ../mixins/svg.pug
+
+.modal
+    .modal__inner.modal__notice.modal__notice--pt40
+        button.modal__close
+            +svg(10,10,"icon-close")
+        .modal__wrapper
+            .modal__icon
+                +svg(35,36,"icon-notice")
+            h4.modal__title Заявка на отмену занятия отправлена
+

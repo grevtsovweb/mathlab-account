@@ -1,0 +1,11 @@
+include ../mixins/svg.pug
+
+mixin notice-item(text)
+    .notice-item
+        .notice-item__icon
+            +svg(16,16,'icon-bell')
+        .notice-item__data
+            .notice-item__text= text
+            .notice-item__date 25.03.2020
+        button.notice-item__close
+            +svg(12,12,'icon-close')

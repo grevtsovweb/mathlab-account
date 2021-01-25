@@ -1,0 +1,78 @@
+doctype html
+html(lang="ru").page
+    head
+        meta(charset="UTF-8")
+        title Mathlab: Account
+        meta(name="keywords" content="")
+        meta(name="description" content="")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="styles/style.css")
+        style(type="text/css").
+            .page__ui-kit {
+                padding: 50px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .page__ui-kit h1 {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 28px;
+            }
+            .page__ui-kit ul {
+                margin-top: 24px;
+                margin-bottom: 24px;
+                padding-left: 18px;
+            }
+
+            .page__ui-kit li {
+                margin-bottom: 16px;
+            }
+
+            .page__ui-kit a {
+                text-decoration: none;
+                color: #644BEC;
+                transition: opacity .2s ease;
+                font-size: 16px;
+            }
+            .page__ui-kit a:hover{
+                opacity: .7
+            }
+
+            .page__ui-kit-item {
+                margin-bottom: 70px;
+            }
+
+    body.page__body
+        .page__ui-kit 
+            .page__ui-kit-item
+                h1 Страницы
+                ul
+                    li
+                        a(href="lessons.html") Мои уроки
+                    li
+                        a(href="chat.html") Чат
+                    li
+                        a(href="pay.html") Оплатить занятия
+                    li
+                        a(href="notices.html") Уведомления
+            .page__ui-kit-item
+                h1 Модальные окна
+                ul
+                    li
+                        a(href="move-cancel.html") Перенести/отменить
+                    li
+                        a(href="move-cancel-active.html") Перенести/отменить активно
+                    li
+                        a(href="move-cancel-notice.html") Заявка на отмену занятия отправлена
+                    li
+                        a(href="move-second-screen.html") Перенести(второй экран)
+                    li
+                        a(href="move-second-screen-active.html") Перенести(второй экран) активно
+                    li
+                        a(href="move-second-screen-notice.html")  Заявка на перенос отправлена
+                    li
+                        a(href="add.html") Добавить
+                    li
+                        a(href="add-active.html") Добавить активно
+                    li
+                        a(href="add-notice.html") Заявка на добавление отправлена

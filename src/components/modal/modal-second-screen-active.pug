@@ -1,0 +1,11 @@
+include ../mixins/svg.pug
+
+.modal
+    .modal__inner.modal__notice
+        button.modal__close
+            +svg(10,10,"icon-close")
+        .modal__wrapper
+            h4.modal__title На какую дату перенести ваше занятие?
+            .modal__subtitle Вы можете перенести занятие на удобный для вас промежуток времени
+            .modal__calendar
+                include ../calendar-transfer/calendar-transfer-second-screen-active.pug

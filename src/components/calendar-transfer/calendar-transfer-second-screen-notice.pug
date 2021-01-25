@@ -1,0 +1,83 @@
+include ../mixins/svg.pug
+
+.calendar-transfer
+    .calendar-transfer__header
+        button.calendar-transfer__handler.calendar-transfer__handler--prev
+            +svg(15,15,"icon-arrow-prev")
+        .calendar-transfer__title Сентябрь 2020
+        button.calendar-transfer__handler.calendar-transfer__handler--next
+            +svg(15,15,"icon-arrow-next")
+    .calendar-transfer__body
+        .calendar-transfer__body-container
+            .calendar-transfer__body-inner
+                .calendar-transfer__date
+                    .calendar-transfer__day
+                        .calendar-transfer__day-week пн
+                        .calendar-transfer__day-number 2
+                    button.calendar-transfer__time-button 19:00
+                    button.calendar-transfer__time-button 21:00
+                .calendar-transfer__date
+                    .calendar-transfer__day
+                        .calendar-transfer__day-week вт
+                        .calendar-transfer__day-number 3
+                    button.calendar-transfer__time-button.calendar-transfer__time-button--available 19:00
+                    button.calendar-transfer__time-button 21:00
+                .calendar-transfer__date
+                    .calendar-transfer__day
+                        .calendar-transfer__day-week ср
+                        .calendar-transfer__day-number 4
+                    button.calendar-transfer__time-button.calendar-transfer__time-button--current 19:00
+                    button.calendar-transfer__time-button 21:00
+                .calendar-transfer__date
+                    .calendar-transfer__day
+                        .calendar-transfer__day-week чт
+                        .calendar-transfer__day-number 5
+                    button.calendar-transfer__time-button.calendar-transfer__time-button--current 19:00
+                    button.calendar-transfer__time-button 21:00
+                .calendar-transfer__date
+                    .calendar-transfer__day
+                        .calendar-transfer__day-week пт
+                        .calendar-transfer__day-number 6
+                    button.calendar-transfer__time-button 19:00
+                    button.calendar-transfer__time-button 21:00
+                .calendar-transfer__date
+                    .calendar-transfer__day
+                        .calendar-transfer__day-week пт
+                        .calendar-transfer__day-number 6
+                    button.calendar-transfer__time-button 19:00
+                    button.calendar-transfer__time-button 21:00
+                .calendar-transfer__date
+                    .calendar-transfer__day
+                        .calendar-transfer__day-week пт
+                        .calendar-transfer__day-number 6
+                    button.calendar-transfer__time-button 19:00
+                    button.calendar-transfer__time-button 21:00
+                .calendar-transfer__date
+                    .calendar-transfer__day
+                        .calendar-transfer__day-week пт
+                        .calendar-transfer__day-number 6
+                    button.calendar-transfer__time-button 19:00
+                    button.calendar-transfer__time-button 21:00
+                .calendar-transfer__date
+                    .calendar-transfer__day
+                        .calendar-transfer__day-week пт
+                        .calendar-transfer__day-number 6
+                    button.calendar-transfer__time-button 19:00
+                    button.calendar-transfer__time-button 21:00
+                .calendar-transfer__date
+                    .calendar-transfer__day
+                        .calendar-transfer__day-week пт
+                        .calendar-transfer__day-number 6
+                    button.calendar-transfer__time-button 19:00
+                    button.calendar-transfer__time-button 21:00
+                .calendar-transfer__date
+                    .calendar-transfer__day
+                        .calendar-transfer__day-week пт
+                        .calendar-transfer__day-number 6
+                    button.calendar-transfer__time-button 19:00
+                    button.calendar-transfer__time-button 21:00
+
+    .calendar-transfer__buttons
+        .calendar-transfer__buttons-item
+            button(disabled=true).calendar-transfer__button Перенести
+        

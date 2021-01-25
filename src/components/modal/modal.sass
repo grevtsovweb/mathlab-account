@@ -1,0 +1,130 @@
+.modal
+    position: fixed
+    content: ''
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    z-index: 100
+    background-color: rgba(0,0,0,.5)
+
+    &__inner
+        width: calc(100% - 30px)
+        background-color: $bg-main
+        border-radius: 8px
+        padding-top: 60px
+        padding-left: 15px
+        padding-right: 15px
+        padding-bottom: 20px
+        margin-left: auto
+        margin-right: auto
+        margin-top: 15px
+        box-sizing: border-box
+        position: relative
+
+        +sm-block()
+            max-width: 595px
+            margin-top: 100px
+            padding-top: 45px
+            padding-left: 60px
+            padding-right: 60px
+
+    &__close
+        position: absolute
+        content: ''
+        border: none
+        width: 24px
+        height: 24px
+        background-color: $accent
+        border-radius: 50%
+        opacity: .7
+        display: flex
+        justify-content: center
+        align-items: center
+        right: 15px
+        top: 15px
+        cursor: pointer
+        transition: opacity .2s ease
+
+        &:hover
+            opacity: 1
+
+        svg
+            fill: $bg-main
+            width: 10px
+            height: 10px
+            
+
+    &__title
+        font-size: 20px
+        font-family: $bold
+        line-height: 1.2em
+        letter-spacing: 0.02em
+        color: #232323
+        margin: 0
+        text-align: center
+        margin-left: auto
+        margin-right: auto
+
+        +sm-block()
+            font-size: 24px
+            max-width: 440px
+            margin-left: auto
+            margin-right: auto
+
+    &__subtitle
+            text-align: center
+            font-size: 14px
+            color: $dark-main
+            opacity: .7
+            line-height: 24px
+            margin-top: 18px
+
+            +sm-block()
+                font-size: 16px
+                max-width: 366px
+                margin-left: auto
+                margin-right: auto
+
+    &__calendar
+        margin-top: 16px
+
+        +sm-block()
+            margin-top: 40px
+
+    &__icon
+        width: 35px
+        height: 36px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 10px
+
+        +sm-block()
+            margin-bottom: 24px
+
+        svg
+            width: 100%
+            height: auto
+
+    &__notice
+        padding-top: 60px
+        padding-bottom: 45px
+        width: calc(100% - 30px)
+        max-width: 290px
+
+        +sm-block()
+            padding-top: 40px
+            max-width: 598px
+
+        &--pt40
+            padding-top: 40px
+        
+
+        .modal__title
+            max-width: 280px
+
+            +sm-block()
+                max-width: 440px
