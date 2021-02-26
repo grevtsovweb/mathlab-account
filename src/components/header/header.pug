@@ -1,4 +1,5 @@
 include ../mixins/svg
+include ../notice-item/notice-item
 
 header.header
     .header__container
@@ -10,6 +11,10 @@ header.header
                     include ../notice-lessons/notice-lessons.pug
                 .header__notice-item
                     include ../notice/notice
+                    .header__notice-item-dropdown(style="display: none")
+                        .dropdown-tooltip.dropdown-tooltip--notice
+                            +notice-item("Твоё следующее занятие завтра в 18:00! Не пропусти! :)")
+                            +notice-item("Твоё следующее занятие завтра в 18:00! Не пропусти! :)")
             .header__user-block
                 a.header__user-avatar(href="#")
                 span.header__greeting
@@ -18,8 +23,36 @@ header.header
                     +svg(16,16,"icon-logout")
     .header__m-menu
         button.header__m-menu-button
-            span.header__m-menu-button-icon
-                +svg(16,16,"icon-star")
-            | Мои уроки   
-            span.header__m-menu-button-dropdown  
-                +svg(8,4,"icon-arrow")           
+            span.header__m-menu-page.header__m-menu-page--current
+                span.header__m-menu-page-icon
+                    +svg(16,16,"icon-pay")
+                | Мои уроки  
+                span.header__m-menu-page-dropdown  
+                    +svg(8,4,"icon-arrow")        
+        .header__m-menu-dropdown(style="display: none")
+            .dropdown-tooltip
+                .header__m-menu-dropdown-item
+                    a(href="#").header__m-menu-page
+                        span.header__m-menu-page-icon
+                            +svg(16,16,"icon-play")
+                        | Доступные занятия
+                .header__m-menu-dropdown-item
+                    a(href="#").header__m-menu-page.header__m-menu-page--current
+                        span.header__m-menu-page-icon
+                            +svg(16,16,"icon-star")
+                        | Мои уроки 
+                .header__m-menu-dropdown-item
+                    a(href="#").header__m-menu-page
+                        span.header__m-menu-page-icon
+                            +svg(16,16,"icon-settings")
+                        | Настройки
+                .header__m-menu-dropdown-item
+                    a(href="#").header__m-menu-page
+                        span.header__m-menu-page-icon
+                            +svg(16,16,"icon-bell")
+                        | Уведомления 
+                .header__m-menu-dropdown-item
+                    a(href="#").header__m-menu-page
+                        span.header__m-menu-page-icon
+                            +svg(16,16,"icon-logout")
+                        | Выход

@@ -1,0 +1,69 @@
+.introductory
+    padding: 15px
+    border-radius: 8px
+    background-color: $bg-white
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05)
+
+    +sm-block()
+        padding: 20px
+        padding-bottom: 15px
+
+
+    +md-block()
+        display: flex
+        padding-top: 20px
+        padding-bottom: 20px
+        padding-left: 30px
+        padding-right: 30px
+
+    &__title
+        font-size: 16px
+        font-family: $bold
+        line-height: 24px
+        color: #000000
+        margin-bottom: 10px
+
+    &__list
+        margin: 0
+        padding: 0
+        list-style: none
+
+    &__list-item
+        font-size: 14px
+        color: #000000
+        line-height: 22px
+        padding-left: 9px
+        position: relative
+
+        &:not(:last-child)
+            margin-bottom: 14px
+
+        &::before
+            position: absolute
+            content: ''
+            width: 2px
+            height: 2px
+            background-color: #000000
+            border-radius: 50%
+            left: 0
+            top: 8px
+
+    &__button
+        margin-top: 12px
+
+        +sm-block()
+            margin-top: 16px
+            background-image: url('../img/bg/introductory/bg-1.svg'), url('../img/bg/introductory/bg-2.svg'), url('../img/bg/introductory/bg-3.svg'), url('../img/bg/introductory/bg-4.svg')
+            background-repeat: no-repeat
+            background-position: left 73% top, right 5px top, left 60% top, left 84% top 100%
+
+
+        +md-block()
+            margin-top: 0
+            display: flex
+            align-items: center
+            justify-content: center
+            padding-left: 60px
+            padding-right: 60px
+            margin-left: auto
+            background-position: left bottom 45px, left 35px top 4px, right 114px top, right 10px bottom 35px

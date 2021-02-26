@@ -39,21 +39,20 @@
             right: 15px
             bottom: 0
 
-        &:hover,&:focus
+        &--active,&:hover,&:focus
             background-color: $purple
             color: $white
 
-            svg
-                fill: $white
-                opacity: 1
-
             .main-nav__link-icon
                 background-color: rgba(255,255,255,.2)
-                
-                
 
+                svg
+                    fill: $white
+                    opacity: 1
+                
             &::after
                 display: none
+
 
     &__link-icon
         display: flex
@@ -92,3 +91,4 @@
         color: $white
         font-size: 10px
         font-family: $main
+        flex-shrink: 0

@@ -1,0 +1,30 @@
+include ../field/field.pug
+include ../button/button.pug
+include ../social-link/social-link.pug
+include ../social-link/social-link-tooltip.pug
+
+.invite-block
+    h1.invite-block__title Пригласи друзей в MathLabs и получи бонусы! 5&nbsp;друзей&nbsp;=&nbsp;1 занятие.
+    p.invite-block__text У тебя есть друзья, которые ищут платформу для обучения онлайн? Предложи им MathLabs! Когда приглашенный зарегистрируется и оплатит занятия, ты получишь бесплатный урок.
+    .invite-block__share 
+        p.invite-block__share-title Поделись с ними ссылкой
+        .invite-block__share-container 
+            a(href="#").invite-block__share-link https://mathlabs.ru/ref=12adae02
+            ul.invite-block__share-social 
+                li.invite-block__share-social-item
+                    +social-link-tooltip("icon-share")
+                li.invite-block__share-social-item
+                    +social-link("icon-telegram-2")
+                li.invite-block__share-social-item
+                    +social-link("icon-vk")
+                li.invite-block__share-social-item
+                    +social-link("icon-facebook-2")
+                li.invite-block__share-social-item 
+                    +social-link("icon-twitter")
+    form(action="#").invite-block__form.form
+        p.invite-block__form-title Или отправь приглашение по&nbsp;e&nbsp;-&nbsp;mail
+        .invite-block__form-body
+            .form__row.invite-block__form-input
+                +field("E-mail твоего друга", "text", "name", null, "name")
+            .form__row
+                +button("button--full-width", "Отправить")

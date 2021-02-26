@@ -1,0 +1,66 @@
+.course-info
+    padding-top: 15px
+    padding-bottom: 15px
+    padding-left: 15px
+    padding-right: 15px
+    background-color: $bg-white
+    border-radius: 8px
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05)
+
+    +sm-block()
+        display: flex
+        align-items: flex-start
+        flex-wrap: wrap
+        padding-left: 20px
+        padding-right: 20px
+
+    +md-block()
+        padding-left: 30px
+        padding-right: 30px
+
+    &__title
+        font-size: 18px
+        color: $dark-main
+        font-family: $bold
+        line-height: 22px
+        margin-bottom: 14px
+
+        +sm-block()
+            font-size: 20px
+            line-height: 24px
+            flex-grow: 1
+            max-width: none
+            margin-bottom: 10px
+
+        +md-block()
+            max-width: 360px
+            padding-right: 30px
+            margin-bottom: 0
+
+    &__data
+        display: flex
+        align-items: center
+        margin-left: -8px
+        margin-right: -8px
+        margin-bottom: 15px
+
+        +sm-block()
+            margin-bottom: 0
+
+    &__data-item
+        margin-left: 8px
+        margin-right: 8px
+
+    &__about
+        color: $accent
+        font-size: 14px 
+        font-family: $main
+        line-height: 16px
+        text-decoration: none
+        margin-top: 12px
+        margin-left: auto
+        transition: opacity .2s ease
+        cursor: pointer
+
+        &:hover
+            opacity: .7

@@ -1,32 +1,44 @@
 include ../price-card/price-card.pug
+include ../price-card/price-card-accent.pug
 include ../feature/feature.pug
+include ../banner-intensive/banner-intensive.pug
 
 .pay
     h1.pay__title Оплатить занятия
-    p.pay__text Тебе доступно: 
-        span.pay__text--accent.pay__text--bold 32 занятия
-    p.pay__text Когда занятий будет “
-        span.pay__text--red 0
-        | ” – оплати подходящий пакет занятий ниже, чтобы продолжить обучение. После 
+    p.pay__text 
+        | Выбери удобный способ обучения
+        br
+        | После 
         span.pay__text--accent привязки карты 
         | ты сможешь удобно оплачивать занятия.
-    .pay__price-block
-        .pay__price-block-item
-            +price-card(null, 1, "1 190", null, "Хорошо для старта", "1190")
-        .pay__price-block-item
-            +price-card(null, 4, "990", 700, "2 неделя учёбы (два занятия в неделю)", "3960")
-        .pay__price-block-item
-             +price-card(null, 8, "890", 2100, "1 месяц учёбы (два занятия в неделю)", "7120")
-        .pay__price-block-item
-             +price-card(null, 16, "790", 4200, "1 месяц учёбы (два занятия в неделю)", "12640")
-        .pay__price-block-item.pay__price-block-item--sm-full
-             +price-card("price-card--accent", 32, "690", 8400, "1 месяц учёбы (два занятия в неделю)", "20480")
-    .pay__how-works
-        h2.pay__how-works-title Как это работает?
-        .pay__how-works-container
-            .pay__how-works-item
-                +feature("icon-pay-feature", "Оплачивай занятия, чтобы обучаться с репетитором в группе")
-            .pay__how-works-item
-                +feature("icon-education", "После покупки занятий ты можешь использовать их кол-во для участия в любых доступных групповых занятиях. Просто запишись и учись!")
-            .pay__how-works-item
-                +feature("icon-notice-balance", "Кол-во доступных занятий видно в панели навигации. Если они закончились – пополни, чтобы продолжить обучение.")
+    .pay__tab 
+        ul.pay__tab-handler
+            li.pay__tab-handler-item 
+                a(href="#").pay__tab-handler-link.pay__tab-handler-link--active Индивидуальные занятия
+            li.pay__tab-handler-item 
+                a(href="#").pay__tab-handler-link Обучение в группе
+        ul.pay__tab-content 
+            li.pay__tab-content-item
+                .pay__price-block
+                    .pay__price-block-item
+                        +price-card(null, "2 индивидуальных занятия", "1290", "Хороший старт", "Лучшее решение для старта обучения", "2580")
+                    .pay__price-block-item
+                        +price-card(null, "4 индивидуальных занятия", "1450", "Экономия 200 руб.", "Месяц учёбы (1 занятие в неделю)", "4760")
+                    .pay__price-block-item.pay__price-block-item--sm-full
+                        +price-card("price-card--accent", "4 индивидуальных занятия", "1350", "Экономия 1200 руб.", "Месяц учёбы (2 занятия в неделю)", "8720")
+            li.pay__tab-content-item(style="display: none;")
+                .pay__price-block
+                    .pay__price-block-item
+                        +price-card(null, "2 индивидуальных занятия", "1290", "Хороший старт", "Лучшее решение для старта обучения", "2580")
+                    .pay__price-block-item
+                        +price-card(null, "4 индивидуальных занятия", "1450", "Экономия 200 руб.", "Месяц учёбы (1 занятие в неделю)", "4760")
+                    .pay__price-block-item.pay__price-block-item--sm-full
+                        +price-card-accent("price-card--accent", "4 индивидуальных занятия", "1350", "Экономия 1200 руб.", "Месяц учёбы (2 занятия в неделю)", "8720")
+    .pay__additionally
+        include ../additionally/additionally.pug
+    .pay__banner
+        +banner-intensive('banner-intensive--green')
+    .pay__banner
+        +banner-intensive('banner-intensive--pink')
+    .pay__banner
+        +banner-intensive('banner-intensive--yellow')

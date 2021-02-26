@@ -1,0 +1,30 @@
+include ../ticket/ticket.pug
+include ../button/button.pug
+
+article.intensive-card
+    .intensive-card__content
+        .intensive-card__tickets
+            .intensive-card__tickets-item
+                +ticket("Курс")
+            .intensive-card__tickets-item
+                +ticket("11 класс")
+            .intensive-card__tickets-item
+                +ticket("Олимпиадная математика")
+        .intensive-card__data-block
+            h1.intensive-card__title Курс подготовки к олимпиаде «Физтех» по математике
+            p.intensive-card__description  Курс прорабатывает необходимую теорию, учит решать сложные задания из олимпиады Физтех по математике, правильно выстраивая логику рассуждений. На занятиях обсуждаются олимпиадные задачи прошлых лет по математике и разбираются методы их решения.
+        .intensive-card__footer
+            .intensive-card__teacher
+                include ../teacher/teacher.pug
+            .intensive-card__date
+                span.intensive-card__date-icon
+                    +svg(18,18,"icon-clock-history")
+                span.intensive-card__date-text 5 занятий
+    .intensive-card__choice-block
+        .intensive-card__price
+            span.intensive-card__new-price 1 600 руб.
+        .intensive-card__button-block
+            .intensive-card__button-block-item
+                +button('button--full-width-m ', "Оплатить курс")
+            .intensive-card__button-block-item
+                +button('button--full-width-m button--transparent', "Подробнее")

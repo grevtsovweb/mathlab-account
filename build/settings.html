@@ -21,7 +21,33 @@
             <div class="header__notice-item"><a class="notice" href="#"><span class="notice__icon">
                                 <svg aria-hidden="true" width="16" height="16">
                                   <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
-                                </svg></span><span class="notice__text">Твоё занятие уже началось! Подключайся!</span></a>
+                                </svg></span><span class="notice__text">Твоё занятие уже началось! Подключайся!</span><span class="notice__count"> <span class="notice__count-number">2</span></span></a>
+              <div class="header__notice-item-dropdown" style="display: none">
+                <div class="dropdown-tooltip dropdown-tooltip--notice">
+                      <div class="notice-item">
+                        <div class="notice-item__icon">
+                                        <svg aria-hidden="true" width="16" height="16">
+                                          <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                        </svg>
+                        </div>
+                        <div class="notice-item__data">
+                          <div class="notice-item__text">Твоё следующее занятие завтра в 18:00! Не пропусти! :)</div>
+                          <div class="notice-item__date">25.03.2020</div>
+                        </div>
+                      </div>
+                      <div class="notice-item">
+                        <div class="notice-item__icon">
+                                        <svg aria-hidden="true" width="16" height="16">
+                                          <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                        </svg>
+                        </div>
+                        <div class="notice-item__data">
+                          <div class="notice-item__text">Твоё следующее занятие завтра в 18:00! Не пропусти! :)</div>
+                          <div class="notice-item__date">25.03.2020</div>
+                        </div>
+                      </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="header__user-block"><a class="header__user-avatar" href="#"></a><span class="header__greeting"><span class="header__greeting-text">Привет, Константин!</span></span><a class="header__logout" href="#">
@@ -31,13 +57,37 @@
         </div>
       </div>
       <div class="header__m-menu">
-        <button class="header__m-menu-button"><span class="header__m-menu-button-icon">
-                          <svg aria-hidden="true" width="16" height="16">
-                            <use xlink:href="img/sprite/sprite.svg#icon-star"></use>
-                          </svg></span>Мои уроки   <span class="header__m-menu-button-dropdown"> 
-                          <svg aria-hidden="true" width="8" height="4">
-                            <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
-                          </svg></span></button>
+        <button class="header__m-menu-button"><span class="header__m-menu-page header__m-menu-page--current"><span class="header__m-menu-page-icon">
+                            <svg aria-hidden="true" width="16" height="16">
+                              <use xlink:href="img/sprite/sprite.svg#icon-pay"></use>
+                            </svg></span>Мои уроки  <span class="header__m-menu-page-dropdown"> 
+                            <svg aria-hidden="true" width="8" height="4">
+                              <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                            </svg></span></span></button>
+        <div class="header__m-menu-dropdown" style="display: none">
+          <div class="dropdown-tooltip">
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-play"></use>
+                                </svg></span>Доступные занятия</a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page header__m-menu-page--current" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-star"></use>
+                                </svg></span>Мои уроки </a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-settings"></use>
+                                </svg></span>Настройки</a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                </svg></span>Уведомления </a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-logout"></use>
+                                </svg></span>Выход</a></div>
+          </div>
+        </div>
       </div>
     </header>
     <main class="page__main">
@@ -47,7 +97,7 @@
             <div class="page__main-nav">
               <nav class="main-nav">
                 <ul class="main-nav__list">
-                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                  <li class="main-nav__list-item"><a class="main-nav__link main-nav__link--active" href="#"><span class="main-nav__link-icon">
                                       <svg aria-hidden="true" width="16" height="16">
                                         <use xlink:href="img/sprite/sprite.svg#icon-pay"></use>
                                       </svg></span><span class="main-nav__link-title">Оплатить занятия</span></a></li>
@@ -92,125 +142,144 @@
             </div>
           </div>
           <div class="page__content">
-            <div class="notice-block">
-              <div class="notice-block__messeges">
-                            <div class="notice-item">
-                              <div class="notice-item__icon">
+            <div class="settings-block">
+              <h1 class="settings-block__title">Личная информация</h1>
+              <form class="settings-block__form form" action="#" method="post">
+                <div class="settings-block__form-row settings-block--decor-bottom settings-block--no-pt">
+                  <div class="settings-block__upload">
+                    <div class="form__group">
+                      <div class="avatar-upload">
+                        <div class="avatar-upload__image"><img src="" alt="" style="display: none;"></div>
+                        <p class="avatar-upload__link">
+                          <input type="file" name="avatar"><span class="avatar-upload__link-text">Изменить</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__row">
+                    <div class="form__col settings-block__class-input">
+                      <div class="form__group">
+                        <label class="form__label" for="class">Класс</label>
+                        <div class="form__group-fields">
+                                      <div class="select"><span class="select__arrow">
+                                                      <svg aria-hidden="true" width="12" height="9">
+                                                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                                                      </svg></span>
+                                        <select name="class" id="class">
+                                          <option>11 класс</option>
+                                          <option>10 класс</option>
+                                        </select>
+                                      </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__col">
+                      <div class="form__group">
+                        <label class="form__label" for="name">Имя</label>
+                        <div class="form__group-fields">
+                                      <input class="field" placeholder="Имя" type="text" name="name" id="name">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__col">
+                      <div class="form__group">
+                        <label class="form__label" for="surname">Фамилия ученика</label>
+                        <div class="form__group-fields">
+                                      <input class="field" placeholder="Фамилия" type="text" name="surname" id="surname">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__col">
+                      <div class="form__group">
+                        <label class="form__label" for="mail">E-mail</label>
+                        <div class="form__group-fields">
+                                      <input class="field" placeholder="@" type="email" name="mail" id="mail">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__col">
+                      <div class="form__group">
+                        <label class="form__label" for="phone">Номер телефона</label>
+                        <div class="form__group-fields">
+                                      <input class="field" placeholder="+7 (___)___-__-__" type="number" name="phone" id="phone">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__col">
+                      <div class="form__group">
+                        <label class="form__label" for="parent-name">Имя родителя</label>
+                        <div class="form__group-fields">
+                                      <input class="field" placeholder="Имя родителя" type="text" name="parent-name" id="parent-name">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__col">
+                      <div class="form__group">
+                        <label class="form__label" for="parent-phone">Телефон родителя</label>
+                        <div class="form__group-fields">
+                                      <input class="field" placeholder="+7 (___)___-__-__" type="number" name="parent-phone" id="parent-phone">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="settings-block__form-row settings-block--decor-bottom">
+                  <h2 class="settings-block__title">Сменить пароль</h2>
+                  <div class="form__row">
+                    <div class="form__col">
+                      <div class="form__group">
+                        <label class="form__label form__sr-only" for="old-password">Старый пароль</label>
+                        <div class="form__group-fields">
+                                      <input class="field" placeholder="Старый пароль" type="password" name="old-password" id="old-password">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__col">
+                      <div class="form__group">
+                        <label class="form__label form__sr-only" for="new-password">Новый пароль</label>
+                        <div class="form__group-fields">
+                                      <input class="field" placeholder="Новый пароль" type="password" name="new-password" id="new-password">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="settings-block__form-row">
+                  <h2 class="settings-block__title">Платежная информация</h2>
+                  <p class="settings-block__subtitle">Подключи карту и ты сможешь быстро, и удобно оплачивать занятия</p>
+                  <div class="settings-block__add-card">
+                    <button class="card">
+                      <div class="card__content"><span class="card__button"><span class="button__icon">
+                                        <svg aria-hidden="true" width="20" height="20">
+                                          <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
+                                        </svg></span>Привязать карту</span></div>
+                    </button>
+                  </div>
+                  <div class="settings-block__add-card">
+                    <div class="card card--active"><a class="card__remove" href="#" title="Удалить карту">
                                             <svg aria-hidden="true" width="16" height="16">
-                                              <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
-                                            </svg>
-                              </div>
-                              <div class="notice-item__data">
-                                <div class="notice-item__text">Твоё следующее занятие завтра в 18:00! Не пропусти! :)</div>
-                                <div class="notice-item__date">25.03.2020</div>
-                              </div>
-                              <button class="notice-item__close">
-                                            <svg aria-hidden="true" width="12" height="12">
                                               <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
-                                            </svg>
-                              </button>
-                            </div>
-                            <div class="notice-item">
-                              <div class="notice-item__icon">
-                                            <svg aria-hidden="true" width="16" height="16">
-                                              <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
-                                            </svg>
-                              </div>
-                              <div class="notice-item__data">
-                                <div class="notice-item__text">Твоё следующее занятие завтра в 18:00! Не пропусти! :)</div>
-                                <div class="notice-item__date">25.03.2020</div>
-                              </div>
-                              <button class="notice-item__close">
-                                            <svg aria-hidden="true" width="12" height="12">
-                                              <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
-                                            </svg>
-                              </button>
-                            </div>
-                            <div class="notice-item">
-                              <div class="notice-item__icon">
-                                            <svg aria-hidden="true" width="16" height="16">
-                                              <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
-                                            </svg>
-                              </div>
-                              <div class="notice-item__data">
-                                <div class="notice-item__text">Твоё следующее занятие завтра в 18:00! Не пропусти! :)</div>
-                                <div class="notice-item__date">25.03.2020</div>
-                              </div>
-                              <button class="notice-item__close">
-                                            <svg aria-hidden="true" width="12" height="12">
-                                              <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
-                                            </svg>
-                              </button>
-                            </div>
-                            <div class="notice-item">
-                              <div class="notice-item__icon">
-                                            <svg aria-hidden="true" width="16" height="16">
-                                              <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
-                                            </svg>
-                              </div>
-                              <div class="notice-item__data">
-                                <div class="notice-item__text">Твоё следующее занятие завтра в 18:00! Не пропусти! :)</div>
-                                <div class="notice-item__date">25.03.2020</div>
-                              </div>
-                              <button class="notice-item__close">
-                                            <svg aria-hidden="true" width="12" height="12">
-                                              <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
-                                            </svg>
-                              </button>
-                            </div>
-                            <div class="notice-item">
-                              <div class="notice-item__icon">
-                                            <svg aria-hidden="true" width="16" height="16">
-                                              <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
-                                            </svg>
-                              </div>
-                              <div class="notice-item__data">
-                                <div class="notice-item__text">Твоё следующее занятие завтра в 18:00! Не пропусти! :)</div>
-                                <div class="notice-item__date">25.03.2020</div>
-                              </div>
-                              <button class="notice-item__close">
-                                            <svg aria-hidden="true" width="12" height="12">
-                                              <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
-                                            </svg>
-                              </button>
-                            </div>
-                            <div class="notice-item">
-                              <div class="notice-item__icon">
-                                            <svg aria-hidden="true" width="16" height="16">
-                                              <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
-                                            </svg>
-                              </div>
-                              <div class="notice-item__data">
-                                <div class="notice-item__text">Твоё следующее занятие завтра в 18:00! Не пропусти! :)</div>
-                                <div class="notice-item__date">25.03.2020</div>
-                              </div>
-                              <button class="notice-item__close">
-                                            <svg aria-hidden="true" width="12" height="12">
-                                              <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
-                                            </svg>
-                              </button>
-                            </div>
-                            <div class="notice-item">
-                              <div class="notice-item__icon">
-                                            <svg aria-hidden="true" width="16" height="16">
-                                              <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
-                                            </svg>
-                              </div>
-                              <div class="notice-item__data">
-                                <div class="notice-item__text">Твоё следующее занятие завтра в 18:00! Не пропусти! :)</div>
-                                <div class="notice-item__date">25.03.2020</div>
-                              </div>
-                              <button class="notice-item__close">
-                                            <svg aria-hidden="true" width="12" height="12">
-                                              <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
-                                            </svg>
-                              </button>
-                            </div>
-              </div>
-              <button class="notice-block__button"><span class="notice-block__button-icon">
-                              <svg aria-hidden="true" width="24" height="24">
-                                <use xlink:href="img/sprite/sprite.svg#icon-more"></use>
-                              </svg></span>Показать ещё</button>
+                                            </svg></a>
+                      <div class="card__content">
+                        <div class="card__number">
+                          <div class="card__number-block">5160</div>
+                          <div class="card__number-block">0000</div>
+                          <div class="card__number-block">0000</div>
+                          <div class="card__number-block">0000</div>
+                        </div>
+                        <div class="card__pay-sistem">
+                                              <svg aria-hidden="true" width="38" height="22">
+                                                <use xlink:href="img/sprite/sprite.svg#icon-visa"></use>
+                                              </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="settings-block__button">
+                              <button class="button button--full-width">Сохранить данные</button>
+                </div>
+              </form>
             </div>
           </div>
           <div class="page__offer">
@@ -218,7 +287,9 @@
               <h4 class="offer-school__title">Летняя заочная математическая школа</h4>
               <p class="offer-school__subtitle">23-28 июля | Москва</p>
               <div class="offer-school__image"> <img src="img/summer-school/summer-school.svg" alt="Летняя заочная математическая школа" width="198" height="209"></div>
-              <button class="offer-school__button">Узнать подробнее</button>
+              <div class="offer-school__button"> 
+                            <button class="button button--black button--full-width">Узнать подробнее</button>
+              </div>
             </div>
           </div>
         </div>

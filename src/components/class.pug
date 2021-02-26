@@ -1,0 +1,39 @@
+include button/button.pug
+
+doctype html
+html(lang="ru").page
+    head
+        meta(charset="UTF-8")
+        title Mathlab: Account
+        meta(name="keywords" content="")
+        meta(name="description" content="")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="styles/style.css")
+    body.page__body
+        include header/header.pug
+        main.page__main
+            .page__container
+                .page__grid.page__grid-js
+                    .page__content
+                        .page__content-block
+                            include back-block/back-block.pug
+                        .page__progress.page__progress-js
+                            include progress/progress.pug
+                        .page__content-block
+                            include course-info/course-info.pug
+                        .page__content-block
+                            include introductory/introductory.pug
+                        .page__content-block
+                            include video-block/video-block.pug
+                        .page__content-more-button.page__content-more-button--dispaly-m
+                            .page__content-more-button-item
+                                button.button.button--transparent.button--full-width-m(disabled=true)
+                                    span.button__icon
+                                        +svg(24,24,"icon-arrow-prev")
+                                    | Предыдущее заняти
+                            .page__content-more-button-item
+                                +button("button--transparent button--full-width-m button--reverse","Следующее занятие", "icon-arrow-next")
+
+        include footer/footer.pug
+
+        script(src="js/main.js")

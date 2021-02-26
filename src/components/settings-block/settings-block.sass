@@ -1,0 +1,127 @@
+.settings-block
+    padding: 15px
+    border-radius: 8px
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05)
+    background-color: $bg-white
+    position: relative
+
+    +sm-block()
+        padding: 20px
+
+    +md-block()
+        padding: 30px
+
+    &__title
+        font-size: 18px
+        line-height: 24px
+        font-family: $bold
+        letter-spacing: 0.02em
+        margin-top: 0
+        margin-bottom: 0
+        color: $dark-main
+        margin-bottom: 12px
+
+        +sm-block()
+            font-size: 20px
+            margin-bottom: 18px
+
+    &__subtitle
+        font-size: 14px
+        color: $dark-main-opacity
+        line-height: 1.2
+        margin-top: 0
+        margin-bottom: 0
+
+    &__form
+        +md-block()
+            padding-top: 8px    
+
+    &__form-row
+        padding-bottom: 15px
+        padding-top: 15px
+
+        +sm-block()
+            padding-bottom: 5px
+            padding-top: 20px
+
+        +md-block()
+            padding-bottom: 15px
+            padding-top: 30px            
+
+    &__form-group:not(:last-child)
+        margin-bottom: 14px
+
+    &__upload
+        margin-bottom: 14px
+
+        +sm-block()
+            position: absolute
+            content: ''
+            right: 20px
+            top: 20px
+
+        +md-block()
+            top: 47px
+            right: 30px
+
+    &__add-card
+        max-width: 320px
+        margin-top: 15px
+
+        +sm-block()
+            margin-top: 20px
+
+        +md-block()
+            margin-top: 25px
+
+    &__button
+        +sm-block()
+            max-width: 260px
+            margin-top: 15px
+
+    &__class-input
+        .form__group
+            +sm-block()
+                max-width: 114px
+
+    &--decor-bottom
+        border-bottom: 1px solid $bg-main
+
+    &--no-pt
+        padding-top: 0
+
+
+
+    .form__row
+        +sm-block()
+            display: flex
+            flex-wrap: wrap
+            margin-left: -10px
+            margin-right: -10px
+
+        +md-block()
+            position: relative
+            max-width: 536px
+
+    .form__col
+        margin-bottom: 15px
+
+        +sm-block()
+            width: calc(50% - 20px)
+            margin-left: 10px
+            margin-right: 10px
+        
+    .settings-block__class-input
+        +sm-block
+            padding-right: 120px
+            flex-grow: 1
+            width: calc(100% - 20px)  
+
+        @media screen and (min-width: 1110px)
+            position: absolute
+            content: ''
+            left: calc(100% + 10px)
+            flex-grow: 0
+            padding-right: 0
+            margin-left: 0
+            width: auto

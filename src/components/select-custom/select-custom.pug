@@ -1,0 +1,26 @@
+include ../mixins/svg.pug
+
+mixin select-custom(nameField, classname, index)
+    
+    .select-custom
+        .select-custom__container.select-custom__container--active(tabindex=0)
+            span.select-custom__container-text Курс подготовки к олимпиаде «Физтех» по математике
+            span.select-custom__arrow
+                +svg(12,9,"icon-arrow-down")
+        .select-custom__dropdown
+            a(href="#").select-custom__dropdown-item
+                .select-custom__dropdown-item-icon 
+                    +svg(18,18,"icon-check-mark")
+                | Все курсы
+            a(href="#").select-custom__dropdown-item.select-custom__dropdown-item--active
+                .select-custom__dropdown-item-icon 
+                    +svg(18,18,"icon-check-mark")
+                | Курс подготовки к олимпиаде «Физтех» по математике
+            a(href="#").select-custom__dropdown-item
+                .select-custom__dropdown-item-icon 
+                    +svg(18,18,"icon-check-mark")
+                | Интенсив по ЕГЭ 2020
+            a(href="#").select-custom__dropdown-item
+                .select-custom__dropdown-item-icon 
+                    +svg(18,18,"icon-check-mark")
+                | Профильная программа «Физмат+Информатика»

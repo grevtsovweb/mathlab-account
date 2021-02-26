@@ -1,0 +1,42 @@
+.banner
+    padding-left: 13px
+    padding-right: 13px 
+    padding-bottom: 30px
+    padding-top: 30px
+    border-radius: 8px
+    background-color: #F7F6FE 
+
+    +sm-block()
+        padding-bottom: 30px
+        padding-top: 30px
+        padding-left: 30px
+        padding-right: 30px
+
+    +md-block()
+        display: flex
+        align-items: center
+        padding-top: 26px
+        padding-bottom: 26px
+
+    &__title
+        font-family: $bold
+        text-align: center
+        font-size: 18px
+        line-height: 22px
+        margin-bottom: 18px
+
+        +sm-block()
+            font-size: 22px
+            line-height: 32px
+            margin-bottom: 14px
+
+        +md-block()
+            margin-bottom: 0
+            padding-right: 30px
+
+
+    &__button
+        text-align: center
+        
+        +md-block()
+            margin-left: auto

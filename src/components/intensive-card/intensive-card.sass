@@ -1,0 +1,246 @@
+.intensive-card
+    padding: 15px
+    background-color: $bg-white
+    border-radius: 8px
+    position: relative
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05)
+
+    &::before
+        position: absolute
+        content: ''
+        height: 100%
+        width: 5px
+        left: 0
+        top: 0
+        background-color: $accent
+        border-top-left-radius: 8px
+        border-bottom-left-radius: 8px
+
+    +sm-block()
+        padding-right: 20px
+        padding-left: 20px
+
+    +md-block()
+        display: flex
+        padding-left: 30px
+        padding-right: 30px
+        padding-top: 15px
+        padding-bottom: 15px
+
+    &__content
+        +md-block()
+            max-width: 620px
+
+    &__tickets
+        display: flex
+        flex-wrap: wrap
+        margin-left: -5px
+        margin-right: -5px
+        margin-bottom: 6px
+        padding-right: 60px
+
+        +md-block()
+            padding-right: 0
+        
+
+    &__tickets-item
+        margin-left: 5px
+        margin-right: 5px
+        margin-bottom: 10px
+
+    &__title
+        margin-top: 0
+        font-size: 18px 
+        line-height: 24px
+        letter-spacing: .02em
+        color: $dark-main
+        font-family: $bold
+        margin-bottom: 14px
+
+        +md-block
+            font-size: 20px 
+            margin-bottom: 13px
+
+    &__description
+        font-size: 14px
+        line-height: 22px
+        color: $dark-main
+        opacity: .7
+        margin-top: 0
+        margin-bottom: 0
+
+        +md-block()
+            font-size: 16px
+            line-height: 26px
+
+    &__warning
+        color: #FF2674
+        font-size: 14px
+        line-height: 22px
+        margin-bottom: 0
+        font-family: $bold
+        margin-top: 14px
+
+        +md-block()
+            font-size: 16px
+            line-height: 26px
+            margin-bottom: 0
+            margin-top: 14px
+
+    &__footer
+        margin-top: 15px 
+
+        +sm-block()
+            display: flex  
+
+        &--nowrap
+            display: flex  
+            flex-wrap: wrap
+
+            .intensive-card__date
+                margin-top: 0
+                margin-left: 15px    
+
+    &__teacher
+
+        +sm-block()
+            margin-right: 15px
+
+        .teacher__name
+            display: block
+
+    &__date
+        font-size: 14px
+        line-height: 16px
+        margin-top: 15px
+        display: flex
+        align-items: center
+        color: rgba(0,0,0,.5)
+
+        +sm-block()
+            margin-top: 0
+
+    &__date-text
+        margin-top: 2px
+
+    &__date-icon
+        width: 18px
+        height: 18px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 8px
+
+        svg
+            width: 100%
+            height: auto
+            fill: rgba(0,0,0,.5)
+
+    &__choice-block
+        margin-top: 16px
+
+        +sm-block()
+            display: flex
+
+        +md-block()
+            flex-direction: column
+            flex-shrink: 0
+            margin-top: 44px
+            margin-left: auto
+
+    &__price
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: 0.02em
+        font-family: $bold
+        margin-bottom: 15px
+
+        +sm-block()
+            display: flex
+            flex-direction: column-reverse
+            justify-content: center
+            margin-right: 30px
+            margin-bottom: 0
+
+        +md-block()
+            flex-direction: row
+            justify-content: flex-end
+            margin-right: 0
+            margin-bottom: 15px
+
+    &__new-price
+        color: $accent
+    
+    &__old-price
+        color: #999999
+        text-decoration: line-through
+        margin-right: 5px
+
+    &__button-block
+
+        +sm-block()
+            display: flex
+            flex-shrink: 0
+            margin-left: -10px
+            margin-right: -10px
+
+        +md-block()
+            flex-direction: column
+            align-items: flex-end
+
+    &__button-block-item
+
+        +sm-block()
+            margin-left: 10px
+            margin-right: 10px
+
+
+        &:not(:last-child)
+            margin-bottom: 15px
+
+            +sm-block()
+                margin-bottom: 0
+
+            +md-block()
+                margin-bottom: 15px
+
+    &__archive-button
+        background-color: transparent
+        border: none
+        padding: 0
+        position: absolute
+        content: ''
+        right: 15px
+        top: 20px
+        cursor: pointer
+
+        +sm-block()
+            right: 20px
+
+        +md-block()
+            right: 30px
+            top: 20px
+
+        &:hover
+            svg
+                fill: $accent
+
+        svg
+            width: 20px
+            height: 16px
+            fill: rgba(100,75,236,.2)
+            transition: fill .2s ease
+
+    &--orange
+        &::before
+            background-color: $orange
+
+        .intensive-card__new-price
+            color: $orange
+
+    &--purple
+        &::before
+            background-color: $purple
+
+        .intensive-card__new-price
+            color: $purple 

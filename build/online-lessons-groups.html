@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mathlab: Account</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__row"><a class="header__logo" href="#"><img src="img/common/logo.svg" alt="Mathlab" width="120" height="20"></a>
+          <div class="header__notice">
+            <div class="header__notice-item"><a class="notice-lessons" href="#"><span class="notice-lessons__icon">
+                                <svg aria-hidden="true" width="14" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-play"></use>
+                                </svg></span><span class="notice-lessons__text notice-lessons__text--medium">Всего занятий:</span><span class="notice-lessons__text-count">11 <span class="notice-lessons__text-count notice-lessons__text-count--mobile">занятий</span></span><span class="notice-lessons__text-count-contain">(5 индивидуальных, 7  групповых)</span></a>
+            </div>
+            <div class="header__notice-item"><a class="notice" href="#"><span class="notice__icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                </svg></span><span class="notice__text">Твоё занятие уже началось! Подключайся!</span><span class="notice__count"> <span class="notice__count-number">2</span></span></a>
+              <div class="header__notice-item-dropdown" style="display: none">
+                <div class="dropdown-tooltip dropdown-tooltip--notice">
+                      <div class="notice-item">
+                        <div class="notice-item__icon">
+                                        <svg aria-hidden="true" width="16" height="16">
+                                          <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                        </svg>
+                        </div>
+                        <div class="notice-item__data">
+                          <div class="notice-item__text">Твоё следующее занятие завтра в 18:00! Не пропусти! :)</div>
+                          <div class="notice-item__date">25.03.2020</div>
+                        </div>
+                      </div>
+                      <div class="notice-item">
+                        <div class="notice-item__icon">
+                                        <svg aria-hidden="true" width="16" height="16">
+                                          <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                        </svg>
+                        </div>
+                        <div class="notice-item__data">
+                          <div class="notice-item__text">Твоё следующее занятие завтра в 18:00! Не пропусти! :)</div>
+                          <div class="notice-item__date">25.03.2020</div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__user-block"><a class="header__user-avatar" href="#"></a><span class="header__greeting"><span class="header__greeting-text">Привет, Константин!</span></span><a class="header__logout" href="#">
+                            <svg aria-hidden="true" width="16" height="16">
+                              <use xlink:href="img/sprite/sprite.svg#icon-logout"></use>
+                            </svg></a></div>
+        </div>
+      </div>
+      <div class="header__m-menu">
+        <button class="header__m-menu-button"><span class="header__m-menu-page header__m-menu-page--current"><span class="header__m-menu-page-icon">
+                            <svg aria-hidden="true" width="16" height="16">
+                              <use xlink:href="img/sprite/sprite.svg#icon-pay"></use>
+                            </svg></span>Мои уроки  <span class="header__m-menu-page-dropdown"> 
+                            <svg aria-hidden="true" width="8" height="4">
+                              <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                            </svg></span></span></button>
+        <div class="header__m-menu-dropdown" style="display: none">
+          <div class="dropdown-tooltip">
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-play"></use>
+                                </svg></span>Доступные занятия</a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page header__m-menu-page--current" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-star"></use>
+                                </svg></span>Мои уроки </a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-settings"></use>
+                                </svg></span>Настройки</a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                </svg></span>Уведомления </a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-logout"></use>
+                                </svg></span>Выход</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page__main">
+      <div class="page__container">
+        <div class="page__grid">
+          <div class="page__sidebar">
+            <div class="page__main-nav">
+              <nav class="main-nav">
+                <ul class="main-nav__list">
+                  <li class="main-nav__list-item"><a class="main-nav__link main-nav__link--active" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-pay"></use>
+                                      </svg></span><span class="main-nav__link-title">Оплатить занятия</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-material"></use>
+                                      </svg></span><span class="main-nav__link-title">Материалы занятий</span><span class="main-nav__link-notice">1</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-play"></use>
+                                      </svg></span><span class="main-nav__link-title">Доступные интенсивы</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-star"></use>
+                                      </svg></span><span class="main-nav__link-title">Мои уроки</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-promo"></use>
+                                      </svg></span><span class="main-nav__link-title">Мои промокоды</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-invite"></use>
+                                      </svg></span><span class="main-nav__link-title">Пригласи друзей</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-settings"></use>
+                                      </svg></span><span class="main-nav__link-title">Настройки</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                      </svg></span><span class="main-nav__link-title">Уведомления</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-pay"></use>
+                                      </svg></span><span class="main-nav__link-title">Чат с преподавателем</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-logout"></use>
+                                      </svg></span><span class="main-nav__link-title">Выход</span></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="page__content">
+            <div class="page__content-nav">
+              <nav class="nav">
+                <div class="nav__main-container"><a class="nav__main-mobile-link nav__main-mobile-link--active" href="#">
+                     Все занятия<span class="nav__main-mobile-link-notice">2</span><span class="nav__main-mobile-link-icon">
+                                    <svg aria-hidden="true" width="16" height="16">
+                                      <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                                    </svg></span></a>
+                  <div class="nav__main nav__main-dropdown-m">
+                    <div class="nav__main-item"><a class="nav__main-link nav__main-link--active" href="">Все занятия</a></div>
+                    <div class="nav__main-item"><a class="nav__main-link" href="">Интенсивы<span class="nav__main-link-notice">2</span></a></div>
+                    <div class="nav__main-item"><a class="nav__main-link" href="">Курсы</a></div>
+                    <div class="nav__main-item"><a class="nav__main-link" href="">В группе</a></div>
+                  </div>
+                </div>
+                <div class="nav__settings-item nav__settings-item--class"><a class="nav__settings-link">
+                     11 класс<span class="nav__settings-link-icon">
+                                    <svg aria-hidden="true" width="16" height="16">
+                                      <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                                    </svg></span></a>
+                  <div class="nav__settings-dropdown nav__settings-dropdown--class">
+                    <div class="dropdown-tooltip"><a class="nav__settings-dropdown-item nav__settings-dropdown-item--active" href="#">11 класс</a><a class="nav__settings-dropdown-item" href="#">10 класс</a><a class="nav__settings-dropdown-item" href="#">9 класс</a><a class="nav__settings-dropdown-item" href="#">8 класс</a><a class="nav__settings-dropdown-item" href="#">7 класс</a><a class="nav__settings-dropdown-item" href="#">6 класс</a><a class="nav__settings-dropdown-item" href="#">5 класс</a></div>
+                  </div>
+                </div>
+                <div class="nav__settings-item nav__settings-item--targets"><a class="nav__settings-link">
+                     Все цели<span class="nav__settings-link-icon">
+                                    <svg aria-hidden="true" width="16" height="16">
+                                      <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                                    </svg></span></a>
+                  <div class="nav__settings-dropdown nav__settings-dropdown--targets">
+                    <div class="dropdown-tooltip"><a class="nav__settings-dropdown-item nav__settings-dropdown-item--active" href="#">Олимпиадная математика</a><a class="nav__settings-dropdown-item" href="#">Школьная программа</a><a class="nav__settings-dropdown-item" href="#">ЕГЭ по математике</a><a class="nav__settings-dropdown-item" href="#">ОГЭ по математике</a><a class="nav__settings-dropdown-item" href="#">Математические школы</a><a class="nav__settings-dropdown-item" href="#">Международные экзамены</a><a class="nav__settings-dropdown-item" href="#">Все цели</a></div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="page__content-card">
+              <div class="page__content-card-item">
+                <article class="intensive-card intensive-card--purple">
+                  <div class="intensive-card__content">
+                    <div class="intensive-card__tickets">
+                      <div class="intensive-card__tickets-item">
+                                        <div class="ticket">В группе</div>
+                      </div>
+                      <div class="intensive-card__tickets-item">
+                                        <div class="ticket">11 класс</div>
+                      </div>
+                    </div>
+                    <div class="intensive-card__data-block">
+                      <h1 class="intensive-card__title">Подготовка к ЕГЭ по базовой математике</h1>
+                      <p class="intensive-card__description"> Курс прорабатывает необходимую теорию, учит решать сложные задания из олимпиады Физтех по математике, правильно выстраивая логику рассуждений. На занятиях обсуждаются олимпиадные задачи прошлых лет по математике и разбираются методы их решения.</p>
+                    </div>
+                  </div>
+                  <div class="intensive-card__choice-block">
+                    <div class="intensive-card__price"><span class="intensive-card__new-price">1 190 руб/занятие</span></div>
+                    <div class="intensive-card__button-block">
+                      <div class="intensive-card__button-block-item">
+                                        <button class="button button--full-width-m button--purple">Записаться</button>
+                      </div>
+                      <div class="intensive-card__button-block-item">
+                                        <button class="button button--full-width-m button--transparent-purple">Подробнее</button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="page__content-card-item">
+                <article class="intensive-card intensive-card--purple">
+                  <div class="intensive-card__content">
+                    <div class="intensive-card__tickets">
+                      <div class="intensive-card__tickets-item">
+                                        <div class="ticket">В группе</div>
+                      </div>
+                      <div class="intensive-card__tickets-item">
+                                        <div class="ticket">11 класс</div>
+                      </div>
+                    </div>
+                    <div class="intensive-card__data-block">
+                      <h1 class="intensive-card__title">Подготовка к ЕГЭ по базовой математике</h1>
+                      <p class="intensive-card__description"> Курс прорабатывает необходимую теорию, учит решать сложные задания из олимпиады Физтех по математике, правильно выстраивая логику рассуждений. На занятиях обсуждаются олимпиадные задачи прошлых лет по математике и разбираются методы их решения.</p>
+                    </div>
+                  </div>
+                  <div class="intensive-card__choice-block">
+                    <div class="intensive-card__price"><span class="intensive-card__new-price">1 190 руб/занятие</span></div>
+                    <div class="intensive-card__button-block">
+                      <div class="intensive-card__button-block-item">
+                                        <button class="button button--full-width-m button--purple">Записаться</button>
+                      </div>
+                      <div class="intensive-card__button-block-item">
+                                        <button class="button button--full-width-m button--transparent-purple">Подробнее</button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="page__content-card-item">
+                <article class="intensive-card intensive-card--purple">
+                  <div class="intensive-card__content">
+                    <div class="intensive-card__tickets">
+                      <div class="intensive-card__tickets-item">
+                                        <div class="ticket">В группе</div>
+                      </div>
+                      <div class="intensive-card__tickets-item">
+                                        <div class="ticket">11 класс</div>
+                      </div>
+                    </div>
+                    <div class="intensive-card__data-block">
+                      <h1 class="intensive-card__title">Подготовка к ЕГЭ по базовой математике</h1>
+                      <p class="intensive-card__description"> Курс прорабатывает необходимую теорию, учит решать сложные задания из олимпиады Физтех по математике, правильно выстраивая логику рассуждений. На занятиях обсуждаются олимпиадные задачи прошлых лет по математике и разбираются методы их решения.</p>
+                    </div>
+                  </div>
+                  <div class="intensive-card__choice-block">
+                    <div class="intensive-card__price"><span class="intensive-card__new-price">1 190 руб/занятие</span></div>
+                    <div class="intensive-card__button-block">
+                      <div class="intensive-card__button-block-item">
+                                        <button class="button button--full-width-m button--purple">Записаться</button>
+                      </div>
+                      <div class="intensive-card__button-block-item">
+                                        <button class="button button--full-width-m button--transparent-purple">Подробнее</button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="page__content-card-item">
+                <article class="intensive-card intensive-card--purple">
+                  <div class="intensive-card__content">
+                    <div class="intensive-card__tickets">
+                      <div class="intensive-card__tickets-item">
+                                        <div class="ticket">В группе</div>
+                      </div>
+                      <div class="intensive-card__tickets-item">
+                                        <div class="ticket">11 класс</div>
+                      </div>
+                    </div>
+                    <div class="intensive-card__data-block">
+                      <h1 class="intensive-card__title">Подготовка к ЕГЭ по базовой математике</h1>
+                      <p class="intensive-card__description"> Курс прорабатывает необходимую теорию, учит решать сложные задания из олимпиады Физтех по математике, правильно выстраивая логику рассуждений. На занятиях обсуждаются олимпиадные задачи прошлых лет по математике и разбираются методы их решения.</p>
+                    </div>
+                  </div>
+                  <div class="intensive-card__choice-block">
+                    <div class="intensive-card__price"><span class="intensive-card__new-price">1 190 руб/занятие</span></div>
+                    <div class="intensive-card__button-block">
+                      <div class="intensive-card__button-block-item">
+                                        <button class="button button--full-width-m button--purple">Записаться</button>
+                      </div>
+                      <div class="intensive-card__button-block-item">
+                                        <button class="button button--full-width-m button--transparent-purple">Подробнее</button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="page__content-more-button">
+                              <button class="button button--transparent"><span class="button__icon">
+                                                  <svg aria-hidden="true" width="24" height="24">
+                                                    <use xlink:href="img/sprite/sprite.svg#icon-more"></use>
+                                                  </svg></span>Показать ещё
+                              </button>
+            </div>
+          </div>
+          <div class="page__offer">
+            <div class="offer-school">
+              <h4 class="offer-school__title">Летняя заочная математическая школа</h4>
+              <p class="offer-school__subtitle">23-28 июля | Москва</p>
+              <div class="offer-school__image"> <img src="img/summer-school/summer-school.svg" alt="Летняя заочная математическая школа" width="198" height="209"></div>
+              <div class="offer-school__button"> 
+                            <button class="button button--black button--full-width">Узнать подробнее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__row">
+          <div class="footer__info"><a class="footer__logo" href="#">Команда MathLabs</a>
+            <p class="footer__about-team">Математик Годфри Харди писал: «Большинство людей настолько боятся самого названия математики, что они готовы совершенно искренне преувеличивать свою неспособность к математике». Мы полностью разделяем это мнение и считаем, что в большинстве случаев ребенку не хватает упорства, но никак не способностей.</p>
+          </div>
+          <div class="footer__contacts-wrapper">
+            <div class="footer__contacts">
+              <div class="footer__contacts-text">Наши соц.сети</div>
+              <ul class="footer__social-list">
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Instagram">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-instagram"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Facebook">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-facebook"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="footer__contacts">
+              <div class="footer__contacts-text">Если у вас есть вопросы – напишите нам!</div>
+              <ul class="footer__social-list">
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Telegram">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-telegram"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Whatsapp">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-whatsapp"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Viber">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-viber"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Messenger">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-messenger"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__rights-block">
+          <div class="footer__rights-block-item footer__rights-block-copyright">
+            <div class="footer__copyright">© 2020 MathLabs. Все права защищиены   </div>
+          </div>
+          <div class="footer__rights-block-item"><a class="footer__link" href="#">Политика конфиденциальности     </a></div>
+          <div class="footer__rights-block-item"><a class="footer__link" href="#">Пользовательское соглашение</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

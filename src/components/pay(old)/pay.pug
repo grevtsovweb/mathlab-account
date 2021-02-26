@@ -1,0 +1,32 @@
+include ../price-card/price-card.pug
+include ../feature/feature.pug
+
+.pay
+    h1.pay__title Оплатить занятия
+    p.pay__text Тебе доступно: 
+        span.pay__text--accent.pay__text--bold 32 занятия
+    p.pay__text Когда занятий будет “
+        span.pay__text--red 0
+        | ” – оплати подходящий пакет занятий ниже, чтобы продолжить обучение. После 
+        span.pay__text--accent привязки карты 
+        | ты сможешь удобно оплачивать занятия.
+    .pay__price-block
+        .pay__price-block-item
+            +price-card(null, 1, "1 190", null, "Хорошо для старта", "1190")
+        .pay__price-block-item
+            +price-card(null, 4, "990", 700, "2 неделя учёбы (два занятия в неделю)", "3960")
+        .pay__price-block-item
+             +price-card(null, 8, "890", 2100, "1 месяц учёбы (два занятия в неделю)", "7120")
+        .pay__price-block-item
+             +price-card(null, 16, "790", 4200, "1 месяц учёбы (два занятия в неделю)", "12640")
+        .pay__price-block-item.pay__price-block-item--sm-full
+             +price-card("price-card--accent", 32, "690", 8400, "1 месяц учёбы (два занятия в неделю)", "20480")
+    .pay__how-works
+        h2.pay__how-works-title Как это работает?
+        .pay__how-works-container
+            .pay__how-works-item
+                +feature("icon-pay-feature", "Оплачивай занятия, чтобы обучаться с репетитором в группе")
+            .pay__how-works-item
+                +feature("icon-education", "После покупки занятий ты можешь использовать их кол-во для участия в любых доступных групповых занятиях. Просто запишись и учись!")
+            .pay__how-works-item
+                +feature("icon-notice-balance", "Кол-во доступных занятий видно в панели навигации. Если они закончились – пополни, чтобы продолжить обучение.")

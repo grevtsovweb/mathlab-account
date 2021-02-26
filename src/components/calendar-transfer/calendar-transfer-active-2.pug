@@ -1,0 +1,71 @@
+include ../mixins/svg.pug
+
+.calendar-transfer
+    .calendar-transfer__header
+        button.calendar-transfer__handler.calendar-transfer__handler--mobile.calendar-transfer__handler--prev
+            +svg(15,15,"icon-arrow-prev")
+        .calendar-transfer__title Сентябрь 2020
+        button.calendar-transfer__handler.calendar-transfer__handler--mobile.calendar-transfer__handler--next
+            +svg(15,15,"icon-arrow-next")
+    p.calendar-transfer__subtitle Выберите дату
+    .calendar-transfer__body.calendar-transfer__body--mb-22
+        .calendar-transfer__block
+            .calendar-transfer__row
+                .calendar-transfer__day-week пн
+                .calendar-transfer__day-week пн
+                .calendar-transfer__day-week пн
+                .calendar-transfer__day-week пн
+                .calendar-transfer__day-week пн
+                .calendar-transfer__day-week пн
+                .calendar-transfer__day-week пн
+            .calendar-transfer__row.calendar-transfer__row--purple
+                .calendar-transfer__time-button.calendar-transfer__time-button--mobile-sm.calendar-transfer__time-button--current 1
+                .calendar-transfer__time-button.calendar-transfer__time-button--mobile-sm 2
+                .calendar-transfer__time-button.calendar-transfer__time-button--mobile-sm 3
+                .calendar-transfer__time-button.calendar-transfer__time-button--mobile-sm 4
+                .calendar-transfer__time-button.calendar-transfer__time-button--mobile-sm 5
+                .calendar-transfer__time-button.calendar-transfer__time-button--mobile-sm 6
+                .calendar-transfer__time-button.calendar-transfer__time-button--mobile-sm 7
+            .calendar-transfer__row.calendar-transfer__row--purple
+                .calendar-transfer__time-button.calendar-transfer__time-button--mobile-sm 1
+                .calendar-transfer__time-button.calendar-transfer__time-button--mobile-sm 2
+                .calendar-transfer__time-button.calendar-transfer__time-button--mobile-sm 3
+                .calendar-transfer__time-button.calendar-transfer__time-button--mobile-sm 4
+                .calendar-transfer__time-button.calendar-transfer__time-button--mobile-sm 5
+                .calendar-transfer__time-button.calendar-transfer__time-button--mobile-sm 6
+                .calendar-transfer__time-button.calendar-transfer__time-button--mobile-sm 7
+    p.calendar-transfer__subtitle Выберите время
+    .calendar-transfer__body
+        .calendar-transfer__block
+            .calendar-transfer__row.calendar-transfer__row--purple.calendar-transfer__row--desktop-time
+                .calendar-transfer__time-button.calendar-transfer__time.calendar-transfer__time-button--current 10:00
+                .calendar-transfer__time-button.calendar-transfer__time 11:00
+                .calendar-transfer__time-button.calendar-transfer__time 12:00
+                .calendar-transfer__time-button.calendar-transfer__time 14:00
+                .calendar-transfer__time-button.calendar-transfer__time 15:00
+                .calendar-transfer__time-button.calendar-transfer__time 16:00
+                .calendar-transfer__time-button.calendar-transfer__time 17:00
+            .calendar-transfer__row.calendar-transfer__row--purple.calendar-transfer__row--desktop-time
+                .calendar-transfer__time-button.calendar-transfer__time 10:00
+                .calendar-transfer__time-button.calendar-transfer__time 11:00
+                .calendar-transfer__time-button.calendar-transfer__time 12:00
+                .calendar-transfer__time-button.calendar-transfer__time 14:00
+                .calendar-transfer__time-button.calendar-transfer__time 15:00
+                .calendar-transfer__time-button.calendar-transfer__time 16:00
+                .calendar-transfer__time-button.calendar-transfer__time 17:00
+            .calendar-transfer__row.calendar-transfer__row--purple.calendar-transfer__row--mobile-time
+                .calendar-transfer__time-button.calendar-transfer__time.calendar-transfer__time-button--current 10:00
+                .calendar-transfer__time-button.calendar-transfer__time 11:00
+                .calendar-transfer__time-button.calendar-transfer__time 12:00
+                .calendar-transfer__time-button.calendar-transfer__time 14:00
+            .calendar-transfer__row.calendar-transfer__row--purple.calendar-transfer__row--mobile-time
+                .calendar-transfer__time-button.calendar-transfer__time 10:00
+                .calendar-transfer__time-button.calendar-transfer__time 11:00
+                .calendar-transfer__time-button.calendar-transfer__time 12:00
+                .calendar-transfer__time-button.calendar-transfer__time 14:00
+            
+
+    ul.calendar-transfer__buttons
+        li.calendar-transfer__buttons-item
+            button.calendar-transfer__button.calendar-transfer__button--sm-long Перенести 
+        

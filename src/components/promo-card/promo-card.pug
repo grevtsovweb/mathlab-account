@@ -1,0 +1,11 @@
+include ../button/button.pug
+
+.promo-card
+    .promo-card__image 
+        include ../../assets/img/promo-card/promo-card-image.svg
+    .promo-card__content 
+        .promo-card__title Скидка 10% на все курсы учебного сезона 20/21 по промокоду
+        .promo-card__code
+            include ../promocode/promocode.pug
+        .promo-card__button
+            +button("button--purple button--medium", "Выбрать курс")

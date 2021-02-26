@@ -1,0 +1,144 @@
+.promo-block
+    background-color: $bg-white
+    border-radius: 8px
+    padding: 15px
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05)
+
+    +sm-block()
+        padding: 20px
+    
+    +md-block()
+        padding: 30px
+
+    &__title
+        color: $dark-main
+        font-size: 18px
+        margin-top: 0
+        margin-bottom: 11px
+        line-height: 24px
+        letter-spacing: .02em
+        font-family: $bold
+
+        +sm-block()
+            font-size: 20px
+            margin-bottom: 16px
+
+        +md-block()
+            font-size: 24px
+            margin-top: 0
+            margin-bottom: 15px
+            line-height: 1em
+
+    &__text
+        font-size: 14px
+        line-height: 1.3
+        color: $dark-main-opacity
+        margin-top: 0
+        margin-bottom: 12px
+
+        &:last-child
+            margin-bottom: 0
+
+        +sm-block()
+            margin-bottom: 30px
+
+        +md-block()
+            font-size: 16px
+            margin-bottom: 30px
+
+    &__cards
+        +sm-block()
+            +row-flex()
+
+    &__cards-item
+
+        +size-sm(6)
+        +size-md(4)
+
+        +sm-block()
+            +col()
+            
+
+        &:not(:last-child)
+            margin-bottom: 15px
+
+            +sm-block()
+                margin-bottom: 0
+
+    &__add-promo
+        margin-top: 30px
+        border-bottom: 1px solid $bg-main
+        padding-bottom: 30px
+
+    &__add-promo-title
+        font-family: $medium
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: 0.02em
+        color: #000000
+        margin-bottom: 13px
+        margin-top: 0
+        font-weight: normal
+
+        +sm-block()
+            font-size: 18px
+
+    &__add-promo-text
+        font-family: $main
+        font-size: 14px
+        line-height: 22px
+        color: $dark-main-opacity
+        margin-top: 0
+        margin-bottom: 0
+
+        +sm-block()
+            font-size: 16px
+
+    &__add-promo-input
+        margin-top: 12px
+
+        +sm-block()
+            max-width: 338px
+
+    &__feature
+        padding-top: 30px
+        padding-bottom: 15px
+
+        +sm-block()
+            padding-bottom: 0
+
+    &__feature-container
+        +md-block()
+            +row-flex()
+        
+
+    &__feature-title
+        text-align: center
+        font-size: 18px
+        line-height: 24px
+        font-family: $bold
+        margin-top: 0
+        margin-bottom: 28px
+        text-align: center
+        letter-spacing: 0.02em
+        color: $dark-main
+
+        +sm-block()
+            font-size: 20px
+
+        +md-block()
+            font-size: 24px
+
+
+    &__feature-item
+        +size-md(4)
+
+        +md-block()
+            +col()
+
+
+        &:not(:last-child)
+            margin-bottom: 28px
+
+            +md-block()
+                margin-bottom: 0

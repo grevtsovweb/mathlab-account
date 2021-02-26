@@ -53,10 +53,27 @@
     &__notice-item
         margin-left: 6px
         margin-right: 6px
+        position: relative
 
         +xs-block()
             margin-left: 15px
             margin-right: 15px
+
+    &__notice-item-dropdown
+        position: absolute
+        content: ''
+        top: calc(100% + 16px)
+        right: -41px
+        max-width: 264px
+        width: 264px
+        z-index: 12
+
+        +sm-block()
+            right: -75px
+
+        +md-block()
+            display: none
+
  
     &__user-block
         margin-left: auto
@@ -119,6 +136,7 @@
 
     &__m-menu
         border-top: 1px solid $bg-main
+        position: relative
 
         +sm-block()
             display: none
@@ -126,19 +144,39 @@
     &__m-menu-button
         width: 100%
         background-color: transparent
-        color: $accent
         border: none
-        font-size: 14px
-        line-height: 24px
-        letter-spacing: 0.02em
-        display: flex
         font-family: $main
-        padding-left: 16px
-        padding-right: 16px
-        padding-top: 15px
-        padding-bottom: 15px
+        padding-top: 7px
+        padding-bottom: 7px
+        padding-right: 10px
+        padding-left: 10px
+    
+    &__m-menu-page
+        display: flex
+        align-items: center
+        width: 100%
+        padding-top: 7px
+        padding-bottom: 7px
+        padding-left: 6px
+        padding-right: 6px
+        font-size: 14px
+        line-height: 14px
+        letter-spacing: 0.02em
+        box-sizing: border-box
+        color: #000000
+        text-decoration: none
 
-    &__m-menu-button-icon
+        &--current
+            color: $accent
+
+            .header__m-menu-page-icon
+                background-color: $accent
+                
+                svg
+                    fill: $white
+                    opacity: 1
+
+    &__m-menu-page-icon
         display: flex
         justify-content: center
         align-items: center
@@ -146,15 +184,16 @@
         margin-right: 10px
         width: 24px
         height: 24px
-        background-color: $accent
+        background-color: $bg-main
         border-radius: 4px 
 
         svg
             width: 16px
             height: 16px
-            fill: $white
+            fill: $accent
+            opacity: .5
 
-    &__m-menu-button-dropdown
+    &__m-menu-page-dropdown
         width: 24px
         height: 24px
         display: flex
@@ -165,3 +204,23 @@
         svg
             width: 100%
             height: 100%
+
+    &__m-menu-dropdown
+        left: 16px
+        top: 100%
+        z-index: 1
+        position: absolute
+        content: ''
+        max-width: 264px
+        width: 100%
+
+        &::before
+            width: 13px
+            height: 13px
+            background-color: $white
+            position: absolute
+            content: ""
+            left: 40px
+            top: -7px
+            transform: rotate(45deg)
+        

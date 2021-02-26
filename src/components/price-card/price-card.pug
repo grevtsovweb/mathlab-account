@@ -1,10 +1,12 @@
 mixin price-card(className, count, price, savings, description, total)
     .price-card(class=className)
         .price-card__header
-            .price-card__count #{count} занятие
-            .price-card__price #{price} руб.
+            .price-card__count= count
+            .price-card__price #{price} руб/занятие
             if savings
-                .price-card__saving Экономия #{savings} руб.
+                .price-card__saving= savings
         .price-card__footer
             .price-card__description= description
             button.price-card__button Купить за #{total} Р
+        .price-card__checkbox
+            include ../checkbox/checkbox

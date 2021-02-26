@@ -1,0 +1,20 @@
+include ../button/button.pug
+include ../time/time.pug
+
+mixin banner-intensive(className)
+    
+    .banner-intensive(class= className)
+        .banner-intensive__data
+            .banner-intensive__data-title Интенсив по высшей математике
+            .banner-intensive__data-time 
+                +time("icon-clock-history", "30 марта | с 16:00 до 20:00")
+        .banner-intensive__image
+            img(src="img/banner-intensive/banner-intensive.svg", alt="")
+        .banner-intensive__button-block
+            .banner-intensive__button-block-data
+                .banner-intensive__button-block-title Ранняя регистрация:
+                .banner-intensive__button-block-price 
+                    | 500 руб.
+                    span.banner-intensive__button-block-price--old 1 500 руб.
+            span.banner-intensive__button-block-button
+                +button("button--green", "Записаться")

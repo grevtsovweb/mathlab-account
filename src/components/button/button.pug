@@ -1,0 +1,10 @@
+include ../mixins/svg.pug
+
+mixin button(className, text, icon)
+    if icon
+        button.button(class= className)
+            span.button__icon
+                +svg(24,24,icon)
+            = text
+    else
+        button.button(class= className)= text

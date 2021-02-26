@@ -1,0 +1,8 @@
+include ../mixins/svg.pug
+
+.video-block
+    .video-block__video-container
+        video(src="#", poster="img/video-block/video-preview.jpg", width="100%").video-block__video
+        .video-block__overlay
+            button.video-block__play-button
+                +svg(100,100,"icon-video-play")

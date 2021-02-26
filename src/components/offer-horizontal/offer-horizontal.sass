@@ -1,0 +1,110 @@
+.offer-horizontal
+    background-color: #5A69BF
+    border-radius: 8px
+    color: $white
+    padding: 15px
+    text-decoration: none
+    display: block
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05)
+    background-image: url('../img/summer-school/summer-school.svg')
+    background-position: right -20px bottom -15px
+    background-repeat: no-repeat
+    background-size: 138px 145px
+
+
+    +sm-block()
+        padding-top: 15px
+        padding-bottom: 15px
+        padding-left: 20px
+        padding-right: 20px
+        background-position: right 10px bottom -63px
+        background-size: 192px 203px
+    
+    +md-block()
+        display: flex
+        align-items: center
+        padding-left: 30px
+        padding-right: 30px
+        padding-top: 15px
+        padding-bottom: 15px
+        background-position: right 258px bottom -58px
+
+    &__tittle
+        font-family: $bold
+        font-size: 18px
+        line-height: 22px
+        letter-spacing: .02em
+        margin-top: 0
+        margin-bottom: 10px
+        display: block
+
+        +sm-block()
+            line-height: 24px
+            margin-bottom: 10px
+
+        +md-block()
+            font-size: 20px
+
+    &__subtitle 
+        font-size: 14px
+        line-height: 16px
+        letter-spacing: .02em
+        margin-top: 0
+        margin-bottom: 13px
+        display: block
+
+        +sm-block()
+            margin-bottom: 8px
+
+    &__subtitle-text
+        display: block
+        margin-bottom: 5px
+
+        +sm-block()
+            display: inline-block
+            margin-right: 7px
+
+    &__subtitle-price
+        font-size: 14px
+        line-height: 16px
+        font-family: $bold
+        letter-spacing: 0.02em
+        display: inline-block
+
+    &__subtitle-old-price
+        margin-left: 6px
+        font-size: 14px 
+        line-height: 16px
+        font-family: $bold
+        letter-spacing: 0.02em
+        color: rgba(255,255,255,.5)
+        text-decoration: line-through
+        display: inline-block
+
+    &__date
+        display: flex
+        align-items: center
+
+    &__date-text
+        margin-top: 2px
+
+
+    &__date-icon
+        width: 18px
+        height: 18px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 10px
+
+        svg
+            width: 100%
+            height: auto
+            fill: $white
+
+    &__button
+        display: none
+
+        +md-block()
+            display: block
+            margin-left: auto

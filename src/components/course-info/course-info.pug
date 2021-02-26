@@ -1,0 +1,10 @@
+include ../time/time.pug
+
+.course-info
+    .course-info__title Курс подготовки к олимпиаде «Физтех» по математике
+    .course-info__data
+        .course-info__data-item
+            include ../teacher/teacher.pug
+        .course-info__data-item
+            +time("icon-clock-history", "10 занятий")
+    a(href="#").course-info__about О курсе

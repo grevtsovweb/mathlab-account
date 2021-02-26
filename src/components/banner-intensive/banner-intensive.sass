@@ -1,0 +1,116 @@
+.banner-intensive
+    padding: 15px
+    padding-bottom: 30px
+    border-radius: 8px
+    background-color: #E3F2FF
+    position: relative
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05)
+
+    +sm-block()
+        padding: 15px
+        padding-right: 135px
+
+    +md-block()
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-left: 30px
+        padding-right: 30px
+        padding-top: 8px
+        padding-bottom: 8px
+
+    &__data-title
+        font-size: 16px
+        margin-bottom: 8px
+        font-family: $bold
+        line-height: 22px
+        letter-spacing: .02em
+
+        +sm-block()
+            font-size: 18px
+            margin-bottom: 11px
+
+    &__data-time
+        
+        .time
+            svg
+                fill: $dark-main
+
+        .time__text
+            color: $dark-main
+
+    &__image
+        position: absolute
+        bottom: 0
+        right: 5px
+        content: ''
+        width: 84px
+
+        +sm-block()
+            top: 10px
+            right: 10px
+            bottom: auto
+        
+        +md-block()
+            position: static
+
+        
+        img
+            display: block
+            width: 100%
+            max-width: 100%
+            height: auto
+
+
+    &__button-block
+        margin-top: 22px
+
+        +sm-block()
+            display: flex
+            align-items: center
+        
+        +md-block()
+            margin-top: 0
+            display: flex
+
+    &__button-block-button
+
+        .button
+            padding-top: 6px
+            padding-bottom: 6px
+            min-height: 35px
+            font-size: 12px            
+
+    &__button-block-data
+        margin-right: 30px
+        margin-bottom: 15px
+
+        +sm-block()
+            margin-bottom: 0
+            margin-right: 20px
+
+    &__button-block-title
+        font-size: 14px
+        margin-bottom: 9px
+
+    &__button-block-price
+        font-size: 14px
+        line-height: 16px
+        font-family: $bold
+        color: $green
+        letter-spacing: 0.02em
+
+        &--old
+            color: $dark-main
+            opacity: .5
+            text-decoration: line-through
+            margin-left: 5px
+
+    &--green
+        background: linear-gradient(92.62deg, #F0F3EF 35.3%, #D1FFEF 105.39%)
+
+    &--pink
+        background: linear-gradient(92.62deg, #E3F2FF 35.3%, #FFECE8 105.39%)
+
+    &--yellow
+        background: linear-gradient(92.62deg, #FBF6CD 35.3%, #E6B883 105.39%)

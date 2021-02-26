@@ -1,0 +1,16 @@
+include ../mixins/svg.pug
+include ../button/button.pug
+
+a(href="#").offer-horizontal
+    span.offer-horizontal__content
+        span.offer-horizontal__tittle Летняя заочная математическая школа
+        span.offer-horizontal__subtitle 
+            span.offer-horizontal__subtitle-text Ранняя регистрация:
+            span.offer-horizontal__subtitle-price 500 руб.
+            span.offer-horizontal__subtitle-old-price 1 500 руб.
+        span.offer-horizontal__date
+            span.offer-horizontal__date-icon
+                +svg(18,18,"icon-clock-history")
+            span.offer-horizontal__date-text 23-28 июля | Москва
+    span.offer-horizontal__button
+        span.button.button--black Узнать подробнее

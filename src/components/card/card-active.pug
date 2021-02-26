@@ -1,0 +1,13 @@
+include ../mixins/svg.pug
+
+.card.card--active
+    a(href="#", title="Удалить карту").card__remove
+        +svg(16,16,"icon-close")
+    .card__content
+        .card__number
+            .card__number-block 5160
+            .card__number-block 0000
+            .card__number-block 0000
+            .card__number-block 0000
+        .card__pay-sistem
+            +svg(38,22,"icon-visa")

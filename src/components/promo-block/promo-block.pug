@@ -1,0 +1,26 @@
+include ../feature/feature.pug
+include ../field-promo/field-promo.pug
+
+.promo-block
+    h1.promo-block__title Мои промокоды
+    p.promo-block__text Активируй промокоды и получай бесплатные уроки
+    .promo-block__cards
+        .promo-block__cards-item 
+            include ../promo-card/promo-card.pug
+        .promo-block__cards-item 
+            include ../promo-card/promo-card-activated.pug
+    .promo-block__add-promo
+        h2.promo-block__add-promo-title Добавить промокод
+        p.promo-block__add-promo-text Введи промокод и нажми “+”. После этого ты сможешь использовать его.
+        .promo-block__add-promo-input
+            +field-promo("Ввести промокод", "text", "code", null, "code")
+
+    .promo-block__feature 
+        h3.promo-block__feature-title Как это работает?
+        .promo-block__feature-container
+            .promo-block__feature-item
+                +feature("icon-tv", "Выбери подходящий курс")
+            .promo-block__feature-item
+                +feature("icon-pay-feature", "Введи промокод в разделе “Оплата” на странице курса")
+            .promo-block__feature-item
+                +feature("icon-notice-balance", "Бесплатные уроки добавятся к курсу автоматически")

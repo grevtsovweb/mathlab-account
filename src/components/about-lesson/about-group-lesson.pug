@@ -1,0 +1,70 @@
+include ../ticket/ticket
+include ../feature/feature
+include ../price-card/price-card
+
+.about-lesson
+    .about-lesson__banner.about-lesson__banner--purple
+        .about-lesson__banner-content
+            .about-lesson__banner-ticket
+                +ticket("В группе", "ticket--transparent")
+            h1.about-lesson__banner-title Подготовка к ЕГЭ по базовой математике
+            .about-lesson__banner-price 1 190 руб/занятие
+            .about-lesson__banner-button
+                button.button.button--white Записаться
+    p.about-lesson__description Курс прорабатывает необходимую теорию, учит решать сложные задания из олимпиады Физтех по математике, правильно выстраивая логику рассуждений. На занятиях обсуждаются олимпиадные задачи прошлых лет по математике и разбираются методы их решения.
+    .about-lesson__feature.about-lesson--decor-line
+        .about-lesson__feature-item.about-lesson__feature-item-col-md-4
+            +feature("icon-graduated","Курс длится 5 недель – с 25 марта по 1 мая 2020", "feature--white")
+        .about-lesson__feature-item.about-lesson__feature-item-col-md-4
+            +feature("icon-book","Включает 10 занятий, каждое из которых длится 2 академических часа", "feature--white")
+        .about-lesson__feature-item.about-lesson__feature-item-col-md-4
+            +feature("icon-papers","ППредлагается куратор, занятия дополняются материалами для распечатки", "feature--white")
+    .about-lesson__price.about-lesson__price--pt30.about-lesson__price--pt60-sm
+        .about-lesson__price-title
+            h3.title Стоимость занятий
+        .about-lesson__price-row.about-lesson__price-row--margin-10  
+            .about-lesson__price-col-10.about-lesson__price-col-sm-5.about-lesson__price-col-md-2   
+                +price-card(null, 1, "1 190", null, "Хорошо для старта", "1190")
+            .about-lesson__price-col-10.about-lesson__price-col-sm-5.about-lesson__price-col-md-2   
+                +price-card(null, 4, "990", 700, "2 неделя учёбы (два занятия в неделю)", "3960")
+            .about-lesson__price-col-10.about-lesson__price-col-sm-5.about-lesson__price-col-md-2   
+                +price-card(null, 8, "890", 2100, "1 месяц учёбы (два занятия в неделю)", "7120")
+            .about-lesson__price-col-10.about-lesson__price-col-sm-5.about-lesson__price-col-md-2   
+                +price-card(null, 16, "790", 4200, "1 месяц учёбы (два занятия в неделю)", "12640")
+            .about-lesson__price-col-10.about-lesson__price-col-sm-10.about-lesson__price-col-md-2   
+                +price-card("price-card--accent", 32, "690", 8400, "1 месяц учёбы (два занятия в неделю)", "20480")
+    .about-lesson__faq
+        .about-lesson__faq-title
+            h3.title Вопросы/Ответы
+        .about-lesson__faq-accordeon
+            ul.accordeon.accordeon--transparent.accordeon--purple
+                li.accordeon__item
+                    button.accordeon__button.accordeon__button--active
+                        span.accordeon__button-text У вас много репетиторов, как вы контролируете качество занятий?
+                        span.accordeon__button-icon
+                            +svg(13,13,"icon-arrow-prev")
+                    .accordeon__content 
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit pretium bibendum tellus aliquam auctor sem elementum velit. Sit facilisis accumsan, mattis imperdiet lobortis. Curabitur diam sit feugiat mattis feugiat diam nunc posuere. Tellus neque, est, amet adipiscing venenatis, velit semper neque faucibus. Cursus egestas dis massa proin est. Quisque bibendum nullam metus, sed quis. Massa nunc, congue sollicitudin dictumst cras. Convallis morbi nisi, magna egestas. Varius elit augue dictumst at velit tempus, sed et mollis.
+                li.accordeon__item
+                    button.accordeon__button
+                        span.accordeon__button-text Как, когда и в какое время я буду учиться?
+                        span.accordeon__button-icon
+                            +svg(13,13,"icon-arrow-prev")
+                    .accordeon__content 
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit pretium bibendum tellus aliquam auctor sem elementum velit. Sit facilisis accumsan, mattis imperdiet lobortis. Curabitur diam sit feugiat mattis feugiat diam nunc posuere. Tellus neque, est, amet adipiscing venenatis, velit semper neque faucibus. Cursus egestas dis massa proin est. Quisque bibendum nullam metus, sed quis. Massa nunc, congue sollicitudin dictumst cras. Convallis morbi nisi, magna egestas. Varius elit augue dictumst at velit tempus, sed et mollis.
+                li.accordeon__item
+                    button.accordeon__button
+                        span.accordeon__button-text У вас много репетиторов, как вы контролируете качество занятий?
+                        span.accordeon__button-icon
+                            +svg(13,13,"icon-arrow-prev")
+                    .accordeon__content 
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit pretium bibendum tellus aliquam auctor sem elementum velit. Sit facilisis accumsan, mattis imperdiet lobortis. Curabitur diam sit feugiat mattis feugiat diam nunc posuere. Tellus neque, est, amet adipiscing venenatis, velit semper neque faucibus. Cursus egestas dis massa proin est. Quisque bibendum nullam metus, sed quis. Massa nunc, congue sollicitudin dictumst cras. Convallis morbi nisi, magna egestas. Varius elit augue dictumst at velit tempus, sed et mollis.
+                li.accordeon__item
+                    button.accordeon__button
+                        span.accordeon__button-text У вас много репетиторов, как вы контролируете качество занятий?
+                        span.accordeon__button-icon
+                            +svg(13,13,"icon-arrow-prev")
+                    .accordeon__content 
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit pretium bibendum tellus aliquam auctor sem elementum velit. Sit facilisis accumsan, mattis imperdiet lobortis. Curabitur diam sit feugiat mattis feugiat diam nunc posuere. Tellus neque, est, amet adipiscing venenatis, velit semper neque faucibus. Cursus egestas dis massa proin est. Quisque bibendum nullam metus, sed quis. Massa nunc, congue sollicitudin dictumst cras. Convallis morbi nisi, magna egestas. Varius elit augue dictumst at velit tempus, sed et mollis.
+    .about-lesson__offer
+        include ../banner/banner-purple.pug  

@@ -15,15 +15,17 @@ html(lang="ru").page
                     .page__sidebar
                         .page__main-nav
                             include main-nav/main-nav.pug
-                    .page__course-cards
-                        .page__course-cards-item
-                            include course-card/course-card-purple.pug
-                        .page__course-cards-item
-                            include course-card/course-card-orange.pug
-                        .page__course-cards-item
-                            include course-card/course-card-green.pug
-                    .page__calendar
-                            include calendar/calendar.pug
+                    .page__content
+                        .page__content-row-md.page__content-row-js
+                            .page__course-cards
+                                .page__course-cards-item
+                                    include course-card/course-card-purple.pug
+                                .page__course-cards-item
+                                    include course-card/course-card-orange.pug
+                                .page__course-cards-item
+                                    include course-card/course-card-green.pug
+                        .page__calendar
+                                include calendar/calendar.pug
                     .page__social-nav
                             include social-nav/social-nav.pug               
         include footer/footer.pug

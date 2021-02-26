@@ -1,0 +1,11 @@
+mixin price-item(className, title, price, buttonClass, buttonText, oldPice, warning)
+    .price-item(class= className)
+        if title
+            h5.price-item__title= title
+        p.price-item__price= price
+        if oldPice
+            p.price-item__old-price= oldPice
+        .price-item__button
+            button.button(class= buttonClass)= buttonText
+        if warning
+            p.price-item__warning Количество мест ограничено. Записывайтесь заранее!

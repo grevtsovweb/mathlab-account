@@ -1,0 +1,6 @@
+include ../mixins/svg.pug
+
+mixin social-link-tooltip(icon)
+    a(href="#").social-link
+        +svg(48,48,icon)
+        span.social-link__tooltip Ссылка скопирована!

@@ -1,7 +1,7 @@
 include ../mixins/svg.pug
 
-mixin feature(svg, text)
-    .feature
+mixin feature(svg, text, className)
+    .feature(class= className)
         .feature__icon
             .feature__icon-inner
               +svg(50, 50, svg)

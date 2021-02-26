@@ -1,0 +1,45 @@
+.select
+    position: relative
+
+    &__arrow
+        display: flex
+        width: 16px
+        height: 16px
+        justify-content: center
+        align-items: center
+        position: absolute
+        content: ''
+        right: 16px
+        top: 50%
+        transform: translateY(-50%)
+        pointer-events: none
+
+        svg
+            width: 100%
+            height: auto
+            stroke: $dark-main-opacity
+
+    select
+        font-size: 16px 
+        line-height: 24px
+        font-family: $main
+        background-color: rgba(100,75,236,.1)
+        border: none
+        border-radius: 8px
+        color: $dark-main-opacity
+        padding-left: 14px
+        padding-right: 18px
+        padding-top: 7px
+        padding-bottom: 7px
+        height: 44px
+        box-sizing: border-box
+        width: 100%
+        max-width: 100%
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+
+            
+
+        &--full-width
+            max-width: none

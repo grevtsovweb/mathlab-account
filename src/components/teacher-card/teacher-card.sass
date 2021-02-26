@@ -1,0 +1,219 @@
+.teacher-card
+    padding-left: 10px
+    padding-right: 10px
+    padding-top: 15px
+    padding-bottom: 15px
+    background-color: #F7F6FE
+    border-radius: 8px
+    position: relative
+
+    +sm-block()
+        display: flex
+        flex-wrap: wrap
+        padding-left: 15px
+        padding-right: 15px
+        padding-bottom: 30px
+        padding-top: 30px
+
+    +md-block()
+        padding-left: 55px
+        padding-right: 42px
+        padding-top: 58px
+        padding-bottom: 65px
+        display: grid
+        grid-column-gap: 50px
+        grid-template-areas: "image data" "image about"
+
+    &::before
+        position: absolute
+        content: ''
+        top: 0
+        left: 0
+        width: 100%
+        border-top-left-radius: 8px
+        border-top-right-radius: 8px
+        height: 4px
+        background-color: $accent
+
+    &--orange::before
+        background-color: $orange
+
+    &__teacher-data
+        text-align: center
+        margin-bottom: 16px
+
+        +sm-block()
+            margin-left: 15px
+            margin-bottom: 0
+            flex-basis: calc(100% - 165px)
+            text-align: left
+            display: flex
+            flex-direction: column
+            justify-content: center
+
+        +md-block()
+            grid-area: data
+            margin-left: 0
+
+
+    &__name
+        font-family: $bold
+        font-size: 18px
+        line-height: 24px
+        color: $dark-main
+        margin-top: 0
+        margin-bottom: 8px
+
+        +sm-block()
+            font-size: 16px
+            margin-bottom: 6px
+
+        +md-block()
+            font-size: 20px
+            line-height: 20px
+            margin-bottom: 7px
+
+    &__university
+        font-family: $medium
+        font-size: 16px
+        line-height: 1.2em
+        color: $dark-main
+        display: inline-flex        
+
+        +md-block()
+            font-weight: 500
+            margin-bottom: 0
+            align-items: center
+
+
+    &__university-logo
+        display: none
+        width: 32px
+        height: 32px
+        flex-shrink: 0
+        margin-left: 14px
+
+        +sm-block()
+            margin-left: 6px
+            display: inline-flex
+
+        +md-block()
+            width: 23px
+            height: 23px
+            margin-top: -6px
+
+        img
+            width: 100%
+            max-width: 100%
+            height: auto
+            display: block
+
+    &__teacher-about
+        flex-grow: 1
+
+        +sm-block()
+            margin-top: 15px
+
+        +md-block()
+            grid-area: about
+            margin-top: 28px
+
+    &__about
+        font-family: $main
+        font-size: 14px
+        line-height: 22px
+        color: $dark-main
+        opacity: .7
+        margin-bottom: 20px
+        margin-top: 0
+
+        +sm-block()
+            font-size: 16px
+            margin-bottom: 24px
+            line-height: 24px
+
+        + .teacher-card__about
+            margin-bottom: 0
+
+    &__image
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 15px
+        display: flex
+        justify-content: center
+        width: 150px
+        height: 150px
+
+        +sm-block()
+            margin-bottom: 0
+            flex-basis: 150px
+            width: 150px
+            height: 150px
+
+        +md-block()
+            width: 200px
+            height: 200px 
+            grid-area: image
+
+    &__image-inner
+        width: 100%
+        height: 100%
+        border-radius: 50%
+        overflow: hidden
+        flex-shrink: 0
+
+        img
+            width: 100%
+            height: 100%
+            object-fir: cover
+
+
+    &__footer
+        margin-top: 14px
+
+        +sm-block()
+            margin-top: 28px
+            display: flex
+
+        +md-block()
+            margin-top: 32px
+
+
+    &__footer-item
+
+        &:not(:last-child)
+            margin-bottom: 14px
+
+            +sm-block()
+                margin-right: 30px
+                margin-bottom: 0
+
+            +md-block()
+                margin-right: 85px
+
+    &__footer-item-title
+        font-family: $main
+        font-size: 14px
+        line-height: 14px
+        color: $dark-main
+        opacity: .7
+
+        +sm-block()
+            font-size: 15px
+
+        +md-block()
+ 
+
+    &__footer-item-data
+        font-family: $main
+        font-size: 16px
+        line-height: 16px
+        color: $dark-main
+        font-weight: bold
+        margin-top: 4px
+
+        +sm-block()
+            font-size: 18px
+            margin-top: 6px
+
+        +md-block()

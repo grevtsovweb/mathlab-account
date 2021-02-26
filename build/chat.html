@@ -21,7 +21,33 @@
             <div class="header__notice-item"><a class="notice" href="#"><span class="notice__icon">
                                 <svg aria-hidden="true" width="16" height="16">
                                   <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
-                                </svg></span><span class="notice__text">Твоё занятие уже началось! Подключайся!</span></a>
+                                </svg></span><span class="notice__text">Твоё занятие уже началось! Подключайся!</span><span class="notice__count"> <span class="notice__count-number">2</span></span></a>
+              <div class="header__notice-item-dropdown" style="display: none">
+                <div class="dropdown-tooltip dropdown-tooltip--notice">
+                      <div class="notice-item">
+                        <div class="notice-item__icon">
+                                        <svg aria-hidden="true" width="16" height="16">
+                                          <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                        </svg>
+                        </div>
+                        <div class="notice-item__data">
+                          <div class="notice-item__text">Твоё следующее занятие завтра в 18:00! Не пропусти! :)</div>
+                          <div class="notice-item__date">25.03.2020</div>
+                        </div>
+                      </div>
+                      <div class="notice-item">
+                        <div class="notice-item__icon">
+                                        <svg aria-hidden="true" width="16" height="16">
+                                          <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                        </svg>
+                        </div>
+                        <div class="notice-item__data">
+                          <div class="notice-item__text">Твоё следующее занятие завтра в 18:00! Не пропусти! :)</div>
+                          <div class="notice-item__date">25.03.2020</div>
+                        </div>
+                      </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="header__user-block"><a class="header__user-avatar" href="#"></a><span class="header__greeting"><span class="header__greeting-text">Привет, Константин!</span></span><a class="header__logout" href="#">
@@ -31,13 +57,37 @@
         </div>
       </div>
       <div class="header__m-menu">
-        <button class="header__m-menu-button"><span class="header__m-menu-button-icon">
-                          <svg aria-hidden="true" width="16" height="16">
-                            <use xlink:href="img/sprite/sprite.svg#icon-star"></use>
-                          </svg></span>Мои уроки   <span class="header__m-menu-button-dropdown"> 
-                          <svg aria-hidden="true" width="8" height="4">
-                            <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
-                          </svg></span></button>
+        <button class="header__m-menu-button"><span class="header__m-menu-page header__m-menu-page--current"><span class="header__m-menu-page-icon">
+                            <svg aria-hidden="true" width="16" height="16">
+                              <use xlink:href="img/sprite/sprite.svg#icon-pay"></use>
+                            </svg></span>Мои уроки  <span class="header__m-menu-page-dropdown"> 
+                            <svg aria-hidden="true" width="8" height="4">
+                              <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                            </svg></span></span></button>
+        <div class="header__m-menu-dropdown" style="display: none">
+          <div class="dropdown-tooltip">
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-play"></use>
+                                </svg></span>Доступные занятия</a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page header__m-menu-page--current" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-star"></use>
+                                </svg></span>Мои уроки </a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-settings"></use>
+                                </svg></span>Настройки</a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                </svg></span>Уведомления </a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-logout"></use>
+                                </svg></span>Выход</a></div>
+          </div>
+        </div>
       </div>
     </header>
     <main class="page__main">
@@ -47,7 +97,7 @@
             <div class="page__main-nav">
               <nav class="main-nav">
                 <ul class="main-nav__list">
-                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                  <li class="main-nav__list-item"><a class="main-nav__link main-nav__link--active" href="#"><span class="main-nav__link-icon">
                                       <svg aria-hidden="true" width="16" height="16">
                                         <use xlink:href="img/sprite/sprite.svg#icon-pay"></use>
                                       </svg></span><span class="main-nav__link-title">Оплатить занятия</span></a></li>

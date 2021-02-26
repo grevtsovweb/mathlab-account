@@ -1,0 +1,10 @@
+mixin price-card(className, count, price, savings, description, total)
+    .price-card(class=className)
+        .price-card__header
+            .price-card__count #{count} занятие
+            .price-card__price #{price} руб.
+            if savings
+                .price-card__saving Экономия #{savings} руб.
+        .price-card__footer
+            .price-card__description= description
+            button.price-card__button Купить за #{total} Р

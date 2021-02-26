@@ -1,0 +1,129 @@
+.select-custom
+    position: relative
+
+    &__container
+        display: flex
+        align-items: center
+        overflow: hidden
+        flex-grow: 1
+        position: relative
+        font-size: 16px 
+        line-height: 24px
+        font-family: $main
+        background-color: rgba(100,75,236,.1)
+        border: none
+        border-radius: 8px
+        color: $dark-main-opacity
+        padding-left: 14px
+        padding-right: 18px
+        padding-top: 7px
+        padding-bottom: 7px
+        height: 44px
+        box-sizing: border-box
+        width: 100%
+        max-width: 100%
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+        white-space: nowrap
+        overflow: hidden
+        min-width: 0
+
+        &--active + .select-custom__dropdown
+            display: block
+            background-color: $bg-white
+            color: $dark-main-opacity
+            font-size: 13px
+            line-height: 30px
+            border-radius: 6px
+            padding-top: 18px
+            padding-bottom: 18px    
+
+    &__container-text
+        padding-right: 30px
+        max-width: 100%
+        width: 100%
+        white-space: nowrap
+        text-overflow: ellipsis
+        overflow: hidden
+        box-sizing: border-box
+        margin-top: 0
+        margin-bottom: 0
+        min-width: 0
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+        flex-grow: 1
+
+    &__arrow
+        display: flex
+        width: 24px
+        height: 24px
+        justify-content: center
+        align-items: center
+        position: absolute
+        content: ''
+        right: 16px
+        top: 50%
+        transform: translateY(-50%)
+        pointer-events: none
+
+        svg
+            width: 100%
+            height: auto
+            stroke: $accent
+
+    &__dropdown
+        position: absolute
+        content: ''
+        display: none
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15)
+        max-width: 100%
+        right: 0
+        top: calc(100% + 1px)
+
+    &__dropdown-item
+        display: flex
+        font-size: 13px
+        line-height: 16px
+        padding-top: 9px
+        padding-bottom: 9px
+        color: $dark-main-opacity
+        white-space: wrap
+        text-decoration: none
+        font-family: $medium
+        align-items: center
+        padding-left: 10px
+        padding-right: 10px
+        transition: background-color .2s ease
+
+        &:hover
+            background-color: rgba(207,216,245,.3)
+
+        &--active
+            background-color: rgba(207,216,245,.3)
+
+            .select-custom__dropdown-item-icon
+                opacity: 1
+
+
+    &__dropdown-item-icon
+        width: 18px
+        height: 18px
+        align-items: center
+        justify-content: center
+        margin-top: -4px
+        margin-right: 10px
+        display: flex
+        opacity: 0
+
+        svg 
+            width: 100%
+            height: auto
+            fill: $green
+
+    &__container:focus 
+
+
+    &--full-width
+        max-width: none

@@ -1,0 +1,21 @@
+include ../ticket/ticket.pug
+include ../button/button.pug
+
+article.intensive-card.intensive-card--purple
+    .intensive-card__content
+        .intensive-card__tickets
+            .intensive-card__tickets-item
+                +ticket("В группе")
+            .intensive-card__tickets-item
+                +ticket("11 класс")
+        .intensive-card__data-block
+            h1.intensive-card__title Подготовка к ЕГЭ по базовой математике
+            p.intensive-card__description  Курс прорабатывает необходимую теорию, учит решать сложные задания из олимпиады Физтех по математике, правильно выстраивая логику рассуждений. На занятиях обсуждаются олимпиадные задачи прошлых лет по математике и разбираются методы их решения.
+    .intensive-card__choice-block
+        .intensive-card__price
+            span.intensive-card__new-price 1 190 руб/занятие
+        .intensive-card__button-block
+            .intensive-card__button-block-item
+                +button('button--full-width-m button--purple', "Записаться")
+            .intensive-card__button-block-item
+                +button('button--full-width-m button--transparent-purple', "Подробнее")

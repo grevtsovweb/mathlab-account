@@ -1,0 +1,134 @@
+.referral
+
+    &__row
+        +md-block()
+            +row-flex()
+
+    &__col
+        +md-block()
+            +col()
+        +size-md(6)
+
+
+    &__logo
+        text-align: center
+        margin-bottom: 18px
+
+        +sm-block()
+            margin-bottom: 26px
+
+        +md-block()
+            text-align: left
+
+        img
+            width: 80px
+            height: auto
+
+            +sm-block()
+                width: 120px
+                height: 20px
+
+    &__title
+        font-size: 24px
+        line-height: 1.2em
+        font-family: $bold
+        color: $accent
+        text-align: center
+        margin-top: 0
+        margin-bottom: 22px
+
+        +sm-block()
+            font-size: 40px
+            line-height: 1.1em
+            margin-bottom: 29px
+
+        +md-block()
+            text-align: left
+
+    &__phrase
+        +sm-block()
+            max-width: 484px
+            margin-left: auto
+            margin-right: auto
+
+        +md-block()
+            max-width: 560px
+            margin-left: 0
+            margin-right: 0
+
+    &__form   
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05)
+
+        +sm-block()
+            max-width: 484px
+            margin-left: auto
+            margin-right: auto
+
+        +md-block()
+            max-width: 495px
+            margin-left: 0
+            margin-right: 0
+            margin-top: 55px
+
+        .form__row
+            margin-bottom: 15px
+
+    &__form-body
+        padding: 15px
+        background-color: $bg-white
+        border-top-left-radius: 8px
+        border-top-right-radius: 8px
+
+        +sm-block()
+            padding-left: 72px
+            padding-right: 72px
+            padding-top: 30px
+            padding-bottom: 30px
+
+    &__form-agreement
+        font-size: 12px
+        color: $dark-main-opacity
+        text-align: center
+        line-height: 1.2em
+
+    &__form-agreement-link
+        color: $accent
+
+        &:hover
+            text-decoration: none
+
+    &__form-footer
+        padding: 15px
+        background-color: $bg-white
+        border-bottom-left-radius: 8px
+        border-bottom-right-radius: 8px
+        display: flex
+        justify-content: center
+        border-top: 1px solid $bg-main
+
+        +sm-block()
+            padding-top: 30px
+            padding-bottom: 30px
+            padding-left: 72px
+            padding-right: 72px
+
+    &__form-footer-text
+        font-size: 15px
+        color: $dark-main-opacity
+        margin-right: 10px
+
+    &__form-footer-link
+        font-size: 15px
+        color: $accent
+        text-decoration: none
+        transition: opacity .2s ease
+
+        &:hover
+            opacity: .7
+
+    &__col
+        &:not(:last-child)
+            margin-bottom: 15px
+
+            +sm-block()
+                margin-bottom: 30px

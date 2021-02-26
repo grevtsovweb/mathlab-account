@@ -1,0 +1,143 @@
+.progress
+    padding: 15px
+    background-color: $bg-white
+    border-radius: 8px
+
+    &__header
+        display: flex
+        align-items: baseline
+        padding-bottom: 6px
+
+        +sm-block()
+            justify-content: space-between
+
+    &__title
+        font-size: 20px 
+        font-family: $bold
+        line-height: 24px
+        color: $dark-main
+        letter-spacing: -0.01em
+        padding-right: 16px
+
+        +sm-block()
+            font-size: 16px
+
+        +md-block()
+            font-size: 20px
+
+
+    &__steps
+        font-size: 20px 
+        font-family: $bold
+        line-height: 24px
+        color: $dark-main
+        opacity: .5
+        letter-spacing: -0.01em
+
+        +sm-block()
+            font-size: 16px
+
+        +md-block()
+            font-size: 20px
+
+    &__progress-bar
+        padding-top: 10px
+        padding-bottom: 10px
+
+    &__list
+        margin: 0
+        padding: 0
+        list-style: none
+
+    &__list-item
+        border-bottom: 1px solid $bg-main
+
+    &__list-link
+        display: flex
+        text-decoration: none
+        color: rgba(0,0,0,.5)
+        font-size: 14px
+        line-height: 14px
+        font-family: $main
+        padding-top: 18px
+        padding-bottom: 18px
+
+        &--active
+            color: $accent
+            font-family: $bold
+
+    &__list-link-count
+        padding-right: 20px
+
+    &__list-link-text
+
+    &__footer
+        padding-top: 19px
+
+    &__certificate
+        display: flex
+        align-items: center
+        padding-top: 22px
+        padding-bottom: 4px
+
+    &__certificate-icon
+        width: 43px
+        height: 43px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 10px
+        flex-shrink: 0
+
+        svg
+            width: 100%
+            height: auto
+
+    &__certificate-text
+        color: rgba(0,0,0,.5)
+        font-size: 12px
+        line-height: 16px
+
+        +sm-block()
+            font-size: 14px
+
+    &__show-button
+        background-color: transparent
+        color: $accent
+        font-size: 14px
+        line-height: 16px
+        font-family: $medium
+        display: flex
+        justify-content: center
+        width: 100%
+        padding: 0
+        border: none
+        padding-bottom: 2px
+        padding-top: 17px
+        transition: opacity .2s ease
+        cursor: pointer
+
+        &:hover
+            opacity: .8
+
+        +sm-block()
+            display: none
+
+    &__show-button-icon
+        width: 12px
+        height: 12px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 11px
+        transform: rotate(-90deg)
+
+        svg
+            width: 100%
+            height: auto
+            fill: $accent
+
+
+
+
+    

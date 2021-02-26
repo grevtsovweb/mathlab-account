@@ -1,0 +1,31 @@
+.additionally
+    display: flex
+    align-items: center
+    justify-content: center
+    
+    &::before
+        +sm-block()
+            display: block
+            flex-grow: 1
+            content: ''
+            height: 1px
+            background-color: #CFD8F5
+
+    &::after
+        +sm-block()
+            display: block
+            flex-grow: 1
+            content: ''
+            height: 1px
+            background-color: #CFD8F5
+
+    &__text
+        margin-left: auto
+        margin-right: auto
+        color: $dark-main
+        font-family: $medium
+        font-size: 12px
+        line-height: 14px
+        letter-spacing: 0.02em
+        padding-left: 22px
+        padding-right: 22px

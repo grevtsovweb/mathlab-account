@@ -1,0 +1,11 @@
+include ../mixins/svg.pug
+
+mixin field-promo(pleceholderName, typeName, nameField, className, index)
+    .field-promo
+        .field-promo__container
+            input.field-promo__input(placeholder= pleceholderName, type= typeName, name= nameField, class= className, id= index, value="1234567890")
+            span.field-promo__check(style="left: 120px; display: block")
+                +svg(18,18,"icon-check-mark")
+            button.field-promo__button
+                +svg(22,22,"icon-plus-2")
+        .field-promo__notice Промокод добавлен!

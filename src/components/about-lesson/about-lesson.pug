@@ -1,0 +1,103 @@
+include ../ticket/ticket
+include ../feature/feature
+include ../price-item/price-item
+
+.about-lesson
+    .about-lesson__banner
+        .about-lesson__banner-content
+            .about-lesson__banner-ticket
+                +ticket("Курс", "ticket--transparent")
+            h1.about-lesson__banner-title Курс подготовки к олимпиаде «Физтех» по математике
+            .about-lesson__banner-price 1 600 руб.
+            .about-lesson__banner-button
+                button.button.button--white Оплатить курс
+    p.about-lesson__description Курс прорабатывает необходимую теорию, учит решать сложные задания из олимпиады Физтех по математике, правильно выстраивая логику рассуждений. На занятиях обсуждаются олимпиадные задачи прошлых лет по математике и разбираются методы их решения.
+    .about-lesson__feature.about-lesson--decor-line
+        .about-lesson__feature-item.about-lesson__feature-item-col-md-4
+            +feature("icon-graduated","Курс длится 3 недели – с 25 марта по 1 мая 2020", "feature--white")
+        .about-lesson__feature-item.about-lesson__feature-item-col-md-4
+            +feature("icon-book","Включает 5 занятий, каждое из которых длится 2 академических часа", "feature--white")
+        .about-lesson__feature-item.about-lesson__feature-item-col-md-4
+            +feature("icon-papers","Предлагается куратор, занятия дополняются материалами для распечатки", "feature--white")
+    .about-lesson__program
+        .about-lesson__program-title 
+            h2.title Программа курса
+        p.about-lesson__program-subtitle Онлайн-занятия проходят по средам и пятницам в 18:00 и всегда доступны в записи
+        .about-lesson__accordeon
+            ul.accordeon
+                li.accordeon__item
+                    button.accordeon__button.accordeon__button--active
+                        span.accordeon__button-text Геометрическая оптика
+                        span.accordeon__button-icon
+                            +svg(13,13,"icon-arrow-prev")
+                    .accordeon__content 
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit pretium bibendum tellus aliquam auctor sem elementum velit. Sit facilisis accumsan, mattis imperdiet lobortis. Curabitur diam sit feugiat mattis feugiat diam nunc posuere. Tellus neque, est, amet adipiscing venenatis, velit semper neque faucibus. Cursus egestas dis massa proin est. Quisque bibendum nullam metus, sed quis. Massa nunc, congue sollicitudin dictumst cras. Convallis morbi nisi, magna egestas. Varius elit augue dictumst at velit tempus, sed et mollis.
+                li.accordeon__item
+                    button.accordeon__button
+                        span.accordeon__button-text Молекулярная физика и термодинамика
+                        span.accordeon__button-icon
+                            +svg(13,13,"icon-arrow-prev")
+                    .accordeon__content 
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit pretium bibendum tellus aliquam auctor sem elementum velit. Sit facilisis accumsan, mattis imperdiet lobortis. Curabitur diam sit feugiat mattis feugiat diam nunc posuere. Tellus neque, est, amet adipiscing venenatis, velit semper neque faucibus. Cursus egestas dis massa proin est. Quisque bibendum nullam metus, sed quis. Massa nunc, congue sollicitudin dictumst cras. Convallis morbi nisi, magna egestas. Varius elit augue dictumst at velit tempus, sed et mollis.
+                li.accordeon__item
+                    button.accordeon__button
+                        span.accordeon__button-text Геометрическая оптика
+                        span.accordeon__button-icon
+                            +svg(13,13,"icon-arrow-prev")
+                    .accordeon__content 
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit pretium bibendum tellus aliquam auctor sem elementum velit. Sit facilisis accumsan, mattis imperdiet lobortis. Curabitur diam sit feugiat mattis feugiat diam nunc posuere. Tellus neque, est, amet adipiscing venenatis, velit semper neque faucibus. Cursus egestas dis massa proin est. Quisque bibendum nullam metus, sed quis. Massa nunc, congue sollicitudin dictumst cras. Convallis morbi nisi, magna egestas. Varius elit augue dictumst at velit tempus, sed et mollis.
+                li.accordeon__item
+                    button.accordeon__button
+                        span.accordeon__button-text Молекулярная физика и термодинамика
+                        span.accordeon__button-icon
+                            +svg(13,13,"icon-arrow-prev")
+                    .accordeon__content 
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit pretium bibendum tellus aliquam auctor sem elementum velit. Sit facilisis accumsan, mattis imperdiet lobortis. Curabitur diam sit feugiat mattis feugiat diam nunc posuere. Tellus neque, est, amet adipiscing venenatis, velit semper neque faucibus. Cursus egestas dis massa proin est. Quisque bibendum nullam metus, sed quis. Massa nunc, congue sollicitudin dictumst cras. Convallis morbi nisi, magna egestas. Varius elit augue dictumst at velit tempus, sed et mollis.
+    .about-lesson__price
+        .about-lesson__price-title
+            h3.title Стоимость занятий
+        .about-lesson__price-row.about-lesson__price-row--center
+            .about-lesson__col-sm-6.about-lesson__price-col-4     
+                +price-item("price-item--green", "Первое вводное занятие", "Бесплатно", "button--medium button--green", "Записаться")  
+            .about-lesson__col-sm-6.about-lesson__price-col-4     
+                +price-item("price-item--purple","5 занятий", "1 600 руб","button--medium", "Оплатить курс") 
+    .about-lesson__teacher
+        .about-lesson__teacher-title 
+            h3.title Преподаватель курса
+        .about-lesson__teacher-card
+            include ../teacher-card/teacher-card.pug
+    .about-lesson__faq
+        .about-lesson__faq-title
+            h3.title Вопросы/Ответы
+        .about-lesson__faq-accordeon
+            ul.accordeon.accordeon--transparent
+                li.accordeon__item
+                    button.accordeon__button.accordeon__button--active
+                        span.accordeon__button-text У вас много репетиторов, как вы контролируете качество занятий?
+                        span.accordeon__button-icon
+                            +svg(13,13,"icon-arrow-prev")
+                    .accordeon__content 
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit pretium bibendum tellus aliquam auctor sem elementum velit. Sit facilisis accumsan, mattis imperdiet lobortis. Curabitur diam sit feugiat mattis feugiat diam nunc posuere. Tellus neque, est, amet adipiscing venenatis, velit semper neque faucibus. Cursus egestas dis massa proin est. Quisque bibendum nullam metus, sed quis. Massa nunc, congue sollicitudin dictumst cras. Convallis morbi nisi, magna egestas. Varius elit augue dictumst at velit tempus, sed et mollis.
+                li.accordeon__item
+                    button.accordeon__button
+                        span.accordeon__button-text Как, когда и в какое время я буду учиться?
+                        span.accordeon__button-icon
+                            +svg(13,13,"icon-arrow-prev")
+                    .accordeon__content 
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit pretium bibendum tellus aliquam auctor sem elementum velit. Sit facilisis accumsan, mattis imperdiet lobortis. Curabitur diam sit feugiat mattis feugiat diam nunc posuere. Tellus neque, est, amet adipiscing venenatis, velit semper neque faucibus. Cursus egestas dis massa proin est. Quisque bibendum nullam metus, sed quis. Massa nunc, congue sollicitudin dictumst cras. Convallis morbi nisi, magna egestas. Varius elit augue dictumst at velit tempus, sed et mollis.
+                li.accordeon__item
+                    button.accordeon__button
+                        span.accordeon__button-text У вас много репетиторов, как вы контролируете качество занятий?
+                        span.accordeon__button-icon
+                            +svg(13,13,"icon-arrow-prev")
+                    .accordeon__content 
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit pretium bibendum tellus aliquam auctor sem elementum velit. Sit facilisis accumsan, mattis imperdiet lobortis. Curabitur diam sit feugiat mattis feugiat diam nunc posuere. Tellus neque, est, amet adipiscing venenatis, velit semper neque faucibus. Cursus egestas dis massa proin est. Quisque bibendum nullam metus, sed quis. Massa nunc, congue sollicitudin dictumst cras. Convallis morbi nisi, magna egestas. Varius elit augue dictumst at velit tempus, sed et mollis.
+                li.accordeon__item
+                    button.accordeon__button
+                        span.accordeon__button-text У вас много репетиторов, как вы контролируете качество занятий?
+                        span.accordeon__button-icon
+                            +svg(13,13,"icon-arrow-prev")
+                    .accordeon__content 
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit pretium bibendum tellus aliquam auctor sem elementum velit. Sit facilisis accumsan, mattis imperdiet lobortis. Curabitur diam sit feugiat mattis feugiat diam nunc posuere. Tellus neque, est, amet adipiscing venenatis, velit semper neque faucibus. Cursus egestas dis massa proin est. Quisque bibendum nullam metus, sed quis. Massa nunc, congue sollicitudin dictumst cras. Convallis morbi nisi, magna egestas. Varius elit augue dictumst at velit tempus, sed et mollis.
+    .about-lesson__offer
+        include ../banner/banner.pug  

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mathlab: Account</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__row"><a class="header__logo" href="#"><img src="img/common/logo.svg" alt="Mathlab" width="120" height="20"></a>
+          <div class="header__notice">
+            <div class="header__notice-item"><a class="notice-lessons" href="#"><span class="notice-lessons__icon">
+                                <svg aria-hidden="true" width="14" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-play"></use>
+                                </svg></span><span class="notice-lessons__text notice-lessons__text--medium">Всего занятий:</span><span class="notice-lessons__text-count">11 <span class="notice-lessons__text-count notice-lessons__text-count--mobile">занятий</span></span><span class="notice-lessons__text-count-contain">(5 индивидуальных, 7  групповых)</span></a>
+            </div>
+            <div class="header__notice-item"><a class="notice" href="#"><span class="notice__icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                </svg></span><span class="notice__text">Твоё занятие уже началось! Подключайся!</span><span class="notice__count"> <span class="notice__count-number">2</span></span></a>
+              <div class="header__notice-item-dropdown" style="display: none">
+                <div class="dropdown-tooltip dropdown-tooltip--notice">
+                      <div class="notice-item">
+                        <div class="notice-item__icon">
+                                        <svg aria-hidden="true" width="16" height="16">
+                                          <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                        </svg>
+                        </div>
+                        <div class="notice-item__data">
+                          <div class="notice-item__text">Твоё следующее занятие завтра в 18:00! Не пропусти! :)</div>
+                          <div class="notice-item__date">25.03.2020</div>
+                        </div>
+                      </div>
+                      <div class="notice-item">
+                        <div class="notice-item__icon">
+                                        <svg aria-hidden="true" width="16" height="16">
+                                          <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                        </svg>
+                        </div>
+                        <div class="notice-item__data">
+                          <div class="notice-item__text">Твоё следующее занятие завтра в 18:00! Не пропусти! :)</div>
+                          <div class="notice-item__date">25.03.2020</div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__user-block"><a class="header__user-avatar" href="#"></a><span class="header__greeting"><span class="header__greeting-text">Привет, Константин!</span></span><a class="header__logout" href="#">
+                            <svg aria-hidden="true" width="16" height="16">
+                              <use xlink:href="img/sprite/sprite.svg#icon-logout"></use>
+                            </svg></a></div>
+        </div>
+      </div>
+      <div class="header__m-menu">
+        <button class="header__m-menu-button"><span class="header__m-menu-page header__m-menu-page--current"><span class="header__m-menu-page-icon">
+                            <svg aria-hidden="true" width="16" height="16">
+                              <use xlink:href="img/sprite/sprite.svg#icon-pay"></use>
+                            </svg></span>Мои уроки  <span class="header__m-menu-page-dropdown"> 
+                            <svg aria-hidden="true" width="8" height="4">
+                              <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                            </svg></span></span></button>
+        <div class="header__m-menu-dropdown" style="display: none">
+          <div class="dropdown-tooltip">
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-play"></use>
+                                </svg></span>Доступные занятия</a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page header__m-menu-page--current" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-star"></use>
+                                </svg></span>Мои уроки </a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-settings"></use>
+                                </svg></span>Настройки</a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                </svg></span>Уведомления </a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-logout"></use>
+                                </svg></span>Выход</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page__main">
+      <div class="page__container">
+        <div class="page__grid">
+          <div class="page__sidebar">
+            <div class="page__main-nav">
+              <nav class="main-nav">
+                <ul class="main-nav__list">
+                  <li class="main-nav__list-item"><a class="main-nav__link main-nav__link--active" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-pay"></use>
+                                      </svg></span><span class="main-nav__link-title">Оплатить занятия</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-material"></use>
+                                      </svg></span><span class="main-nav__link-title">Материалы занятий</span><span class="main-nav__link-notice">1</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-play"></use>
+                                      </svg></span><span class="main-nav__link-title">Доступные интенсивы</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-star"></use>
+                                      </svg></span><span class="main-nav__link-title">Мои уроки</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-promo"></use>
+                                      </svg></span><span class="main-nav__link-title">Мои промокоды</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-invite"></use>
+                                      </svg></span><span class="main-nav__link-title">Пригласи друзей</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-settings"></use>
+                                      </svg></span><span class="main-nav__link-title">Настройки</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                      </svg></span><span class="main-nav__link-title">Уведомления</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-pay"></use>
+                                      </svg></span><span class="main-nav__link-title">Чат с преподавателем</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-logout"></use>
+                                      </svg></span><span class="main-nav__link-title">Выход</span></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="page__content">
+            <div class="page__content-block">
+              <div class="invite-block">
+                <h1 class="invite-block__title">Пригласи друзей в MathLabs и получи бонусы! 5&nbsp;друзей&nbsp;=&nbsp;1 занятие.</h1>
+                <p class="invite-block__text">У тебя есть друзья, которые ищут платформу для обучения онлайн? Предложи им MathLabs! Когда приглашенный зарегистрируется и оплатит занятия, ты получишь бесплатный урок.</p>
+                <div class="invite-block__share"> 
+                  <p class="invite-block__share-title">Поделись с ними ссылкой</p>
+                  <div class="invite-block__share-container"> <a class="invite-block__share-link" href="#">https://mathlabs.ru/ref=12adae02</a>
+                    <ul class="invite-block__share-social"> 
+                      <li class="invite-block__share-social-item"><a class="social-link" href="#">
+                                                      <svg aria-hidden="true" width="48" height="48">
+                                                        <use xlink:href="img/sprite/sprite.svg#icon-share"></use>
+                                                      </svg><span class="social-link__tooltip">Ссылка скопирована!</span></a>
+                      </li>
+                      <li class="invite-block__share-social-item"><a class="social-link" href="#">
+                                                      <svg aria-hidden="true" width="48" height="48">
+                                                        <use xlink:href="img/sprite/sprite.svg#icon-telegram-2"></use>
+                                                      </svg></a>
+                      </li>
+                      <li class="invite-block__share-social-item"><a class="social-link" href="#">
+                                                      <svg aria-hidden="true" width="48" height="48">
+                                                        <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
+                                                      </svg></a>
+                      </li>
+                      <li class="invite-block__share-social-item"><a class="social-link" href="#">
+                                                      <svg aria-hidden="true" width="48" height="48">
+                                                        <use xlink:href="img/sprite/sprite.svg#icon-facebook-2"></use>
+                                                      </svg></a>
+                      </li>
+                      <li class="invite-block__share-social-item"> <a class="social-link" href="#">
+                                                      <svg aria-hidden="true" width="48" height="48">
+                                                        <use xlink:href="img/sprite/sprite.svg#icon-twitter"></use>
+                                                      </svg></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <form class="invite-block__form form" action="#">
+                  <p class="invite-block__form-title">Или отправь приглашение по&nbsp;e&nbsp;-&nbsp;mail</p>
+                  <div class="invite-block__form-body">
+                    <div class="form__row invite-block__form-input">
+                                    <input class="field" placeholder="E-mail твоего друга" type="text" name="name" id="name">
+                    </div>
+                    <div class="form__row">
+                                    <button class="button button--full-width">Отправить</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="page__content-block">
+              <div class="invite-block">
+                <h2 class="invite-block__title invite-block__title--statistic">Статистика</h2>
+                <div class="invite-block__statistic">
+                  <div class="invite-block__statistic-item">
+                    <p class="invite-block__statistic-item-title">13 друзей</p>
+                    <p class="invite-block__statistic-item-text">ты пригласил в MathLabs</p>
+                  </div>
+                  <div class="invite-block__statistic-item">
+                    <p class="invite-block__statistic-item-title">10 друзей</p>
+                    <p class="invite-block__statistic-item-text">принесли тебе бонусы на обучение</p>
+                  </div>
+                  <div class="invite-block__statistic-item">
+                    <p class="invite-block__statistic-item-title invite-block__statistic-item-title--green">2 бесплатных урока</p>
+                    <p class="invite-block__statistic-item-text">бонусы, которые ты заслужил :)</p>
+                  </div>
+                  <div class="invite-block__statistic-item">
+                    <p class="invite-block__statistic-item-title">
+                       Введи код: 
+                      <button class="invite-block__statistic-code">fe245g4</button>
+                    </p>
+                    <p class="invite-block__statistic-item-text">при следующей оплате и получи 2 бесплатных занятия</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__row">
+          <div class="footer__info"><a class="footer__logo" href="#">Команда MathLabs</a>
+            <p class="footer__about-team">Математик Годфри Харди писал: «Большинство людей настолько боятся самого названия математики, что они готовы совершенно искренне преувеличивать свою неспособность к математике». Мы полностью разделяем это мнение и считаем, что в большинстве случаев ребенку не хватает упорства, но никак не способностей.</p>
+          </div>
+          <div class="footer__contacts-wrapper">
+            <div class="footer__contacts">
+              <div class="footer__contacts-text">Наши соц.сети</div>
+              <ul class="footer__social-list">
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Instagram">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-instagram"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Facebook">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-facebook"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="footer__contacts">
+              <div class="footer__contacts-text">Если у вас есть вопросы – напишите нам!</div>
+              <ul class="footer__social-list">
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Telegram">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-telegram"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Whatsapp">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-whatsapp"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Viber">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-viber"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Messenger">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-messenger"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__rights-block">
+          <div class="footer__rights-block-item footer__rights-block-copyright">
+            <div class="footer__copyright">© 2020 MathLabs. Все права защищиены   </div>
+          </div>
+          <div class="footer__rights-block-item"><a class="footer__link" href="#">Политика конфиденциальности     </a></div>
+          <div class="footer__rights-block-item"><a class="footer__link" href="#">Пользовательское соглашение</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+include ../select-custom/select-custom.pug
+include ../button/button.pug
+
+.materials
+    h1.materials__title Материалы занятий
+    .materials__select
+        +select-custom()
+    .materials__card
+        .materials__card-item
+            include ../material-card/material-card.pug
+        .materials__card-item
+            include ../material-card/material-card.pug
+        .materials__card-item
+            include ../material-card/material-card.pug
+        .materials__card-item
+            include ../material-card/material-card.pug
+    .materials__button-more
+        +button("button--transparent button--full-width-m","Показать ещё", "icon-more")
+    

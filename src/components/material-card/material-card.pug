@@ -1,0 +1,32 @@
+include ../mixins/svg.pug
+include ../time/time.pug
+
+.material-card
+    .material-card__content
+        .material-card__title Курс подготовки к олимпиаде «Физтех» по математике
+        .material-card__data 
+            .material-card__data-description Первое занятие. Математический анализ.
+            .material-card__data-time 
+                +time('icon-clock-fill', "7 сентября 2020, 18:00")
+    ul.material-card__handlers
+        li.material-card__handlers-item
+            a(href="#").material-card__handlers-link-container
+                span.material-card__handlers-link-button.material-card__handlers-link-button--homework
+                    span.material-card__handlers-link-icon
+                        +svg(28,28,"icon-homework")
+        li.material-card__handlers-item
+            a(href="#").material-card__handlers-link-container
+                span.material-card__handlers-link-button.material-card__handlers-link-button--play
+                    span.material-card__handlers-link-icon
+                        +svg(28,28,"icon-play-circle")
+        li.material-card__handlers-item
+            a(href="#").material-card__handlers-link-container
+                span.material-card__handlers-link-button.material-card__handlers-link-button--book
+                    span.material-card__handlers-link-icon
+                        +svg(28,28,"icon-book-material")
+        li.material-card__handlers-item
+            a(href="#").material-card__handlers-link-container
+                span.material-card__handlers-link-button.material-card__handlers-link-button--download
+                    span.material-card__handlers-link-icon
+                        +svg(28,28,"icon-download-material")
+                span.material-card__handlers-link-description 2mb

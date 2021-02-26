@@ -1,0 +1,121 @@
+.archive-card
+    padding: 0
+    position: relative
+    padding-top: 15px
+    padding-bottom: 15px
+
+    +sm-block()
+        padding-top: 20px
+        padding-bottom: 20px
+
+    +md-block()
+        padding-top: 30px
+        padding-bottom: 30px
+        display: flex
+
+    &__content
+        +md-block()
+            max-width: 620px
+
+    &__tickets
+        display: flex
+        flex-wrap: wrap
+        margin-left: -5px
+        margin-right: -5px
+        margin-bottom: 6px
+
+    &__tickets-item
+        margin-left: 5px
+        margin-right: 5px
+        margin-bottom: 10px
+
+    &__title
+        margin-top: 0
+        font-size: 18px 
+        line-height: 24px
+        letter-spacing: .02em
+        color: $dark-main
+        font-family: $bold
+        margin-bottom: 14px
+
+        +md-block
+            font-size: 20px 
+            margin-bottom: 13px
+
+    &__description
+        font-size: 14px
+        line-height: 22px
+        color: $dark-main
+        opacity: .7
+        margin-top: 0
+        margin-bottom: 0
+
+        +md-block()
+            font-size: 16px
+            line-height: 26px
+
+    &__warning
+        color: #FF2674
+        font-size: 14px
+        line-height: 22px
+        margin-bottom: 0
+        font-family: $bold
+        margin-top: 14px
+
+        +md-block()
+            font-size: 16px
+            line-height: 26px
+            margin-bottom: 0
+            margin-top: 14px
+
+    &__footer
+        margin-top: 15px 
+        display: flex
+        flex-wrap: wrap   
+         
+
+    &__teacher
+        margin-right: 15px
+
+        .teacher__name
+            display: block
+
+        .teacher__image
+            width: 32px
+            height: 32px
+
+    &__date
+        font-size: 14px
+        line-height: 16px
+        display: flex
+        align-items: center
+        color: rgba(0,0,0,.5)
+
+    &__date-text
+        margin-top: 2px
+
+    &__date-icon
+        width: 18px
+        height: 18px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 8px
+
+        svg
+            width: 100%
+            height: auto
+            fill: rgba(0,0,0,.5)
+
+    &__button-block
+        margin-top: 16px
+
+        +sm-block()
+            display: flex
+
+        +md-block()
+            flex-direction: column
+            flex-shrink: 0
+            margin-top: 44px
+            margin-left: auto
+

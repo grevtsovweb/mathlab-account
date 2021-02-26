@@ -1,0 +1,23 @@
+include ../ticket/ticket.pug
+include ../button/button.pug
+
+article.archive-card
+    .archive-card__content
+        .archive-card__tickets
+            .archive-card__tickets-item
+                +ticket("Курс")
+            .archive-card__tickets-item
+                +ticket("11 класс")
+            .archive-card__tickets-item
+                +ticket("Олимпиадная математика")
+        .archive-card__data-block
+            h1.archive-card__title Курс подготовки к олимпиаде «Физтех» по математике
+        .archive-card__footer
+            .archive-card__teacher
+                include ../teacher/teacher.pug
+            .archive-card__date
+                span.archive-card__date-icon
+                    +svg(18,18,"icon-clock-history")
+                span.archive-card__date-text 5 занятий
+    .archive-card__button-block
+        +button('button--black', "Вернуть из архива")

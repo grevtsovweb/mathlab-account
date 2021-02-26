@@ -1,0 +1,38 @@
+include ../field/field.pug
+include ../field-promo/field-promo.pug
+include ../button/button.pug
+
+.referral
+    .referral__row
+        .referral__col
+            .referral__logo
+                img(src="img/common/logo.svg", alt="MathLabs")
+            h1.referral__title Регистрируйся сейчас и получи первое занятие бесплатно!
+            .referral__phrase
+                include ../phrase/phrase.pug
+        .referral__col
+            form(action="#").referral__form.form
+                .referral__form-body
+                    .form__row
+                        .form__group
+                            .form__group-fields
+                                +field("Имя", "text", "name", null, "name")
+                    .form__row
+                        .form__group
+                            .form__group-fields
+                                +field("+7 (___)___-__-__ *", "number", "phone", null, "phone")
+                    .form__row
+                        .form__group
+                            .form__group-fields
+                                +field("Ваш e-mail *", "email", "email", null, "email")
+                    .form__row
+                        .form__group
+                            .form__group-fields
+                                +field-promo("Ввести промокод", "text", "code", null, "code")
+                    .form__row
+                        +button('button--full-width', "Зарегистрироваться", null)
+                    .referral__form-agreement Нажимая на кнопку, я принимаю 
+                        a(href="#").referral__form-agreement-link условия соглашения
+                .referral__form-footer
+                    span.referral__form-footer-text У вас уже есть аккаунт?
+                    a(href="#").referral__form-footer-link Войти

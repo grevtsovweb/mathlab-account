@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mathlab: Account</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__row"><a class="header__logo" href="#"><img src="img/common/logo.svg" alt="Mathlab" width="120" height="20"></a>
+          <div class="header__notice">
+            <div class="header__notice-item"><a class="notice-lessons" href="#"><span class="notice-lessons__icon">
+                                <svg aria-hidden="true" width="14" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-play"></use>
+                                </svg></span><span class="notice-lessons__text notice-lessons__text--medium">Всего занятий:</span><span class="notice-lessons__text-count">11 <span class="notice-lessons__text-count notice-lessons__text-count--mobile">занятий</span></span><span class="notice-lessons__text-count-contain">(5 индивидуальных, 7  групповых)</span></a>
+            </div>
+            <div class="header__notice-item"><a class="notice" href="#"><span class="notice__icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                </svg></span><span class="notice__text">Твоё занятие уже началось! Подключайся!</span><span class="notice__count"> <span class="notice__count-number">2</span></span></a>
+              <div class="header__notice-item-dropdown" style="display: none">
+                <div class="dropdown-tooltip dropdown-tooltip--notice">
+                      <div class="notice-item">
+                        <div class="notice-item__icon">
+                                        <svg aria-hidden="true" width="16" height="16">
+                                          <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                        </svg>
+                        </div>
+                        <div class="notice-item__data">
+                          <div class="notice-item__text">Твоё следующее занятие завтра в 18:00! Не пропусти! :)</div>
+                          <div class="notice-item__date">25.03.2020</div>
+                        </div>
+                      </div>
+                      <div class="notice-item">
+                        <div class="notice-item__icon">
+                                        <svg aria-hidden="true" width="16" height="16">
+                                          <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                        </svg>
+                        </div>
+                        <div class="notice-item__data">
+                          <div class="notice-item__text">Твоё следующее занятие завтра в 18:00! Не пропусти! :)</div>
+                          <div class="notice-item__date">25.03.2020</div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__user-block"><a class="header__user-avatar" href="#"></a><span class="header__greeting"><span class="header__greeting-text">Привет, Константин!</span></span><a class="header__logout" href="#">
+                            <svg aria-hidden="true" width="16" height="16">
+                              <use xlink:href="img/sprite/sprite.svg#icon-logout"></use>
+                            </svg></a></div>
+        </div>
+      </div>
+      <div class="header__m-menu">
+        <button class="header__m-menu-button"><span class="header__m-menu-page header__m-menu-page--current"><span class="header__m-menu-page-icon">
+                            <svg aria-hidden="true" width="16" height="16">
+                              <use xlink:href="img/sprite/sprite.svg#icon-pay"></use>
+                            </svg></span>Мои уроки  <span class="header__m-menu-page-dropdown"> 
+                            <svg aria-hidden="true" width="8" height="4">
+                              <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                            </svg></span></span></button>
+        <div class="header__m-menu-dropdown" style="display: none">
+          <div class="dropdown-tooltip">
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-play"></use>
+                                </svg></span>Доступные занятия</a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page header__m-menu-page--current" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-star"></use>
+                                </svg></span>Мои уроки </a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-settings"></use>
+                                </svg></span>Настройки</a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                </svg></span>Уведомления </a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-logout"></use>
+                                </svg></span>Выход</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page__main">
+      <div class="page__container">
+        <div class="page__grid">
+          <div class="page__sidebar">
+            <div class="page__main-nav">
+              <nav class="main-nav">
+                <ul class="main-nav__list">
+                  <li class="main-nav__list-item"><a class="main-nav__link main-nav__link--active" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-pay"></use>
+                                      </svg></span><span class="main-nav__link-title">Оплатить занятия</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-material"></use>
+                                      </svg></span><span class="main-nav__link-title">Материалы занятий</span><span class="main-nav__link-notice">1</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-play"></use>
+                                      </svg></span><span class="main-nav__link-title">Доступные интенсивы</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-star"></use>
+                                      </svg></span><span class="main-nav__link-title">Мои уроки</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-promo"></use>
+                                      </svg></span><span class="main-nav__link-title">Мои промокоды</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-invite"></use>
+                                      </svg></span><span class="main-nav__link-title">Пригласи друзей</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-settings"></use>
+                                      </svg></span><span class="main-nav__link-title">Настройки</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                      </svg></span><span class="main-nav__link-title">Уведомления</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-pay"></use>
+                                      </svg></span><span class="main-nav__link-title">Чат с преподавателем</span></a></li>
+                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-logout"></use>
+                                      </svg></span><span class="main-nav__link-title">Выход</span></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="page__content">
+            <div class="page__content-nav">
+              <nav class="nav-pay">
+                <ul class="nav-pay__main">
+                  <li class="nav-pay__main-item"><a class="nav-pay__main-link nav-pay__main-link--active" href="#"> <span class="nav-pay__main-link-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.35 15.4688H12.65L13.75 18.2188H8.25L9.35 15.4688Z" fill="url(#paint0_linear)"/>
+<path d="M16.0146 12.7188H5.98538C4.01191 12.7188 2.40625 11.1131 2.40625 9.13962V8.74672C2.40625 7.33562 3.55437 6.1875 4.96547 6.1875H17.0342C18.4456 6.1875 19.5938 7.33562 19.5938 8.74672V9.13962C19.5938 11.1131 17.9881 12.7188 16.0146 12.7188ZM4.96547 7.90625C4.50209 7.90625 4.125 8.28334 4.125 8.74672V9.13962C4.125 10.1654 4.95963 11 5.98538 11H16.0146C17.0404 11 17.875 10.1654 17.875 9.13962V8.74672C17.875 8.28334 17.4979 7.90625 17.0345 7.90625H4.96547Z" fill="url(#paint1_linear)"/>
+<path d="M7.90625 19.25H14.0938C14.4736 19.25 14.7812 18.9423 14.7812 18.5625C14.7812 18.1827 14.4736 17.875 14.0938 17.875H7.90625C7.52641 17.875 7.21875 18.1827 7.21875 18.5625C7.21875 18.9423 7.52641 19.25 7.90625 19.25Z" fill="url(#paint2_linear)"/>
+<path d="M5.84375 4.46875H16.1562V11C16.1562 12.8985 14.6173 14.4375 12.7188 14.4375L11 14.7812L9.28125 14.4375C7.38272 14.4375 5.84375 12.8985 5.84375 11V4.46875Z" fill="url(#paint3_linear)"/>
+<path d="M8.9375 15.8125H13.0625C13.4423 15.8125 13.75 15.5048 13.75 15.125C13.75 14.7452 13.4423 14.4375 13.0625 14.4375H8.9375C8.55766 14.4375 8.25 14.7452 8.25 15.125C8.25 15.5048 8.55766 15.8125 8.9375 15.8125Z" fill="url(#paint4_linear)"/>
+<path d="M5.66019 4.8125H16.3398C16.808 4.8125 17.1875 4.433 17.1875 3.96481V3.94144C17.1875 3.47325 16.808 3.09375 16.3398 3.09375H5.66019C5.192 3.09375 4.8125 3.47325 4.8125 3.94144V3.96481C4.8125 4.433 5.192 4.8125 5.66019 4.8125Z" fill="url(#paint5_linear)"/>
+<path d="M9.6042 7.85228L10.9954 6.97503C11.0882 6.91763 11.2095 6.875 11.3305 6.875C11.6801 6.875 11.9585 7.16031 11.9585 7.50269V11.726C11.9585 12.0828 11.666 12.375 11.3092 12.375C10.9524 12.375 10.6602 12.0825 10.6602 11.726V8.44456L10.168 8.75119C10.0896 8.80103 9.98955 8.82956 9.88986 8.82956C9.59733 8.82956 9.35498 8.59409 9.35498 8.30156C9.3543 8.11628 9.46155 7.94509 9.6042 7.85228Z" fill="url(#paint6_linear)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="11" y1="18.4649" x2="11" y2="15.698" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FD9557"/>
+<stop offset="1" stop-color="#FDB45B"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="11" y1="18.3827" x2="11" y2="4.99916" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FD9557"/>
+<stop offset="1" stop-color="#FDB45B"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="11" y1="19.1551" x2="11" y2="17.017" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FCA853"/>
+<stop offset="0.612" stop-color="#FDCB49"/>
+<stop offset="1" stop-color="#FDDC44"/>
+</linearGradient>
+<linearGradient id="paint3_linear" x1="11" y1="17.2081" x2="11" y2="-3.49044" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FCA853"/>
+<stop offset="0.612" stop-color="#FDCB49"/>
+<stop offset="1" stop-color="#FDDC44"/>
+</linearGradient>
+<linearGradient id="paint4_linear" x1="11" y1="15.7176" x2="11" y2="13.5795" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FCA853"/>
+<stop offset="0.612" stop-color="#FDCB49"/>
+<stop offset="1" stop-color="#FDDC44"/>
+</linearGradient>
+<linearGradient id="paint5_linear" x1="11" y1="4.69391" x2="11" y2="2.02125" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FCA853"/>
+<stop offset="0.612" stop-color="#FDCB49"/>
+<stop offset="1" stop-color="#FDDC44"/>
+</linearGradient>
+<linearGradient id="paint6_linear" x1="10.6568" y1="21.5514" x2="10.6568" y2="7.15344" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FCA853"/>
+<stop offset="0.612" stop-color="#FDCB49"/>
+<stop offset="1" stop-color="#FDDC44"/>
+</linearGradient>
+</defs>
+</svg>
+</span>Олимпиадная математика</a></li>
+                  <li class="nav-pay__main-item"><a class="nav-pay__main-link" href="#"> <span class="nav-pay__main-link-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.9998 14.0117C6.94955 14.0117 3.6665 16.2672 3.6665 18.7261V19.25C3.6665 19.7565 4.07671 20.1667 4.58317 20.1667H17.4165C17.923 20.1667 18.3332 19.7565 18.3332 19.25V18.7261C18.3332 16.2672 15.0501 14.0117 10.9998 14.0117Z" fill="#5059C9"/>
+<path d="M13.2918 14.2083C13.2918 15.0777 12.3752 16.0416 11.0002 16.0416C9.62516 16.0416 8.7085 15.0777 8.7085 14.2083C8.7085 12.9996 8.7085 10.9839 8.7085 10.9839H13.2918C13.2918 10.9839 13.2918 12.9996 13.2918 14.2083Z" fill="#D6A121"/>
+<path d="M15.0863 8.25H14.8447V10.0833H15.1669C15.403 10.0833 15.6042 9.94033 15.6441 9.74417L15.8017 8.96362C15.8774 8.59054 15.5359 8.25 15.0863 8.25Z" fill="url(#paint1_linear)"/>
+<path d="M6.91348 8.25H7.15503V10.0833H6.83282C6.59678 10.0833 6.39557 9.94033 6.35569 9.74417L6.19803 8.96362C6.1224 8.59054 6.46386 8.25 6.91348 8.25Z" fill="url(#paint2_linear)"/>
+<path d="M11 2.93335C8.96454 2.93335 6.875 3.24272 6.875 7.64273C6.875 7.99473 6.875 10.3364 6.875 10.7126C6.875 12.2834 9.35 14.2084 11 14.2084C12.65 14.2084 15.125 12.2834 15.125 10.7126C15.125 10.3364 15.125 7.99518 15.125 7.64273C15.125 3.24272 13.0355 2.93335 11 2.93335Z" fill="url(#paint3_radial)"/>
+<path d="M10.9998 2.5415C9.00425 2.5415 8.70817 3.29134 8.70817 3.29134C7.89692 3.41096 6.4165 5.97442 6.4165 7.33292C6.4165 7.79125 6.4165 8.70792 6.87484 9.16625C7.12463 6.16646 7.90563 5.04125 8.70817 5.04125C9.28888 5.04125 9.74996 5.49959 10.9998 5.49959C12.0554 5.49959 12.3175 5.04125 13.2915 5.04125C14.6665 5.04125 15.1248 8.69325 15.1248 9.16625C15.5832 8.70792 15.5832 7.33292 15.5832 7.33292C15.5832 5.7613 13.8456 2.5415 10.9998 2.5415Z" fill="url(#paint4_radial)"/>
+<path d="M18.3333 4.125H17.875V9.625H18.3333V4.125Z" fill="#3A41AC"/>
+<path d="M18.104 11.0918C18.104 11.0918 18.7915 10.2337 18.7915 9.85425C18.7915 9.47475 18.4835 9.16675 18.104 9.16675C17.7245 9.16675 17.4165 9.47475 17.4165 9.85425C17.4165 10.2337 18.104 11.0918 18.104 11.0918Z" fill="#3A41AC"/>
+<path d="M10.4649 7.53452L3.42265 4.60027C3.13711 4.48157 3.13711 4.07686 3.42265 3.95815L10.4649 1.0239C10.8073 0.881357 11.1928 0.881357 11.5352 1.0239L18.5774 3.95815C18.863 4.07686 18.863 4.48157 18.5774 4.60027L11.5352 7.53452C11.1928 7.67707 10.8078 7.67707 10.4649 7.53452Z" fill="#5059C9"/>
+<path d="M10.9998 4.125C8.46846 4.125 6.4165 4.56454 6.4165 5.10721V7.33333C9.03542 7.33333 10.9998 8.25 10.9998 8.25C10.9998 8.25 12.9643 7.33333 15.5832 7.33333V5.10721C15.5832 4.56454 13.5312 4.125 10.9998 4.125Z" fill="#7B83EB"/>
+<defs>
+<linearGradient id="paint0_linear" x1="9.50934" y1="14.0411" x2="11.1978" y2="19.4806" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5963E0"/>
+<stop offset="1" stop-color="#5059C9"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="15.0867" y1="9.16667" x2="15.6981" y2="9.16667" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C48F0C"/>
+<stop offset="0.251" stop-color="#D19B16"/>
+<stop offset="0.619" stop-color="#DCA51F"/>
+<stop offset="1" stop-color="#E0A922"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="6.91303" y1="9.16667" x2="6.30161" y2="9.16667" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C48F0C"/>
+<stop offset="0.251" stop-color="#D19B16"/>
+<stop offset="0.619" stop-color="#DCA51F"/>
+<stop offset="1" stop-color="#E0A922"/>
+</linearGradient>
+<radialGradient id="paint3_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11.0005 8.57083) scale(4.93931)">
+<stop stop-color="#FFCF54"/>
+<stop offset="0.261" stop-color="#FDCB4D"/>
+<stop offset="0.639" stop-color="#F7C13A"/>
+<stop offset="1" stop-color="#F0B421"/>
+</radialGradient>
+<radialGradient id="paint4_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(7.0797 3.05414) scale(11.6836)">
+<stop stop-color="#C26715"/>
+<stop offset="0.508" stop-color="#B85515"/>
+<stop offset="1" stop-color="#AD3F16"/>
+</radialGradient>
+</defs>
+</svg>
+</span>Повышение уровня</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="page__content-card">
+              <div class="pay">
+                <h1 class="pay__title">Оплатить занятия</h1>
+                <p class="pay__text">
+                   Выбери удобный способ обучения<br>После <span class="pay__text--accent">привязки карты </span>ты сможешь удобно оплачивать занятия.</p>
+                <div class="pay__tab"> 
+                  <ul class="pay__tab-handler">
+                    <li class="pay__tab-handler-item"> <a class="pay__tab-handler-link pay__tab-handler-link--active" href="#">Индивидуальные занятия</a></li>
+                    <li class="pay__tab-handler-item"> <a class="pay__tab-handler-link" href="#">Обучение в группе</a></li>
+                  </ul>
+                  <ul class="pay__tab-content"> 
+                    <li class="pay__tab-content-item">
+                      <div class="pay__price-block">
+                        <div class="pay__price-block-item">
+                                        <div class="price-card">
+                                          <div class="price-card__header">
+                                            <div class="price-card__count">2 индивидуальных занятия</div>
+                                            <div class="price-card__price">1290 руб/занятие</div>
+                                            <div class="price-card__saving">Хороший старт</div>
+                                          </div>
+                                          <div class="price-card__footer">
+                                            <div class="price-card__description">Лучшее решение для старта обучения</div>
+                                            <button class="price-card__button">Купить за 2580 Р</button>
+                                          </div>
+                                          <div class="price-card__checkbox">
+                                            <label class="checkbox">
+                                              <input class="checkbox__input" type="checkbox" required="" name="agreement"><span class="checkbox__text"><span>Автоматически продлевать подписку</span></span>
+                                            </label>
+                                          </div>
+                                        </div>
+                        </div>
+                        <div class="pay__price-block-item">
+                                        <div class="price-card">
+                                          <div class="price-card__header">
+                                            <div class="price-card__count">4 индивидуальных занятия</div>
+                                            <div class="price-card__price">1450 руб/занятие</div>
+                                            <div class="price-card__saving">Экономия 200 руб.</div>
+                                          </div>
+                                          <div class="price-card__footer">
+                                            <div class="price-card__description">Месяц учёбы (1 занятие в неделю)</div>
+                                            <button class="price-card__button">Купить за 4760 Р</button>
+                                          </div>
+                                          <div class="price-card__checkbox">
+                                            <label class="checkbox">
+                                              <input class="checkbox__input" type="checkbox" required="" name="agreement"><span class="checkbox__text"><span>Автоматически продлевать подписку</span></span>
+                                            </label>
+                                          </div>
+                                        </div>
+                        </div>
+                        <div class="pay__price-block-item pay__price-block-item--sm-full">
+                                        <div class="price-card price-card--accent">
+                                          <div class="price-card__header">
+                                            <div class="price-card__count">4 индивидуальных занятия</div>
+                                            <div class="price-card__price">1350 руб/занятие</div>
+                                            <div class="price-card__saving">Экономия 1200 руб.</div>
+                                          </div>
+                                          <div class="price-card__footer">
+                                            <div class="price-card__description">Месяц учёбы (2 занятия в неделю)</div>
+                                            <button class="price-card__button">Купить за 8720 Р</button>
+                                          </div>
+                                          <div class="price-card__checkbox">
+                                            <label class="checkbox">
+                                              <input class="checkbox__input" type="checkbox" required="" name="agreement"><span class="checkbox__text"><span>Автоматически продлевать подписку</span></span>
+                                            </label>
+                                          </div>
+                                        </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="pay__tab-content-item" style="display: none;">
+                      <div class="pay__price-block">
+                        <div class="pay__price-block-item">
+                                        <div class="price-card">
+                                          <div class="price-card__header">
+                                            <div class="price-card__count">2 индивидуальных занятия</div>
+                                            <div class="price-card__price">1290 руб/занятие</div>
+                                            <div class="price-card__saving">Хороший старт</div>
+                                          </div>
+                                          <div class="price-card__footer">
+                                            <div class="price-card__description">Лучшее решение для старта обучения</div>
+                                            <button class="price-card__button">Купить за 2580 Р</button>
+                                          </div>
+                                          <div class="price-card__checkbox">
+                                            <label class="checkbox">
+                                              <input class="checkbox__input" type="checkbox" required="" name="agreement"><span class="checkbox__text"><span>Автоматически продлевать подписку</span></span>
+                                            </label>
+                                          </div>
+                                        </div>
+                        </div>
+                        <div class="pay__price-block-item">
+                                        <div class="price-card">
+                                          <div class="price-card__header">
+                                            <div class="price-card__count">4 индивидуальных занятия</div>
+                                            <div class="price-card__price">1450 руб/занятие</div>
+                                            <div class="price-card__saving">Экономия 200 руб.</div>
+                                          </div>
+                                          <div class="price-card__footer">
+                                            <div class="price-card__description">Месяц учёбы (1 занятие в неделю)</div>
+                                            <button class="price-card__button">Купить за 4760 Р</button>
+                                          </div>
+                                          <div class="price-card__checkbox">
+                                            <label class="checkbox">
+                                              <input class="checkbox__input" type="checkbox" required="" name="agreement"><span class="checkbox__text"><span>Автоматически продлевать подписку</span></span>
+                                            </label>
+                                          </div>
+                                        </div>
+                        </div>
+                        <div class="pay__price-block-item pay__price-block-item--sm-full">
+                                        <div class="price-card price-card--accent">
+                                          <div class="price-card__header">
+                                            <div class="price-card__count">4 индивидуальных занятия</div>
+                                            <div class="price-card__price">1350 руб/занятие</div>
+                                            <div class="price-card__saving">Экономия 1200 руб.</div>
+                                          </div>
+                                          <div class="price-card__footer">
+                                            <div class="price-card__description">Месяц учёбы (2 занятия в неделю)</div>
+                                            <button class="price-card__button">Купить за 8720 Р</button>
+                                          </div>
+                                          <div class="price-card__checkbox">
+                                            <label class="checkbox">
+                                              <input class="checkbox__input" type="checkbox" required="" name="agreement"><span class="checkbox__text"><span>Автоматически продлевать подписку</span></span>
+                                            </label>
+                                          </div>
+                                        </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pay__additionally">
+                  <div class="additionally">
+                    <div class="additionally__text">Дополнительные интенсивы</div>
+                  </div>
+                </div>
+                <div class="pay__banner">
+                                <div class="banner-intensive banner-intensive--green">
+                                  <div class="banner-intensive__data">
+                                    <div class="banner-intensive__data-title">Интенсив по высшей математике</div>
+                                    <div class="banner-intensive__data-time"> 
+                                                    <div class="time"><span class="time__icon">
+                                                                      <svg aria-hidden="true" width="18" height="18">
+                                                                        <use xlink:href="img/sprite/sprite.svg#icon-clock-history"></use>
+                                                                      </svg></span><span class="time__text">30 марта | с 16:00 до 20:00</span></div>
+                                    </div>
+                                  </div>
+                                  <div class="banner-intensive__image"><img src="img/banner-intensive/banner-intensive.svg" alt=""></div>
+                                  <div class="banner-intensive__button-block">
+                                    <div class="banner-intensive__button-block-data">
+                                      <div class="banner-intensive__button-block-title">Ранняя регистрация:</div>
+                                      <div class="banner-intensive__button-block-price">
+                                         500 руб.<span class="banner-intensive__button-block-price--old">1 500 руб.</span></div>
+                                    </div><span class="banner-intensive__button-block-button">
+                                                    <button class="button button--green">Записаться</button></span>
+                                  </div>
+                                </div>
+                </div>
+                <div class="pay__banner">
+                                <div class="banner-intensive banner-intensive--pink">
+                                  <div class="banner-intensive__data">
+                                    <div class="banner-intensive__data-title">Интенсив по высшей математике</div>
+                                    <div class="banner-intensive__data-time"> 
+                                                    <div class="time"><span class="time__icon">
+                                                                      <svg aria-hidden="true" width="18" height="18">
+                                                                        <use xlink:href="img/sprite/sprite.svg#icon-clock-history"></use>
+                                                                      </svg></span><span class="time__text">30 марта | с 16:00 до 20:00</span></div>
+                                    </div>
+                                  </div>
+                                  <div class="banner-intensive__image"><img src="img/banner-intensive/banner-intensive.svg" alt=""></div>
+                                  <div class="banner-intensive__button-block">
+                                    <div class="banner-intensive__button-block-data">
+                                      <div class="banner-intensive__button-block-title">Ранняя регистрация:</div>
+                                      <div class="banner-intensive__button-block-price">
+                                         500 руб.<span class="banner-intensive__button-block-price--old">1 500 руб.</span></div>
+                                    </div><span class="banner-intensive__button-block-button">
+                                                    <button class="button button--green">Записаться</button></span>
+                                  </div>
+                                </div>
+                </div>
+                <div class="pay__banner">
+                                <div class="banner-intensive banner-intensive--yellow">
+                                  <div class="banner-intensive__data">
+                                    <div class="banner-intensive__data-title">Интенсив по высшей математике</div>
+                                    <div class="banner-intensive__data-time"> 
+                                                    <div class="time"><span class="time__icon">
+                                                                      <svg aria-hidden="true" width="18" height="18">
+                                                                        <use xlink:href="img/sprite/sprite.svg#icon-clock-history"></use>
+                                                                      </svg></span><span class="time__text">30 марта | с 16:00 до 20:00</span></div>
+                                    </div>
+                                  </div>
+                                  <div class="banner-intensive__image"><img src="img/banner-intensive/banner-intensive.svg" alt=""></div>
+                                  <div class="banner-intensive__button-block">
+                                    <div class="banner-intensive__button-block-data">
+                                      <div class="banner-intensive__button-block-title">Ранняя регистрация:</div>
+                                      <div class="banner-intensive__button-block-price">
+                                         500 руб.<span class="banner-intensive__button-block-price--old">1 500 руб.</span></div>
+                                    </div><span class="banner-intensive__button-block-button">
+                                                    <button class="button button--green">Записаться</button></span>
+                                  </div>
+                                </div>
+                </div>
+              </div>
+            </div>
+            <div class="page__content-more-button">
+                            <button class="button button--transparent"><span class="button__icon">
+                                              <svg aria-hidden="true" width="24" height="24">
+                                                <use xlink:href="img/sprite/sprite.svg#icon-more"></use>
+                                              </svg></span>Показать ещё
+                            </button>
+            </div>
+          </div>
+          <div class="page__social-nav">
+            <ul class="social-nav">
+              <li class="social-nav__item"><a class="social-nav__link" href="#"><span class="social-nav__icon">
+                                <svg aria-hidden="true" width="25" height="25">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-discord"></use>
+                                </svg></span>Подключиться в Discord</a></li>
+              <li class="social-nav__item"><a class="social-nav__link" href="#"><span class="social-nav__icon">
+                                <svg aria-hidden="true" width="25" height="25">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-telegram"></use>
+                                </svg></span>Онлайн-чат в Telegram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__row">
+          <div class="footer__info"><a class="footer__logo" href="#">Команда MathLabs</a>
+            <p class="footer__about-team">Математик Годфри Харди писал: «Большинство людей настолько боятся самого названия математики, что они готовы совершенно искренне преувеличивать свою неспособность к математике». Мы полностью разделяем это мнение и считаем, что в большинстве случаев ребенку не хватает упорства, но никак не способностей.</p>
+          </div>
+          <div class="footer__contacts-wrapper">
+            <div class="footer__contacts">
+              <div class="footer__contacts-text">Наши соц.сети</div>
+              <ul class="footer__social-list">
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Instagram">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-instagram"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Facebook">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-facebook"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="footer__contacts">
+              <div class="footer__contacts-text">Если у вас есть вопросы – напишите нам!</div>
+              <ul class="footer__social-list">
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Telegram">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-telegram"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Whatsapp">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-whatsapp"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Viber">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-viber"></use>
+                    </svg></a></li>
+                <li class="footer__social-item"><a class="footer-main__social-link" href="#" title="Messenger">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-messenger"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__rights-block">
+          <div class="footer__rights-block-item footer__rights-block-copyright">
+            <div class="footer__copyright">© 2020 MathLabs. Все права защищиены   </div>
+          </div>
+          <div class="footer__rights-block-item"><a class="footer__link" href="#">Политика конфиденциальности     </a></div>
+          <div class="footer__rights-block-item"><a class="footer__link" href="#">Пользовательское соглашение</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

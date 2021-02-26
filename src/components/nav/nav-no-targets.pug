@@ -1,0 +1,34 @@
+include ../mixins/svg.pug
+
+nav.nav
+    .nav__main-container
+        a(href="#").nav__main-mobile-link.nav__main-mobile-link--active 
+            | Все занятия
+            span.nav__main-mobile-link-notice 2
+            span.nav__main-mobile-link-icon
+                +svg(16,16,"icon-arrow-down")
+        .nav__main.nav__main-dropdown-m
+            .nav__main-item
+                a(href="").nav__main-link.nav__main-link--active Все занятия
+            .nav__main-item
+                a(href="").nav__main-link
+                    | Интенсивы
+                    span.nav__main-link-notice 2
+            .nav__main-item
+                a(href="").nav__main-link Курсы
+            .nav__main-item
+                a(href="").nav__main-link В группе
+    .nav__settings-item.nav__settings-item--class
+        a.nav__settings-link 
+            | 11 класс
+            span.nav__settings-link-icon
+                +svg(16,16,"icon-arrow-down")
+        .nav__settings-dropdown.nav__settings-dropdown--class
+            .dropdown-tooltip
+                a(href="#").nav__settings-dropdown-item.nav__settings-dropdown-item--active 11 класс
+                a(href="#").nav__settings-dropdown-item 10 класс
+                a(href="#").nav__settings-dropdown-item 9 класс
+                a(href="#").nav__settings-dropdown-item 8 класс
+                a(href="#").nav__settings-dropdown-item 7 класс
+                a(href="#").nav__settings-dropdown-item 6 класс
+                a(href="#").nav__settings-dropdown-item 5 класс

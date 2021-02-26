@@ -1,0 +1,71 @@
+include ../field/field.pug
+include ../button/button.pug
+include ../mixins/svg.pug
+include ../select/select.pug
+
+.settings-block
+    h1.settings-block__title Личная информация
+    form(action="#" method="post").settings-block__form.form
+        .settings-block__form-row.settings-block--decor-bottom.settings-block--no-pt
+            .settings-block__upload
+                .form__group
+                    include ../avatar-upload/avatar-upload.pug
+            .form__row
+                .form__col.settings-block__class-input
+                    .form__group
+                        label(for="class").form__label Класс
+                        .form__group-fields
+                            +select("class", null, "class")
+                .form__col
+                    .form__group
+                        label(for="name").form__label Имя
+                        .form__group-fields
+                            +field("Имя", "text", "name", null, "name")
+                .form__col
+                    .form__group
+                        label(for="surname").form__label Фамилия ученика
+                        .form__group-fields
+                            +field("Фамилия", "text", "surname", null, "surname")
+                .form__col
+                    .form__group
+                        label(for="mail").form__label E-mail
+                        .form__group-fields
+                            +field("@", "email", "mail", null, "mail")
+                .form__col
+                    .form__group
+                        label(for="phone").form__label Номер телефона
+                        .form__group-fields
+                            +field("+7 (___)___-__-__", "number", "phone", null, "phone")
+                .form__col
+                    .form__group
+                        label(for="parent-name").form__label Имя родителя
+                        .form__group-fields
+                            +field("Имя родителя", "text", "parent-name", null, "parent-name")
+                .form__col
+                    .form__group
+                        label(for="parent-phone").form__label Телефон родителя
+                        .form__group-fields
+                            +field("+7 (___)___-__-__", "number", "parent-phone", null, "parent-phone")
+        .settings-block__form-row.settings-block--decor-bottom
+                h2.settings-block__title Сменить пароль
+                .form__row
+                    .form__col
+                        .form__group
+                            label(for="old-password").form__label.form__sr-only Старый пароль
+                            .form__group-fields
+                                +field("Старый пароль", "password", "old-password", null, "old-password")
+                    .form__col
+                        .form__group
+                            label(for="new-password").form__label.form__sr-only Новый пароль
+                            .form__group-fields
+                                +field("Новый пароль", "password", "new-password", null, "new-password")
+        .settings-block__form-row
+            h2.settings-block__title Платежная информация
+            p.settings-block__subtitle Подключи карту и ты сможешь быстро, и удобно оплачивать занятия
+            .settings-block__add-card
+                include ../card/card.pug
+            .settings-block__add-card
+                include ../card/card-active.pug
+        .settings-block__button
+            +button("button--full-width", "Сохранить данные")
+

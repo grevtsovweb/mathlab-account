@@ -1,15 +1,37 @@
 .page
     width: 100%
-    height: 100%
+    min-height: 100vh
+    display: flex
     margin: 0
     padding: 0
 
     &__body
         margin: 0
         padding: 0
+        min-height: 100%
         font-family: $main
         color: $dark-main
         background-color: $bg-main
+        display: flex
+        flex-direction: column
+        flex-grow: 1
+        overflow-x: hidden
+
+        &--bg-referral
+            background-image: url('../img/bg-referral/bg-1.svg'), url('../img/bg-referral/bg-2.svg'), url('../img/bg-referral/bg-3.svg')
+            background-repeat: no-repeat, no-repeat, no-repeat
+            background-position: bottom 15px left 56%, top 125px left 15px, top 20px right 36px
+
+            +sm-block()
+                background-image: url('../img/bg-referral/bg-1.svg'), url('../img/bg-referral/bg-2.svg'), url('../img/bg-referral/bg-3.svg'), url('../img/bg-referral/bg-4.svg'), url('../img/bg-referral/bg-5.svg'),  url('../img/bg-referral/bg-1.svg'), url('../img/bg-referral/bg-6.svg'), url('../img/bg-referral/bg-7.svg'), url('../img/bg-referral/bg-8.svg'), url('../img/bg-referral/bg-9.svg') 
+                background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat
+                background-position: top 20px right 36px, top 72px left 15px, top 222px left 74px, top 400px right 176px, top 300px right 84px, top 531px left 84px, top 730px left 46px, top 648px right 60px, bottom 253px right 94px, bottom 70px left 142px
+
+            +md-block()
+                background-image: url('../img/bg-referral/bg-desktop.svg')
+                background-repeat: no-repeat
+                background-position: center
+                background-size: cover
 
     &__main
         +md-block()
@@ -17,11 +39,24 @@
             background-repeat: no-repeat
             background-position: right bottom
 
+        &--no-bg
+            background-image: none
+
 
     &__container
         +wrapper()
         padding-top: 20px
         padding-bottom: 80px
+
+        &--referral
+            padding-bottom: 10px
+            padding-top: 30px
+
+            +sm-block()
+                padding-bottom: 30px
+
+            +md-block()
+                padding-top: 100px
 
     &__grid
         +sm-block()
@@ -29,6 +64,7 @@
             flex-wrap: wrap
             margin-left: -10px
             margin-right: -10px
+
 
     &__main-nav
         display: none
@@ -64,6 +100,55 @@
             margin-left: 10px
             margin-right: 10px
 
+    &__content-row-md
+        +md-block()
+            display: flex
+            margin-left: -10px
+            margin-right: -10px
+
+    &__content-nav
+        margin-bottom: 20px
+    
+    &__content-card
+        margin-top: 20px
+        margin-bottom: 20px
+
+    &__content-card-item
+        margin-top: 20px
+        margin-bottom: 20px
+
+    &__content-block
+        margin-top: 20px
+        margin-bottom: 20px
+
+        &:first-child
+            margin-top: 0
+        
+        &:last-child
+            margin-bottom: 0
+
+    &__content-more-button
+        display: none
+
+        +sm-block()
+            display: flex
+            justify-content: space-between
+            margin-top: 20px
+
+        &--dispaly-m
+            display: block
+
+            +sm-block()
+                display: flex
+
+    &__content-more-button-item
+        &:not(:last-child)
+            margin-bottom: 15px
+
+        .button
+            padding-left: 20px
+            padding-right: 20px
+
     &__offer
         margin-top: 15px
 
@@ -73,17 +158,24 @@
     &__course-cards
         +sm-block()
             display: block
+            width: 100%
+
+        +md-block()
             width: calc(66.66% - 20px)
             margin-left: 10px
             margin-right: 10px
 
-        +md-block()
-            width: calc(50% - 20px)
-            margin-left: 10px
-            margin-right: 10px
-
     &__course-cards-item:not(:last-child)
-        margin-bottom: 10px
+        margin-bottom: 20px
+
+    &__progress
+        +sm-block()
+            width: calc(33.33% - 20px)
+            margin-right: 10px
+            margin-left: 10px
+
+        +md-block()
+            width: calc(25% - 20px)
 
     &__calendar
         margin-top: 15px
@@ -93,7 +185,7 @@
 
         +md-block()
             display: block
-            width: calc(25% - 20px)
+            width: calc(33.33% - 20px)
             margin-left: 10px
             margin-right: 10px
             margin-top: 0
@@ -115,5 +207,8 @@
 
         +md-block()
             width: calc(75% - 20px)
+
+    &__back-block
+        margin-bottom: 20px
 
     

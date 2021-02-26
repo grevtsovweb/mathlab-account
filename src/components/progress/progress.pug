@@ -1,0 +1,62 @@
+include ../mixins/svg.pug
+
+.progress
+    .progress__header
+        .progress__title Пройдено занятий
+        .progress__steps 0/10
+    .progress__progress-bar 
+        include ../progress-bar/progress-bar.pug
+    .progress__content
+        ul.progress__list
+            li.progress__list-item
+                a(href="#").progress__list-link.progress__list-link--active
+                    span.progress__list-link-count 0.
+                    span.progress__list-link-text Вводное занятие
+            li.progress__list-item
+                a(href="#").progress__list-link 
+                    span.progress__list-link-count 1.
+                    span.progress__list-link-text Алегбра в части В
+            li.progress__list-item
+                a(href="#").progress__list-link 
+                    span.progress__list-link-count 2.
+                    span.progress__list-link-text Геометрия в части В
+            li.progress__list-item
+                a(href="#").progress__list-link 
+                    span.progress__list-link-count 3.
+                    span.progress__list-link-text Задача 1
+            li.progress__list-item
+                a(href="#").progress__list-link 
+                    span.progress__list-link-count 4.
+                    span.progress__list-link-text Задача 2
+            li.progress__list-item
+                a(href="#").progress__list-link 
+                    span.progress__list-link-count 5.
+                    span.progress__list-link-text Уравнения
+            li.progress__list-item
+                a(href="#").progress__list-link 
+                    span.progress__list-link-count 6.
+                    span.progress__list-link-text Стереометрия
+            li.progress__list-item
+                a(href="#").progress__list-link 
+                    span.progress__list-link-count 7.
+                    span.progress__list-link-text Задача 1
+            li.progress__list-item
+                a(href="#").progress__list-link 
+                    span.progress__list-link-count 8.
+                    span.progress__list-link-text Задача 2
+            li.progress__list-item
+                a(href="#").progress__list-link 
+                    span.progress__list-link-count 9.
+                    span.progress__list-link-text Алегбра в части В
+            li.progress__list-item
+                a(href="#").progress__list-link 
+                    span.progress__list-link-count 10.
+                    span.progress__list-link-text Геометрия в части В
+        .progress__certificate
+            .progress__certificate-icon
+                include ../../assets/img/certificate/certificate.svg
+            .progress__certificate-text Сертификат об успешном прохождении курса    
+    button.progress__show-button
+        span.progress__show-button-icon
+            +svg(12,12,"icon-arrow-prev")
+        | Показать все

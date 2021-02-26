@@ -21,7 +21,33 @@
             <div class="header__notice-item"><a class="notice" href="#"><span class="notice__icon">
                                 <svg aria-hidden="true" width="16" height="16">
                                   <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
-                                </svg></span><span class="notice__text">Твоё занятие уже началось! Подключайся!</span></a>
+                                </svg></span><span class="notice__text">Твоё занятие уже началось! Подключайся!</span><span class="notice__count"> <span class="notice__count-number">2</span></span></a>
+              <div class="header__notice-item-dropdown" style="display: none">
+                <div class="dropdown-tooltip dropdown-tooltip--notice">
+                      <div class="notice-item">
+                        <div class="notice-item__icon">
+                                        <svg aria-hidden="true" width="16" height="16">
+                                          <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                        </svg>
+                        </div>
+                        <div class="notice-item__data">
+                          <div class="notice-item__text">Твоё следующее занятие завтра в 18:00! Не пропусти! :)</div>
+                          <div class="notice-item__date">25.03.2020</div>
+                        </div>
+                      </div>
+                      <div class="notice-item">
+                        <div class="notice-item__icon">
+                                        <svg aria-hidden="true" width="16" height="16">
+                                          <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                        </svg>
+                        </div>
+                        <div class="notice-item__data">
+                          <div class="notice-item__text">Твоё следующее занятие завтра в 18:00! Не пропусти! :)</div>
+                          <div class="notice-item__date">25.03.2020</div>
+                        </div>
+                      </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="header__user-block"><a class="header__user-avatar" href="#"></a><span class="header__greeting"><span class="header__greeting-text">Привет, Константин!</span></span><a class="header__logout" href="#">
@@ -31,13 +57,37 @@
         </div>
       </div>
       <div class="header__m-menu">
-        <button class="header__m-menu-button"><span class="header__m-menu-button-icon">
-                          <svg aria-hidden="true" width="16" height="16">
-                            <use xlink:href="img/sprite/sprite.svg#icon-star"></use>
-                          </svg></span>Мои уроки   <span class="header__m-menu-button-dropdown"> 
-                          <svg aria-hidden="true" width="8" height="4">
-                            <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
-                          </svg></span></button>
+        <button class="header__m-menu-button"><span class="header__m-menu-page header__m-menu-page--current"><span class="header__m-menu-page-icon">
+                            <svg aria-hidden="true" width="16" height="16">
+                              <use xlink:href="img/sprite/sprite.svg#icon-pay"></use>
+                            </svg></span>Мои уроки  <span class="header__m-menu-page-dropdown"> 
+                            <svg aria-hidden="true" width="8" height="4">
+                              <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                            </svg></span></span></button>
+        <div class="header__m-menu-dropdown" style="display: none">
+          <div class="dropdown-tooltip">
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-play"></use>
+                                </svg></span>Доступные занятия</a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page header__m-menu-page--current" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-star"></use>
+                                </svg></span>Мои уроки </a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-settings"></use>
+                                </svg></span>Настройки</a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-bell"></use>
+                                </svg></span>Уведомления </a></div>
+            <div class="header__m-menu-dropdown-item"><a class="header__m-menu-page" href="#"><span class="header__m-menu-page-icon">
+                                <svg aria-hidden="true" width="16" height="16">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-logout"></use>
+                                </svg></span>Выход</a></div>
+          </div>
+        </div>
       </div>
     </header>
     <main class="page__main">
@@ -47,7 +97,7 @@
             <div class="page__main-nav">
               <nav class="main-nav">
                 <ul class="main-nav__list">
-                  <li class="main-nav__list-item"><a class="main-nav__link" href="#"><span class="main-nav__link-icon">
+                  <li class="main-nav__list-item"><a class="main-nav__link main-nav__link--active" href="#"><span class="main-nav__link-icon">
                                       <svg aria-hidden="true" width="16" height="16">
                                         <use xlink:href="img/sprite/sprite.svg#icon-pay"></use>
                                       </svg></span><span class="main-nav__link-title">Оплатить занятия</span></a></li>
@@ -91,202 +141,215 @@
               </nav>
             </div>
           </div>
-          <div class="page__course-cards">
-            <div class="page__course-cards-item">
-              <div class="course-card course-card--purple">
-                <div class="course-card__header">
-                  <div class="course-card__teacher">
-                    <div class="course-card__teacher-image"><img src="img/courses-card/teacher.jpg" alt="Альберт Горяев"></div>
-                    <div class="course-card__teacher-name">Альберт Горяев</div>
-                  </div>
-                  <div class="course-card__ticket-container">
-                    <div class="course-card__ticket">Курс</div>
-                    <div class="course-card__ticket">11 класс</div>
+          <div class="page__content">
+            <div class="page__content-row-md page__content-row-js">
+              <div class="page__course-cards">
+                <div class="page__course-cards-item">
+                  <div class="course-card course-card--purple">
+                    <div class="course-card__header">
+                      <div class="course-card__teacher">
+                        <div class="teacher">
+                          <div class="teacher__image"><img src="img/courses-card/teacher.jpg" alt="Альберт Горяев"></div>
+                          <div class="teacher__name">Альберт Горяев</div>
+                        </div>
+                      </div>
+                      <div class="course-card__ticket-container">
+                        <div class="course-card__ticket">Курс</div>
+                        <div class="course-card__ticket">11 класс</div>
+                      </div>
+                    </div>
+                    <div class="course-card__title">Курс подготовки к олимпиаде «Физтех» по математике</div>
+                    <div class="course-card__data">
+                      <div class="course-card__data-item">
+                        <div class="course-card__data-icon">
+                                            <svg aria-hidden="true" width="16" height="16">
+                                              <use xlink:href="img/sprite/sprite.svg#icon-time"></use>
+                                            </svg>
+                        </div>По пятницам в 17:30
+                      </div>
+                      <div class="course-card__data-item"> 
+                        <div class="course-card__data-icon">
+                                            <svg aria-hidden="true" width="16" height="16">
+                                              <use xlink:href="img/sprite/sprite.svg#icon-sand-time"></use>
+                                            </svg>
+                        </div>Доступно 8 занятий
+                      </div>
+                    </div>
+                    <div class="course-card__button"> <a class="button button--full-width-m" href="#">Открыть материалы</a></div>
                   </div>
                 </div>
-                <div class="course-card__title">Курс подготовки к олимпиаде «Физтех» по математике</div>
-                <div class="course-card__data">
-                  <div class="course-card__data-item">
-                    <div class="course-card__data-icon">
-                                    <svg aria-hidden="true" width="16" height="16">
-                                      <use xlink:href="img/sprite/sprite.svg#icon-time"></use>
-                                    </svg>
-                    </div>По пятницам в 17:30
+                <div class="page__course-cards-item">
+                  <div class="course-card course-card--orange">
+                    <div class="course-card__header">
+                      <div class="course-card__teacher">
+                        <div class="teacher">
+                          <div class="teacher__image"><img src="img/courses-card/teacher.jpg" alt="Альберт Горяев"></div>
+                          <div class="teacher__name">Альберт Горяев</div>
+                        </div>
+                      </div>
+                      <div class="course-card__ticket-container">
+                        <div class="course-card__ticket">Индивидуально</div>
+                        <div class="course-card__ticket">11 класс</div>
+                      </div>
+                    </div>
+                    <div class="course-card__title">Курс подготовки к олимпиаде «Физтех» по математике</div>
+                    <div class="course-card__data">
+                      <div class="course-card__data-item">
+                        <div class="course-card__data-icon">
+                                            <svg aria-hidden="true" width="16" height="16">
+                                              <use xlink:href="img/sprite/sprite.svg#icon-time"></use>
+                                            </svg>
+                        </div>Каждое воскресенье  в 18:45
+                      </div>
+                      <div class="course-card__data-item"> 
+                        <div class="course-card__data-icon">
+                                            <svg aria-hidden="true" width="16" height="16">
+                                              <use xlink:href="img/sprite/sprite.svg#icon-sand-time"></use>
+                                            </svg>
+                        </div>Доступно 3 занятия
+                      </div>
+                    </div>
+                    <div class="course-card__button"> <a class="button button--full-width-m button--orange" href="#">Открыть материалы</a></div>
                   </div>
-                  <div class="course-card__data-item"> 
-                    <div class="course-card__data-icon">
-                                    <svg aria-hidden="true" width="16" height="16">
-                                      <use xlink:href="img/sprite/sprite.svg#icon-sand-time"></use>
-                                    </svg>
-                    </div>Доступно 8 занятий
+                </div>
+                <div class="page__course-cards-item">
+                  <div class="course-card course-card--green">
+                    <div class="course-card__header">
+                      <div class="course-card__teacher">
+                        <div class="teacher">
+                          <div class="teacher__image"><img src="img/courses-card/teacher.jpg" alt="Альберт Горяев"></div>
+                          <div class="teacher__name">Альберт Горяев</div>
+                        </div>
+                      </div>
+                      <div class="course-card__ticket-container">
+                        <div class="course-card__ticket">Подписка</div>
+                        <div class="course-card__ticket">11 класс</div>
+                      </div>
+                    </div>
+                    <div class="course-card__title">Курс подготовки к олимпиаде «Физтех» по математике</div>
+                    <div class="course-card__data">
+                      <div class="course-card__data-item">
+                        <div class="course-card__data-icon">
+                                            <svg aria-hidden="true" width="16" height="16">
+                                              <use xlink:href="img/sprite/sprite.svg#icon-time"></use>
+                                            </svg>
+                        </div>Каждое воскресенье  в 18:45
+                      </div>
+                      <div class="course-card__data-item"> 
+                        <div class="course-card__data-icon">
+                                            <svg aria-hidden="true" width="16" height="16">
+                                              <use xlink:href="img/sprite/sprite.svg#icon-sand-time-end"></use>
+                                            </svg>
+                        </div>У вас закончились занятия
+                      </div>
+                    </div>
+                    <div class="course-card__button"> <a class="button button--full-width-m button--green" href="#">Открыть материалы</a></div>
                   </div>
-                </div><a class="course-card__button">Открыть материалы</a>
+                </div>
               </div>
             </div>
-            <div class="page__course-cards-item">
-              <div class="course-card course-card--orange">
-                <div class="course-card__header">
-                  <div class="course-card__teacher">
-                    <div class="course-card__teacher-image"><img src="img/courses-card/teacher.jpg" alt="Альберт Горяев"></div>
-                    <div class="course-card__teacher-name">Альберт Горяев</div>
-                  </div>
-                  <div class="course-card__ticket-container">
-                    <div class="course-card__ticket">Индивидуально</div>
-                    <div class="course-card__ticket">11 класс</div>
-                  </div>
-                </div>
-                <div class="course-card__title">Курс подготовки к олимпиаде «Физтех» по математике</div>
-                <div class="course-card__data">
-                  <div class="course-card__data-item">
-                    <div class="course-card__data-icon">
-                                    <svg aria-hidden="true" width="16" height="16">
-                                      <use xlink:href="img/sprite/sprite.svg#icon-time"></use>
+            <div class="page__calendar">
+              <div class="calendar">
+                <div class="calendar__header">
+                  <div class="calendar__month-title">Сентябрь 2020</div>
+                  <div class="calendar__handlers">
+                    <button class="calendar__handler-item">
+                                    <svg aria-hidden="true" width="15" height="15">
+                                      <use xlink:href="img/sprite/sprite.svg#icon-arrow-prev"></use>
                                     </svg>
-                    </div>Каждое воскресенье  в 18:45
-                  </div>
-                  <div class="course-card__data-item"> 
-                    <div class="course-card__data-icon">
-                                    <svg aria-hidden="true" width="16" height="16">
-                                      <use xlink:href="img/sprite/sprite.svg#icon-sand-time"></use>
+                    </button>
+                    <button class="calendar__handler-item">
+                                    <svg aria-hidden="true" width="15" height="15">
+                                      <use xlink:href="img/sprite/sprite.svg#icon-arrow-next"></use>
                                     </svg>
-                    </div>Доступно 3 занятия
-                  </div>
-                </div><a class="course-card__button">Открыть материалы</a>
-              </div>
-            </div>
-            <div class="page__course-cards-item">
-              <div class="course-card course-card--green">
-                <div class="course-card__header">
-                  <div class="course-card__teacher">
-                    <div class="course-card__teacher-image"><img src="img/courses-card/teacher.jpg" alt="Альберт Горяев"></div>
-                    <div class="course-card__teacher-name">Альберт Горяев</div>
-                  </div>
-                  <div class="course-card__ticket-container">
-                    <div class="course-card__ticket">Подписка</div>
-                    <div class="course-card__ticket">11 класс</div>
+                    </button>
                   </div>
                 </div>
-                <div class="course-card__title">Курс подготовки к олимпиаде «Физтех» по математике</div>
-                <div class="course-card__data">
-                  <div class="course-card__data-item">
-                    <div class="course-card__data-icon">
-                                    <svg aria-hidden="true" width="16" height="16">
-                                      <use xlink:href="img/sprite/sprite.svg#icon-time"></use>
-                                    </svg>
-                    </div>Каждое воскресенье  в 18:45
-                  </div>
-                  <div class="course-card__data-item"> 
-                    <div class="course-card__data-icon">
-                                    <svg aria-hidden="true" width="16" height="16">
-                                      <use xlink:href="img/sprite/sprite.svg#icon-sand-time-end"></use>
-                                    </svg>
-                    </div>У вас закончились занятия
-                  </div>
-                </div><a class="course-card__button">Открыть материалы</a>
-              </div>
-            </div>
-          </div>
-          <div class="page__calendar">
-            <div class="calendar">
-              <div class="calendar__header">
-                <div class="calendar__month-title">Сентябрь 2020</div>
-                <div class="calendar__handlers">
-                  <button class="calendar__handler-item">
-                                <svg aria-hidden="true" width="15" height="15">
-                                  <use xlink:href="img/sprite/sprite.svg#icon-arrow-prev"></use>
-                                </svg>
-                  </button>
-                  <button class="calendar__handler-item">
-                                <svg aria-hidden="true" width="15" height="15">
-                                  <use xlink:href="img/sprite/sprite.svg#icon-arrow-next"></use>
-                                </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="calendar__body">
-                <ul class="calendar__week-days">
-                  <li class="calendar__week-day-item">пн</li>
-                  <li class="calendar__week-day-item">вт</li>
-                  <li class="calendar__week-day-item">ср</li>
-                  <li class="calendar__week-day-item">чт</li>
-                  <li class="calendar__week-day-item">пт</li>
-                  <li class="calendar__week-day-item">сб</li>
-                  <li class="calendar__week-day-item">вс</li>
-                </ul>
-                <div class="calendar__weeks">
-                  <div class="calendar__week">
-                    <button class="calendar__day calendar__day--unactive">24</button>
-                    <button class="calendar__day calendar__day--unactive">25</button>
-                    <button class="calendar__day calendar__day--unactive">26</button>
-                    <button class="calendar__day calendar__day--unactive">27</button>
-                    <button class="calendar__day calendar__day--unactive">28</button>
-                    <button class="calendar__day calendar__day--unactive">29</button>
-                    <button class="calendar__day">1</button>
-                  </div>
-                  <div class="calendar__week">
-                    <button class="calendar__day">2</button>
-                    <button class="calendar__day">3</button>
-                    <button class="calendar__day">4</button>
-                    <button class="calendar__day">5</button>
-                    <button class="calendar__day">6</button>
-                    <button class="calendar__day">7</button>
-                    <button class="calendar__day">8</button>
-                  </div>
-                  <div class="calendar__week">
-                    <button class="calendar__day">9</button>
-                    <button class="calendar__day">10</button>
-                    <button class="calendar__day">11</button>
-                    <button class="calendar__day">12</button>
-                    <button class="calendar__day">13</button>
-                    <button class="calendar__day">14</button>
-                    <button class="calendar__day">15</button>
-                  </div>
-                  <div class="calendar__week">
-                    <button class="calendar__day">16</button>
-                    <button class="calendar__day calendar__day--current">17</button>
-                    <button class="calendar__day">18</button>
-                    <button class="calendar__day">19</button>
-                    <button class="calendar__day">20</button>
-                    <button class="calendar__day">21</button>
-                    <button class="calendar__day">22</button>
-                  </div>
-                  <div class="calendar__week">
-                    <button class="calendar__day">23</button>
-                    <button class="calendar__day">24</button>
-                    <button class="calendar__day">25</button>
-                    <button class="calendar__day">26</button>
-                    <button class="calendar__day">27</button>
-                    <button class="calendar__day">28</button>
-                    <button class="calendar__day">29</button>
-                  </div>
-                  <div class="calendar__week">
-                    <button class="calendar__day">30</button>
-                    <button class="calendar__day">31</button>
-                    <button class="calendar__day calendar__day--unactive">1</button>
-                    <button class="calendar__day calendar__day--unactive">2</button>
-                    <button class="calendar__day calendar__day--unactive">3</button>
-                    <button class="calendar__day calendar__day--unactive">4</button>
-                    <button class="calendar__day calendar__day--unactive">5</button>
+                <div class="calendar__body">
+                  <ul class="calendar__week-days">
+                    <li class="calendar__week-day-item">пн</li>
+                    <li class="calendar__week-day-item">вт</li>
+                    <li class="calendar__week-day-item">ср</li>
+                    <li class="calendar__week-day-item">чт</li>
+                    <li class="calendar__week-day-item">пт</li>
+                    <li class="calendar__week-day-item">сб</li>
+                    <li class="calendar__week-day-item">вс</li>
+                  </ul>
+                  <div class="calendar__weeks">
+                    <div class="calendar__week">
+                      <button class="calendar__day calendar__day--unactive">24</button>
+                      <button class="calendar__day calendar__day--unactive">25</button>
+                      <button class="calendar__day calendar__day--unactive">26</button>
+                      <button class="calendar__day calendar__day--unactive">27</button>
+                      <button class="calendar__day calendar__day--unactive">28</button>
+                      <button class="calendar__day calendar__day--unactive">29</button>
+                      <button class="calendar__day">1</button>
+                    </div>
+                    <div class="calendar__week">
+                      <button class="calendar__day">2</button>
+                      <button class="calendar__day">3</button>
+                      <button class="calendar__day">4</button>
+                      <button class="calendar__day">5</button>
+                      <button class="calendar__day">6</button>
+                      <button class="calendar__day">7</button>
+                      <button class="calendar__day">8</button>
+                    </div>
+                    <div class="calendar__week">
+                      <button class="calendar__day">9</button>
+                      <button class="calendar__day">10</button>
+                      <button class="calendar__day">11</button>
+                      <button class="calendar__day">12</button>
+                      <button class="calendar__day">13</button>
+                      <button class="calendar__day">14</button>
+                      <button class="calendar__day">15</button>
+                    </div>
+                    <div class="calendar__week">
+                      <button class="calendar__day">16</button>
+                      <button class="calendar__day calendar__day--current">17</button>
+                      <button class="calendar__day">18</button>
+                      <button class="calendar__day">19</button>
+                      <button class="calendar__day calendar__day--active">20</button>
+                      <button class="calendar__day">21</button>
+                      <button class="calendar__day">22</button>
+                    </div>
+                    <div class="calendar__week">
+                      <button class="calendar__day">23</button>
+                      <button class="calendar__day">24</button>
+                      <button class="calendar__day">25</button>
+                      <button class="calendar__day">26</button>
+                      <button class="calendar__day">27</button>
+                      <button class="calendar__day">28</button>
+                      <button class="calendar__day">29</button>
+                    </div>
+                    <div class="calendar__week">
+                      <button class="calendar__day">30</button>
+                      <button class="calendar__day">31</button>
+                      <button class="calendar__day calendar__day--unactive">1</button>
+                      <button class="calendar__day calendar__day--unactive">2</button>
+                      <button class="calendar__day calendar__day--unactive">3</button>
+                      <button class="calendar__day calendar__day--unactive">4</button>
+                      <button class="calendar__day calendar__day--unactive">5</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="calendar__footer">
-                <div class="calendar__footer-item">
-                  <div class="calendar__button"> 
-                    <div class="calendar__button-icon">
-                                  <svg aria-hidden="true" width="16" height="16">
-                                    <use xlink:href="img/sprite/sprite.svg#icon-arrow-remove"></use>
-                                  </svg>
-                    </div>Перенести/отменить занятие  
+                <div class="calendar__footer">
+                  <div class="calendar__footer-item">
+                    <div class="calendar__button"> 
+                      <div class="calendar__button-icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-remove"></use>
+                                      </svg>
+                      </div>Перенести/отменить занятие  
+                    </div>
                   </div>
-                </div>
-                <div class="calendar__footer-item">
-                  <div class="calendar__button">
-                    <div class="calendar__button-icon"> 
-                                  <svg aria-hidden="true" width="16" height="16">
-                                    <use xlink:href="img/sprite/sprite.svg#icon-clock-add"></use>
-                                  </svg>
-                    </div>Добавить занятие
+                  <div class="calendar__footer-item">
+                    <div class="calendar__button">
+                      <div class="calendar__button-icon"> 
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-clock-add"></use>
+                                      </svg>
+                      </div>Добавить занятие
+                    </div>
                   </div>
                 </div>
               </div>

@@ -3,9 +3,7 @@ include ../mixins/svg.pug
 .course-card.course-card--orange
     .course-card__header
         .course-card__teacher
-            .course-card__teacher-image
-                img(src="img/courses-card/teacher.jpg", alt="Альберт Горяев")
-            .course-card__teacher-name Альберт Горяев
+            include ../teacher/teacher.pug
         .course-card__ticket-container
             .course-card__ticket Индивидуально
             .course-card__ticket 11 класс
@@ -19,4 +17,5 @@ include ../mixins/svg.pug
             .course-card__data-icon
                 +svg(16,16,"icon-sand-time")
             | Доступно 3 занятия
-    a.course-card__button Открыть материалы
+    .course-card__button 
+        a(href="#").button.button--full-width-m.button--orange Открыть материалы

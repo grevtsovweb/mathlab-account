@@ -1,0 +1,130 @@
+.material-card
+    padding-top: 20px
+    padding-bottom: 15px
+
+    +md-block()
+        display: flex
+        justify-content: space-between
+        padding-bottom: 20px
+
+    &__content
+        +md-block()
+            padding-right: 40px
+
+    &__title
+        font-family: $bold
+        font-size: 18px
+        line-height: 26px
+        letter-spacing: 0.02em
+        color: $accent
+        margin-bottom: 8px
+
+    &__data-description
+        font-size: 16px
+        line-height: 22px
+        color: $dark-main-opacity
+
+    &__data-time
+        margin-top: 14px
+        
+        .time 
+
+            &__icon
+                width: 12px
+                height: 12px
+
+            &__text
+                color: $dark-main-opacity
+                font-size: 12px
+            
+            svg
+                fill: $green
+
+    &__handlers
+        margin: 0
+        padding: 0
+        list-style: none
+        display: flex
+        margin-left: -5px
+        margin-right: -5px
+        margin-top: 13px
+
+        +md-block()
+            margin-top: 0
+
+    &__handlers-item
+        margin-left: 5px
+        margin-right: 5px
+
+    &__handlers-link-container
+        display: flex
+        text-decoration: none
+        align-items: center
+
+        +md-block()
+            flex-direction: column
+
+    &__handlers-link-button
+        width: 50px
+        height: 50px
+        display: flex
+        border-radius: 50%
+        justify-content: center
+        align-items: center
+        justify-content: center
+        background-color: $bg-main
+
+        &--homework
+            background-color: $bg-main
+
+        svg
+            width: 100%
+            fill: $accent
+
+        &--play
+            background-color: #FFF4F7
+
+            svg
+                width: 100%
+                fill: #F61A4F
+
+        &--book
+            background-color: #F8F7D8
+
+            svg
+                width: 100%
+                fill: $orange
+
+        &--download
+            background-color: #D4FDE0
+
+            svg
+                width: 100%
+                fill: $green
+
+    &__handlers-link-icon
+        width: 28px
+        height: 28px
+        display: flex
+        justify-content: center
+        align-items: center
+
+        svg
+            width: 100%
+
+    &__handlers-link-description
+        margin-left: 6px
+        font-family: $main
+        font-size: 11px
+        line-height: 14px
+        letter-spacing: -0.03em
+        color: #999999
+        margin-top: 4px
+
+        +sm-block()
+            font-size: 14px
+
+        +md-block()
+            margin-left: 0
+            margin-top: 8px
+

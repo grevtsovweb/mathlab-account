@@ -1,0 +1,60 @@
+.avatar-upload
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &__image
+        width: 70px
+        height: 70px
+        border-radius: 50%
+        background-color: #C6DAFC
+        background-image: url(../img/common/no-avatar.svg)
+        background-position: bottom center
+        background-repeat: no-repeat
+        background-size: 65%
+        margin-bottom: 9px
+        display: flex
+        justify-content: center
+        align-items: center
+        overflow: hidden
+
+        +md-block()
+            width: 80px
+            height: 80px
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+    &__link
+        position: relative
+        cursor: pointer
+        margin-top: 0
+        margin-bottom: 0
+
+        input[type=file]
+            position: absolute
+            content: ''
+            opacity: 0
+            width: 100%
+            height: 100%
+            left: 0
+            top: 0
+            z-index: 1000
+            cursor: inherit
+
+        &:hover
+
+            .avatar-upload__link-text
+                text-decoration: underline
+
+        input[type=file]::-webkit-file-upload-button
+            cursor: pointer
+
+    &__link-text
+        color: rgba(0,0,0,.5)
+        font-size: 12px
+        line-height: 16px
+
+        
